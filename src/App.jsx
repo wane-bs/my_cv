@@ -614,8 +614,8 @@ const CV = () => {
             {/* ═══════════════════ FOOTER ═══════════════════ */}
             <footer className="bg-slate-900 text-slate-400 py-8 border-t border-slate-800 mt-4">
                 <div className="max-w-6xl mx-auto px-6 text-center text-sm">
-                    <p className="mb-1">&copy; 2026 {t.header.name}. All rights reserved.</p>
-                    <p className="text-slate-500">Designed with Financial Clarity & Data Precision.</p>
+                    <p className="mb-2 text-slate-300">{language === 'vi' ? 'Cảm ơn bạn đã đọc đến đây! 🙏' : 'Thank you for reading this far! 🙏'}</p>
+                    <p className="text-slate-500">&copy; 2026 {t.header.name}</p>
                 </div>
             </footer>
         </div>
