@@ -25,6 +25,7 @@ const CV = () => {
         en: {
             header: {
                 role: "FINANCIAL TECHNOLOGY | INVESTOR RELATIONS SPECIALIST",
+                name: "Nguyen Trung Hieu",
                 location: "Ho Chi Minh City, Vietnam"
             },
             nav: {
@@ -103,6 +104,7 @@ const CV = () => {
         vi: {
             header: {
                 role: "CÔNG NGHỆ TÀI CHÍNH | CHUYÊN VIÊN QUAN HỆ NHÀ ĐẦU TƯ (IR)",
+                name: "Nguyễn Trung Hiếu",
                 location: "TP. Hồ Chí Minh, Việt Nam"
             },
             nav: {
@@ -189,7 +191,7 @@ const CV = () => {
                 <div className="max-w-5xl mx-auto px-6 py-8">
                     <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
                         <div>
-                            <h1 className="text-3xl md:text-4xl font-bold tracking-tight">NGUYEN TRUNG HIEU</h1>
+                            <h1 className="text-3xl md:text-4xl font-bold tracking-tight">{t.header.name.toUpperCase()}</h1>
                             <p className="text-blue-300 font-medium text-lg mt-1 tracking-wide uppercase">
                                 {t.header.role}
                             </p>
@@ -235,8 +237,8 @@ const CV = () => {
                         <button
                             onClick={() => setActiveTab('overview')}
                             className={`py-4 text-sm font-semibold tracking-wide uppercase border-b-2 transition-all whitespace-nowrap ${activeTab === 'overview'
-                                    ? 'border-blue-600 text-blue-800'
-                                    : 'border-transparent text-slate-500 hover:text-slate-700'
+                                ? 'border-blue-600 text-blue-800'
+                                : 'border-transparent text-slate-500 hover:text-slate-700'
                                 }`}
                         >
                             {t.nav.overview}
@@ -244,8 +246,8 @@ const CV = () => {
                         <button
                             onClick={() => setActiveTab('experience')}
                             className={`py-4 text-sm font-semibold tracking-wide uppercase border-b-2 transition-all whitespace-nowrap ${activeTab === 'experience'
-                                    ? 'border-blue-600 text-blue-800'
-                                    : 'border-transparent text-slate-500 hover:text-slate-700'
+                                ? 'border-blue-600 text-blue-800'
+                                : 'border-transparent text-slate-500 hover:text-slate-700'
                                 }`}
                         >
                             {t.nav.experience}
@@ -253,8 +255,8 @@ const CV = () => {
                         <button
                             onClick={() => setActiveTab('skills')}
                             className={`py-4 text-sm font-semibold tracking-wide uppercase border-b-2 transition-all whitespace-nowrap ${activeTab === 'skills'
-                                    ? 'border-blue-600 text-blue-800'
-                                    : 'border-transparent text-slate-500 hover:text-slate-700'
+                                ? 'border-blue-600 text-blue-800'
+                                : 'border-transparent text-slate-500 hover:text-slate-700'
                                 }`}
                         >
                             {t.nav.skills}
@@ -532,7 +534,7 @@ const CV = () => {
             {/* Footer */}
             <footer className="bg-slate-900 text-slate-400 py-8 border-t border-slate-800 mt-12">
                 <div className="max-w-5xl mx-auto px-6 text-center text-sm">
-                    <p className="mb-2">&copy; 2026 Nguyen Trung Hieu. All rights reserved.</p>
+                    <p className="mb-2">&copy; 2026 {t.header.name}. All rights reserved.</p>
                     <p>Designed with Financial Clarity & Data Precision.</p>
                 </div>
             </footer>
