@@ -56,12 +56,12 @@ const CV = () => {
             },
             summary: {
                 profileTitle: "Professional Profile",
-                profileText: "Finance Technology student proficient in integrating advanced financial analysis with AI and automation to enhance operational efficiency. Successfully developed an automated data collection system that <strong>reduced manual processing time by 40%</strong>. Experienced in producing detailed investment reports analyzing global UAV companies. Aspiring to advance expertise in Investor Relations (IR) and financial analysis leveraging Web3 technology and data-driven approaches.",
+                profileText: "Finance Technology student proficient in integrating advanced financial analysis with AI and automation to enhance operational efficiency. Successfully developed an automated data collection system that <strong>reduced manual processing time by 40%</strong>. Experienced in producing detailed investment reports analyzing 8 global UAV enterprises. Aspiring to advance expertise in Investor Relations (IR) and financial analysis leveraging Web3 technology and data-driven approaches.",
                 highlightsTitle: "Key Highlights",
                 efficiency: "Efficiency",
                 efficiencyDesc: "Reduced manual data processing time by 40% via Python automation.",
                 dataIntel: "Data Intelligence",
-                dataIntelDesc: "Analyzed value chains of 8 global UAV companies using AI.",
+                dataIntelDesc: "Analyzed value chains of 8 global UAV enterprises using AI.",
                 educationTitle: "Education",
                 university: "Ho Chi Minh City University of Food Industry (HUIT)",
                 degree: "B.Sc. Financial Technology",
@@ -75,7 +75,7 @@ const CV = () => {
                     time: "Oct 2025 – Present (Part-time)",
                     company: "CT GROUP JOINT STOCK COMPANY",
                     bullets: [
-                        "Spearheaded <strong>AI-driven market intelligence</strong> leveraging Gemini Deep Research to deconstruct value chains and business models of 8 global UAV companies.",
+                        "Spearheaded <strong>AI-driven market intelligence</strong> leveraging Gemini Deep Research to deconstruct value chains and business models of 8 global UAV enterprises.",
                         "Developed and optimized a <strong>50-page investment report structure</strong> utilizing AI to integrate multi-source data, ensuring consistency and clear visualization of complex financial metrics.",
                         "Engineered <strong>Python scripts</strong> to automate data collection and processing, reducing manual processing time by <strong>40%</strong> and enhancing focus on quantitative analysis."
                     ]
@@ -173,7 +173,7 @@ const CV = () => {
                 efficiency: "Hiệu suất Vận hành",
                 efficiencyDesc: "Giảm 40% thời gian xử lý dữ liệu thủ công thông qua tự động hóa bằng Python.",
                 dataIntel: "Trí tuệ Dữ liệu",
-                dataIntelDesc: "Phân tích chuỗi giá trị của 8 công ty UAV toàn cầu với công cụ AI.",
+                dataIntelDesc: "Phân tích chuỗi giá trị của 8 doanh nghiệp UAV toàn cầu với công cụ AI.",
                 educationTitle: "Học vấn",
                 university: "Trường Đại học Công Thương TP.HCM (HUIT)",
                 degree: "Cử nhân Công nghệ Tài chính",
@@ -187,7 +187,7 @@ const CV = () => {
                     time: "10/2025 – Hiện tại (Bán thời gian)",
                     company: "CÔNG TY CỔ PHẦN TẬP ĐOÀN CT GROUP",
                     bullets: [
-                        "Tiên phong ứng dụng <strong>Trí tuệ thị trường (Market Intelligence)</strong> dựa trên AI (Gemini Deep Research) để giải mã chuỗi giá trị và mô hình kinh doanh của 8 công ty UAV toàn cầu.",
+                        "Tiên phong ứng dụng <strong>Trí tuệ thị trường (Market Intelligence)</strong> dựa trên AI (Gemini Deep Research) để giải mã chuỗi giá trị và mô hình kinh doanh của 8 doanh nghiệp UAV toàn cầu.",
                         "Phát triển và tối ưu hóa cấu trúc <strong>báo cáo đầu tư dài 50 trang</strong>, đảm bảo tính nhất quán và trực quan hóa các chỉ số tài chính phức tạp.",
                         "Xây dựng các <strong>tập lệnh Python</strong> để tự động hóa việc thu thập và xử lý dữ liệu báo cáo ngành, giảm <strong>40%</strong> thời gian xử lý thủ công."
                     ]
