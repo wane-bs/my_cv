@@ -582,7 +582,7 @@ const CV = () => {
                         <div className="bg-white p-5 rounded-xl shadow-sm border border-slate-100">
                             <h3 className="text-sm font-bold text-slate-800 mb-3 pb-2 border-b border-slate-100">{t.skills.cat2}</h3>
                             <div className="flex flex-wrap gap-2">
-                                {['Python', 'Gemini AI', 'AI Strategy', 'Prompt Engineering', 'Fullstack Dev', 'Blockchain/IPFS', 'Automation'].map(s => (
+                                {['Python', 'Gemini AI', 'AI Strategy', 'Prompt Engineering', 'Fullstack Development', 'Blockchain/IPFS', 'Automation'].map(s => (
                                     <span key={s} className="px-2.5 py-1 bg-purple-50 text-purple-700 text-xs font-medium rounded-full border border-purple-100">{s}</span>
                                 ))}
                             </div>
@@ -592,7 +592,7 @@ const CV = () => {
                         <div className="bg-white p-5 rounded-xl shadow-sm border border-slate-100">
                             <h3 className="text-sm font-bold text-slate-800 mb-3 pb-2 border-b border-slate-100">{t.skills.cat3}</h3>
                             <div className="flex flex-wrap gap-2 mb-4">
-                                {['Critical Thinking', 'Problem Solving', 'Project Mgmt', 'Communication', 'Attention to Detail'].map(s => (
+                                {['Critical Thinking', 'Problem Solving', 'Project Management', 'Communication', 'Attention to Detail'].map(s => (
                                     <span key={s} className="px-2.5 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded border border-slate-200">{s}</span>
                                 ))}
                             </div>
@@ -614,7 +614,7 @@ const CV = () => {
             {/* ═══════════════════ FOOTER ═══════════════════ */}
             <footer className="bg-slate-900 text-slate-400 py-8 border-t border-slate-800 mt-4">
                 <div className="max-w-6xl mx-auto px-6 text-center text-sm">
-                    <p className="mb-2 text-slate-300">{language === 'vi' ? 'Cảm ơn bạn đã đọc đến đây! 🙏' : 'Thank you for reading this far! 🙏'}</p>
+                    <p className="mb-2 text-slate-300">{language === 'vi' ? 'Cảm ơn bạn đã đọc đến đây!' : 'Thank you for reading this far!'}</p>
                     <p className="text-slate-500">&copy; 2026 {t.header.name}</p>
                 </div>
             </footer>
