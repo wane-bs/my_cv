@@ -403,7 +403,7 @@ const CV = () => {
                                     <p className="text-sm text-slate-600 mt-1">{t.summary.degree}</p>
                                     <p className="text-xs text-slate-500 mt-0.5">{t.summary.degreeStatus} • {t.summary.timeEdu}</p>
                                     <div className="mt-3 inline-flex items-center px-3 py-1.5 bg-slate-100 text-slate-800 text-sm font-bold rounded-lg">
-                                        GPA: 7.4 / 10
+                                        GPA: 2.9 (7.4)
                                     </div>
                                 </div>
                             </div>
