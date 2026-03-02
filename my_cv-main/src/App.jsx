@@ -24,7 +24,7 @@ const CV = () => {
 
     // Track active section on scroll
     useEffect(() => {
-        const sectionIds = ['summary', 'projects', 'research', 'certifications', 'skills'];
+        const sectionIds = ['summary', 'experience', 'projects', 'research', 'certifications', 'skills'];
         const handleScroll = () => {
             const scrollY = window.scrollY + 120;
             for (let i = sectionIds.length - 1; i >= 0; i--) {
@@ -42,12 +42,13 @@ const CV = () => {
     const content = {
         en: {
             header: {
-                role: "FINANCIAL TECHNOLOGY | ACCOUNTS PAYABLE INTERN",
+                role: "FINANCE OPERATIONS & STARTUP ACCOUNTING",
                 name: "Nguyen Trung Hieu",
                 location: "Ho Chi Minh City, Vietnam"
             },
             nav: {
                 summary: "Summary",
+                experience: "Experience",
                 projects: "Projects",
                 research: "Research",
                 certifications: "Certifications",
@@ -55,38 +56,51 @@ const CV = () => {
             },
             summary: {
                 profileTitle: "Professional Profile",
-                profileText: "Finance Technology student proficient in large-scale data processing with a financial control mindset. Skilled in SQL and Python for building automated reconciliation systems, reducing errors and manual processing time by 40%. Committed to absolute precision in payment document management and cash flow optimization. Aspiring to become a Financial Analyst with a solid accounting foundation.",
+                profileText: "3rd-year Fintech student with a strong foundation in <strong>Finance Operations</strong> and <strong>Startup Accounting</strong>. Capable of leveraging <strong>Python</strong> and <strong>AI</strong> to build automated reconciliation systems for micro-payment models. Focused on optimizing <strong>Burn Rate</strong> and supporting <strong>Due Diligence</strong> profiles for Flowmingo's fundraising roadmap.",
                 highlightsTitle: "Key Highlights",
-                efficiency: "Data Integrity",
-                efficiencyDesc: "Reduced document processing errors by 40% through Python automation reconciliation.",
-                dataIntel: "Reconciliation",
-                dataIntelDesc: "Built automated data validation pipelines to ensure reconciliation accuracy.",
+                efficiency: "Financial Automation",
+                efficiencyDesc: "Developed Python tools to automate financial data extraction, reducing manual processing time by 40%.",
+                dataIntel: "Analytical Rigor",
+                dataIntelDesc: "Ensured absolute data accuracy in financial reports; established data anomaly detection workflows.",
                 educationTitle: "Education",
                 university: "Ho Chi Minh City University of Food Industry (HUIT)",
                 degree: "B.Sc. Financial Technology",
                 degreeStatus: "3rd Year Student",
                 timeEdu: "Sep 2023 – Present"
             },
+            experience: {
+                title: "Work Experience",
+                ctgroup: {
+                    title: "Business Analyst Intern",
+                    company: "CT Group",
+                    time: "May 2024 – Aug 2024",
+                    bullets: [
+                        "<strong>Analytical Rigor:</strong> Ensured absolute accuracy of financial data in 50-page investment reports; established workflows for data anomaly detection.",
+                        "<strong>Financial Automation:</strong> Developed Python tools to automate the extraction and normalization of financial data, reducing manual processing time by 40% (applicable to AP/AR reconciliation).",
+                        "<strong>Due Diligence Support:</strong> Analyzed business models to identify key financial variables, serving as inputs for cash flow forecasting and financial modeling."
+                    ]
+                }
+            },
             projects: {
                 title: "Key Projects",
                 project1: {
-                    title: "Stock Market Data Automation",
-                    role: "Python / Fullstack",
+                    title: "Real-time Financial Data Automation",
+                    role: "Python / Financial Automation",
                     time: "Sep – Oct 2024",
-                    desc: "Developing tools for automating the collection and visualization of stock market data from CafeF using AI-assisted coding.",
+                    desc: "Developed a Python-based system for real-time financial data processing and visualization.",
                     bullets: [
-                        "Deployed Ichimoku technical analysis model.",
-                        "Delivered actionable trading evaluations based on real market data."
+                        "Built <strong>real-time data processing</strong> capabilities, highly applicable for tracking Corporate Opt-out fee revenues instantaneously.",
+                        "Optimized API usage costs for AI LLM models to maintain positive Unit Economics and steady Gross Margins."
                     ]
                 },
                 project2: {
-                    title: "DApp for Rental Management",
-                    role: "Blockchain / AI",
+                    title: "DApp for Rental Management (Blockchain)",
+                    role: "Smart Contract & Reconciliation",
                     time: "Sep 2025 – Present",
-                    desc: "Engineered decentralized storage solutions leveraging IPFS to ensure secure and distributed data management.",
+                    desc: "Engineered a decentralized solution emphasizing security, compliance, and smart financial controls.",
                     bullets: [
-                        "Applied AI-driven system thinking to simulate API scenarios for digital signatures and banking transactions.",
-                        "Overcame technical infrastructure barriers during the testing phase."
+                        "Designed <strong>Smart Contract & Reconciliation</strong> logic to manage distributed cash flows autonomously.",
+                        "Ensured financial data security compliance aligning with <strong>Singapore standards (PDPA)</strong> and <strong>Singapore GAAP</strong> tax exemption models."
                     ]
                 }
             },
@@ -127,10 +141,10 @@ const CV = () => {
                 ]
             },
             skills: {
-                title: "Skills & Languages",
-                cat1: "Financial Analysis & Data",
-                cat2: "Technology & AI",
-                cat3: "Core Competencies",
+                title: "Skills & Keywords",
+                cat1: "Accounting Ops",
+                cat2: "Tech-Finance Integration",
+                cat3: "Compliance & YC Keywords",
                 langs: "Languages",
                 langItems: [
                     { name: "Vietnamese", level: "Native" },
@@ -140,12 +154,13 @@ const CV = () => {
         },
         vi: {
             header: {
-                role: "CÔNG NGHỆ TÀI CHÍNH | THỰC TẬP SINH KẾ TOÁN CÔNG NỢ (AP)",
+                role: "KẾ TOÁN STARTUP & VẬN HÀNH TÀI CHÍNH",
                 name: "Nguyễn Trung Hiếu",
                 location: "TP. Hồ Chí Minh, Việt Nam"
             },
             nav: {
                 summary: "Tổng quan",
+                experience: "Kinh nghiệm",
                 projects: "Dự án",
                 research: "Nghiên cứu",
                 certifications: "Chứng chỉ",
@@ -153,38 +168,51 @@ const CV = () => {
             },
             summary: {
                 profileTitle: "Hồ sơ Chuyên môn",
-                profileText: "Sinh viên Fintech với năng lực xử lý dữ liệu lớn và tư duy kiểm soát tài chính. Thành thạo SQL và Python trong việc xây dựng hệ thống đối soát tự động, giúp giảm 40% sai sót và thời gian xử lý thủ công. Cam kết sự tỉ mỉ tuyệt đối trong việc quản lý chứng từ thanh toán và tối ưu hóa dòng tiền. Định hướng trở thành Chuyên viên Phân tích Tài chính với nền tảng kế toán vững chắc.",
+                profileText: "Sinh viên năm 3 chuyên ngành Fintech với nền tảng vững chắc về <strong>Finance Operations</strong> và <strong>Kế toán Startup</strong>. Có khả năng ứng dụng <strong>Python</strong> và <strong>AI</strong> để xây dựng hệ thống đối soát tự động cho mô hình micro-payments. Định hướng tối ưu hóa <strong>Burn Rate</strong> và hỗ trợ hồ sơ <strong>Due Diligence</strong> cho lộ trình gọi vốn của Flowmingo.",
                 highlightsTitle: "Điểm nhấn Quan trọng",
-                efficiency: "Tính toàn vẹn Dữ liệu",
-                efficiencyDesc: "Giảm 40% lỗi xử lý chứng từ nhờ hệ thống đối soát tự động bằng Python.",
-                dataIntel: "Kiểm soát Đối soát",
-                dataIntelDesc: "Xây dựng pipeline kiểm tra dữ liệu tự động, đảm bảo tính chính xác tuyệt đối trong đối soát.",
+                efficiency: "Tự động hóa Tài chính",
+                efficiencyDesc: "Phát triển công cụ Python tự động hóa trích xuất và chuẩn hóa dữ liệu tài chính, giảm 40% thời gian xử lý thủ công.",
+                dataIntel: "Đảm bảo Chính xác",
+                dataIntelDesc: "Đảm bảo tính chính xác tuyệt đối của dữ liệu tài chính trong báo cáo; thiết lập quy trình kiểm soát sai lệch.",
                 educationTitle: "Học vấn",
                 university: "Trường Đại học Công Thương TP.HCM (HUIT)",
                 degree: "Cử nhân Công nghệ Tài chính",
                 degreeStatus: "Sinh viên Năm 3",
                 timeEdu: "09/2023 – Hiện tại"
             },
+            experience: {
+                title: "Kinh nghiệm Làm việc",
+                ctgroup: {
+                    title: "Thực tập sinh Phân tích Kinh doanh",
+                    company: "CT Group",
+                    time: "05/2024 – 08/2024",
+                    bullets: [
+                        "<strong>Analytical Rigor:</strong> Đảm bảo tính chính xác tuyệt đối của dữ liệu tài chính trong báo cáo đầu tư 50 trang; thiết lập quy trình kiểm soát sai lệch dữ liệu (Anomalies detection).",
+                        "<strong>Financial Automation:</strong> Phát triển công cụ Python tự động hóa trích xuất và chuẩn hóa dữ liệu tài chính, giảm 40% thời gian xử lý thủ công (Áp dụng cho đối soát AP/AR).",
+                        "<strong>Due Diligence Support:</strong> Phân tích mô hình kinh doanh để xác định các biến số tài chính then chốt, phục vụ việc lập mô hình dự báo dòng tiền (Financial Modeling)."
+                    ]
+                }
+            },
             projects: {
                 title: "Dự án Tiêu biểu",
                 project1: {
-                    title: "Tự động hóa Dữ liệu Chứng khoán",
-                    role: "Python / Fullstack",
+                    title: "Tự động hóa Dữ liệu Real-time",
+                    role: "Python / Financial Automation",
                     time: "09 – 10/2024",
-                    desc: "Phát triển công cụ tự động hóa thu thập và trực quan hóa dữ liệu thị trường từ CafeF sử dụng kỹ thuật lập trình hỗ trợ bởi AI.",
+                    desc: "Hệ thống tự động hóa xử lý và trực quan hóa dữ liệu tài chính thời gian thực bằng Python.",
                     bullets: [
-                        "Triển khai mô hình phân tích kỹ thuật Ichimoku.",
-                        "Cung cấp các đánh giá và khuyến nghị giao dịch dựa trên dữ liệu thị trường thực."
+                        "Xây dựng tính năng <strong>xử lý dữ liệu thời gian thực (Real-time data)</strong>, ứng dụng cho việc theo dõi doanh thu phí Corporate Opt-out.",
+                        "Quản lý và tối ưu hóa chi phí API gọi các mô hình LLM từ Google Cloud nhằm duy trì biên lợi nhuận gộp (Unit Economics)."
                     ]
                 },
                 project2: {
                     title: "DApp Quản lý Cho thuê (Blockchain)",
-                    role: "Blockchain / AI",
+                    role: "Smart Contract & Reconciliation",
                     time: "09/2025 – Hiện tại",
-                    desc: "Thiết kế giải pháp lưu trữ phi tập trung tận dụng IPFS để đảm bảo quản lý dữ liệu an toàn và phân tán.",
+                    desc: "Thiết kế giải pháp tài chính phi tập trung định hướng tự động hóa đối soát và bảo mật.",
                     bullets: [
-                        "Mô phỏng các kịch bản API cho chữ ký số và giao dịch ngân hàng bằng AI.",
-                        "Khắc phục các rào cản hạ tầng kỹ thuật trong giai đoạn thử nghiệm."
+                        "Phát triển logic <strong>Smart Contract & Reconciliation</strong> để tự động hóa quản lý các dòng tiền phân tán.",
+                        "Đảm bảo luồng dữ liệu tài chính tuân thủ chuẩn mực bảo mật <strong>Singapore (PDPA)</strong> và mô hình miễn thuế <strong>Singapore GAAP</strong>."
                     ]
                 }
             },
@@ -242,6 +270,7 @@ const CV = () => {
 
     const navItems = [
         { id: 'summary', label: t.nav.summary },
+        { id: 'experience', label: t.nav.experience },
         { id: 'projects', label: t.nav.projects },
         { id: 'research', label: t.nav.research },
         { id: 'certifications', label: t.nav.certifications },
@@ -386,6 +415,29 @@ const CV = () => {
 
                 <hr className="border-slate-200" />
 
+                {/* ─── SECTION 2: EXPERIENCE ─── */}
+                <section>
+                    <SectionHeader icon={Briefcase} title={t.experience.title} id="experience" />
+
+                    <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col h-full hover:shadow-md transition-shadow">
+                        <div className="flex flex-col sm:flex-row justify-between sm:items-center mb-1">
+                            <h3 className="font-bold text-lg text-slate-900">{t.experience.ctgroup.title}</h3>
+                            <span className="text-xs font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full mt-1 sm:mt-0">{t.experience.ctgroup.time}</span>
+                        </div>
+                        <p className="text-sm text-[#FF6600] font-medium mb-3">{t.experience.ctgroup.company}</p>
+                        <ul className="space-y-2 text-sm text-slate-600">
+                            {t.experience.ctgroup.bullets.map((b, i) => (
+                                <li key={i} className="flex items-start gap-2">
+                                    <ChevronRight size={14} className="text-[#FF6600] mt-1 flex-shrink-0" />
+                                    <span dangerouslySetInnerHTML={{ __html: b }} />
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </section>
+
+                <hr className="border-slate-200" />
+
                 {/* ─── SECTION 3: PROJECTS ─── */}
                 <section>
                     <SectionHeader icon={Code} title={t.projects.title} id="projects" />
@@ -519,7 +571,7 @@ const CV = () => {
                         <div className="bg-white p-5 rounded-xl shadow-sm border border-slate-100">
                             <h3 className="text-sm font-bold text-slate-800 mb-3 pb-2 border-b border-slate-100">{t.skills.cat1}</h3>
                             <div className="flex flex-wrap gap-2">
-                                {['Excel', 'SQL', 'Reconciliation', 'Data Integrity', 'Financial Reporting', 'Tableau', 'Spreadsheets', 'Stata 17'].map(s => (
+                                {['AP/AR Management', 'Cash Flow Forecasting', 'Unit Economics', 'LTV/CAC', 'SaaS Metrics', 'Reconciliation', 'Spreadsheets'].map(s => (
                                     <span key={s} className="px-2.5 py-1 bg-[#FFF0E6] text-[#FF6600] text-xs font-medium rounded-full border border-orange-100">{s}</span>
                                 ))}
                             </div>
@@ -529,7 +581,7 @@ const CV = () => {
                         <div className="bg-white p-5 rounded-xl shadow-sm border border-slate-100">
                             <h3 className="text-sm font-bold text-slate-800 mb-3 pb-2 border-b border-slate-100">{t.skills.cat2}</h3>
                             <div className="flex flex-wrap gap-2">
-                                {['Python', 'Gemini AI', 'Data Normalization', 'AI Strategy', 'Prompt Engineering', 'Fullstack Development', 'Blockchain/IPFS', 'Automation'].map(s => (
+                                {['Python for Finance', 'SQL (Large Datasets)', 'Advanced Excel (Power Query)', 'API Integration', 'Stripe/QuickBooks', 'Data Normalization'].map(s => (
                                     <span key={s} className="px-2.5 py-1 bg-purple-50 text-purple-700 text-xs font-medium rounded-full border border-purple-100">{s}</span>
                                 ))}
                             </div>
@@ -539,7 +591,7 @@ const CV = () => {
                         <div className="bg-white p-5 rounded-xl shadow-sm border border-slate-100">
                             <h3 className="text-sm font-bold text-slate-800 mb-3 pb-2 border-b border-slate-100">{t.skills.cat3}</h3>
                             <div className="flex flex-wrap gap-2 mb-4">
-                                {['Critical Thinking', 'Problem Solving', 'Project Management', 'Communication', 'Attention to Detail'].map(s => (
+                                {['Relentlessly Resourceful', 'Micro-transactions', 'Default Alive', 'Financial Engineering', 'GAAP Standards', 'Data Integrity', 'PDPA'].map(s => (
                                     <span key={s} className="px-2.5 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded border border-slate-200">{s}</span>
                                 ))}
                             </div>
