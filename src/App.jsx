@@ -42,7 +42,7 @@ const CV = () => {
     const content = {
         en: {
             header: {
-                role: "FINANCE OPERATIONS & STARTUP ACCOUNTING",
+                role: "FINANCE ANALYST | OPERATIONS & ACCOUNTING",
                 name: "Nguyen Trung Hieu",
                 location: "Ho Chi Minh City, Vietnam"
             },
@@ -55,8 +55,8 @@ const CV = () => {
                 skills: "Skills"
             },
             summary: {
-                profileTitle: "Professional Profile",
-                profileText: "3rd-year Fintech student with a strong foundation in <strong>Finance Operations</strong> and <strong>Startup Accounting</strong>. Capable of leveraging <strong>Python</strong> and <strong>AI</strong> to build automated reconciliation systems for micro-payment models. Focused on optimizing <strong>Burn Rate</strong> and supporting <strong>Due Diligence</strong> profiles for Flowmingo's fundraising roadmap.",
+                profileTitle: "Introduction",
+                profileText: "3rd-year Fintech student with a strong foundation in <strong>Finance Operations</strong> and a solid <strong>Accounting</strong> background. Aspiring <strong>Finance Analyst</strong> capable of leveraging <strong>Python</strong> and <strong>AI</strong> to automate financial data processing and reconciliation workflows. Experienced in ensuring data accuracy in investment reports and building tools that reduce manual processing time by 40%.",
                 highlightsTitle: "Key Highlights",
                 efficiency: "Financial Automation",
                 efficiencyDesc: "Developed Python tools to automate financial data extraction, reducing manual processing time by 40%.",
@@ -71,9 +71,9 @@ const CV = () => {
             experience: {
                 title: "Work Experience",
                 ctgroup: {
-                    title: "Business Analyst Intern",
+                    title: "Investor Relations Intern",
                     company: "CT Group",
-                    time: "May 2024 – Aug 2024",
+                    time: "Nov 2025 – Present",
                     bullets: [
                         "<strong>Analytical Rigor:</strong> Ensured absolute accuracy of financial data in 50-page investment reports; established workflows for data anomaly detection.",
                         "<strong>Financial Automation:</strong> Developed Python tools to automate the extraction and normalization of financial data, reducing manual processing time by 40% (applicable to AP/AR reconciliation).",
@@ -154,7 +154,7 @@ const CV = () => {
         },
         vi: {
             header: {
-                role: "KẾ TOÁN STARTUP & VẬN HÀNH TÀI CHÍNH",
+                role: "PHÂN TÍCH TÀI CHÍNH | VẬN HÀNH & KẾ TOÁN",
                 name: "Nguyễn Trung Hiếu",
                 location: "TP. Hồ Chí Minh, Việt Nam"
             },
@@ -167,8 +167,8 @@ const CV = () => {
                 skills: "Kỹ năng"
             },
             summary: {
-                profileTitle: "Hồ sơ Chuyên môn",
-                profileText: "Sinh viên năm 3 chuyên ngành Fintech với nền tảng vững chắc về <strong>Finance Operations</strong> và <strong>Kế toán Startup</strong>. Có khả năng ứng dụng <strong>Python</strong> và <strong>AI</strong> để xây dựng hệ thống đối soát tự động cho mô hình micro-payments. Định hướng tối ưu hóa <strong>Burn Rate</strong> và hỗ trợ hồ sơ <strong>Due Diligence</strong> cho lộ trình gọi vốn của Flowmingo.",
+                profileTitle: "Giới thiệu",
+                profileText: "Sinh viên năm 3 chuyên ngành Fintech với nền tảng vững chắc về <strong>Finance Operations</strong> và kiến thức <strong>Kế toán</strong> nền tảng. Định hướng trở thành <strong>Chuyên viên Phân tích Tài chính (Finance Analyst)</strong>, có khả năng ứng dụng <strong>Python</strong> và <strong>AI</strong> để tự động hóa quy trình xử lý dữ liệu tài chính và đối soát. Đã đảm bảo tính chính xác dữ liệu trong báo cáo đầu tư và phát triển công cụ giảm 40% thời gian xử lý thủ công.",
                 highlightsTitle: "Điểm nhấn Quan trọng",
                 efficiency: "Tự động hóa Tài chính",
                 efficiencyDesc: "Phát triển công cụ Python tự động hóa trích xuất và chuẩn hóa dữ liệu tài chính, giảm 40% thời gian xử lý thủ công.",
@@ -183,9 +183,9 @@ const CV = () => {
             experience: {
                 title: "Kinh nghiệm Làm việc",
                 ctgroup: {
-                    title: "Thực tập sinh Phân tích Kinh doanh",
+                    title: "Thực tập sinh Quan hệ Đầu tư",
                     company: "CT Group",
-                    time: "05/2024 – 08/2024",
+                    time: "11/2025 – Hiện tại",
                     bullets: [
                         "<strong>Analytical Rigor:</strong> Đảm bảo tính chính xác tuyệt đối của dữ liệu tài chính trong báo cáo đầu tư 50 trang; thiết lập quy trình kiểm soát sai lệch dữ liệu (Anomalies detection).",
                         "<strong>Financial Automation:</strong> Phát triển công cụ Python tự động hóa trích xuất và chuẩn hóa dữ liệu tài chính, giảm 40% thời gian xử lý thủ công (Áp dụng cho đối soát AP/AR).",
@@ -454,8 +454,9 @@ const CV = () => {
                             <div className="pt-3 border-t border-slate-100 mt-auto">
                                 <ul className="text-sm text-slate-600 space-y-1.5">
                                     {t.projects.project1.bullets.map((b, i) => (
-                                        <li key={i} className="flex items-center gap-2">
-                                            <ChevronRight size={14} className="text-emerald-500" /> {b}
+                                        <li key={i} className="flex items-start gap-2">
+                                            <ChevronRight size={14} className="text-emerald-500 mt-1 flex-shrink-0" />
+                                            <span dangerouslySetInnerHTML={{ __html: b }} />
                                         </li>
                                     ))}
                                 </ul>
@@ -473,8 +474,9 @@ const CV = () => {
                             <div className="pt-3 border-t border-slate-100 mt-auto">
                                 <ul className="text-sm text-slate-600 space-y-1.5">
                                     {t.projects.project2.bullets.map((b, i) => (
-                                        <li key={i} className="flex items-center gap-2">
-                                            <ChevronRight size={14} className="text-emerald-500" /> {b}
+                                        <li key={i} className="flex items-start gap-2">
+                                            <ChevronRight size={14} className="text-emerald-500 mt-1 flex-shrink-0" />
+                                            <span dangerouslySetInnerHTML={{ __html: b }} />
                                         </li>
                                     ))}
                                 </ul>
