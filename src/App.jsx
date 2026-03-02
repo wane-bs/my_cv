@@ -63,7 +63,7 @@ const CV = () => {
                 dataIntel: "Analytical Rigor",
                 dataIntelDesc: "Ensured absolute data accuracy in financial reports; established data anomaly detection workflows.",
                 educationTitle: "Education",
-                university: "Ho Chi Minh City University of Food Industry (HUIT)",
+                university: "Ho Chi Minh City University of Industry and Trade (HUIT)",
                 degree: "B.Sc. Financial Technology",
                 degreeStatus: "3rd Year Student",
                 timeEdu: "Sep 2023 – Present"
