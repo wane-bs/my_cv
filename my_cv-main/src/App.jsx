@@ -15,7 +15,8 @@ import {
     ChevronRight,
     Globe,
     Heart,
-    Users
+    Users,
+    Download
 } from 'lucide-react';
 
 const CV = () => {
@@ -301,6 +302,12 @@ const CV = () => {
                             <p className="text-[#FF6600] font-medium text-base md:text-lg mt-2 tracking-wide uppercase">
                                 {t.header.role}
                             </p>
+                            <div className="mt-5">
+                                <a href="/CV_Nguyen_Trung_Hieu.pdf" download className="inline-flex items-center gap-2 px-5 py-2 bg-[#FF6600] hover:bg-[#e65c00] text-white text-sm font-bold rounded-lg transition-colors shadow shadow-orange-500/30">
+                                    <Download size={18} />
+                                    {language === 'vi' ? 'Tải CV (Harvard Form)' : 'Download CV (Harvard Form)'}
+                                </a>
+                            </div>
                         </div>
 
                         <div className="flex flex-col items-start md:items-end gap-4">
@@ -452,7 +459,7 @@ const CV = () => {
                                 <span className="text-xs font-bold text-[#FF6600] bg-[#FFF0E6] px-2.5 py-1 rounded-lg whitespace-nowrap">{t.projects.project1.role}</span>
                             </div>
                             <p className="text-xs text-slate-400 mb-2">{t.projects.project1.time}</p>
-                            <p className="text-sm text-slate-600 mb-4 flex-grow">{t.projects.project1.desc}</p>
+                            <p className="text-sm text-slate-600 mb-4 flex-grow" dangerouslySetInnerHTML={{ __html: t.projects.project1.desc }} />
                             <div className="pt-3 border-t border-slate-100 mt-auto">
                                 <ul className="text-sm text-slate-600 space-y-1.5">
                                     {t.projects.project1.bullets.map((b, i) => (
@@ -472,7 +479,7 @@ const CV = () => {
                                 <span className="text-xs font-bold text-purple-600 bg-purple-50 px-2.5 py-1 rounded-lg whitespace-nowrap">{t.projects.project2.role}</span>
                             </div>
                             <p className="text-xs text-slate-400 mb-2">{t.projects.project2.time}</p>
-                            <p className="text-sm text-slate-600 mb-4 flex-grow">{t.projects.project2.desc}</p>
+                            <p className="text-sm text-slate-600 mb-4 flex-grow" dangerouslySetInnerHTML={{ __html: t.projects.project2.desc }} />
                             <div className="pt-3 border-t border-slate-100 mt-auto">
                                 <ul className="text-sm text-slate-600 space-y-1.5">
                                     {t.projects.project2.bullets.map((b, i) => (
@@ -501,7 +508,7 @@ const CV = () => {
                                 <span className="text-xs font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full mt-1 sm:mt-0">{t.research.research1.time}</span>
                             </div>
                             <p className="text-sm text-[#FF6600] font-medium mb-3">{t.research.research1.role}</p>
-                            <p className="text-sm text-slate-600 mb-4">{t.research.research1.desc}</p>
+                            <p className="text-sm text-slate-600 mb-4" dangerouslySetInnerHTML={{ __html: t.research.research1.desc }} />
                             <ul className="space-y-2 text-sm text-slate-600">
                                 {t.research.research1.highlights.map((h, i) => (
                                     <li key={i} className="flex items-start gap-2">
