@@ -42,7 +42,7 @@ const CV = () => {
     const content = {
         en: {
             header: {
-                role: "FINANCE ANALYST | OPERATIONS & ACCOUNTING",
+                role: "FINANCE ANALYST & CONTROL (INTERN/FRESHER) | CFA LEVEL 1 CANDIDATE",
                 name: "Nguyen Trung Hieu",
                 location: "Ho Chi Minh City, Vietnam"
             },
@@ -56,7 +56,7 @@ const CV = () => {
             },
             summary: {
                 profileTitle: "Introduction",
-                profileText: "3rd-year Fintech student with a strong foundation in <strong>Finance Operations</strong> and a solid <strong>Accounting</strong> background. Aspiring <strong>Finance Analyst</strong> capable of leveraging <strong>Python</strong> and <strong>AI</strong> to automate financial data processing and reconciliation workflows. Experienced in ensuring data accuracy in investment reports and building tools that reduce manual processing time by 40%.",
+                profileText: "3rd-year Fintech student with a strong foundation in <strong>Finance Operations</strong> and a solid <strong>Accounting</strong> background. Aspiring <strong>Finance Analyst & Controller (Intern/Fresher)</strong> capable of leveraging <strong>Python</strong> and <strong>SQL</strong> to control data and optimize financial efficiency. Experienced in ensuring data accuracy in investment reports and building tools that reduce manual processing time by 40%.",
                 highlightsTitle: "Key Highlights",
                 efficiency: "Financial Automation",
                 efficiencyDesc: "Developed Python tools to automate financial data extraction, reducing manual processing time by 40%.",
@@ -72,11 +72,11 @@ const CV = () => {
                 title: "Work Experience",
                 ctgroup: {
                     title: "Investor Relations Intern",
-                    company: "CT Group",
+                    company: "Technology Enterprise",
                     time: "Nov 2025 – Present",
                     bullets: [
-                        "<strong>Analytical Rigor:</strong> Ensured absolute accuracy of financial data in 50-page investment reports; established workflows for data anomaly detection.",
-                        "<strong>Financial Automation:</strong> Developed Python tools to automate the extraction and normalization of financial data, reducing manual processing time by 40% (applicable to AP/AR reconciliation).",
+                        "<strong>Analytical Rigor:</strong> Ensured absolute accuracy of financial data in 50-page investment reports; controlled financial variables and established workflows for data anomaly detection.",
+                        "<strong>Financial Automation:</strong> Developed Python tools with a focus on <strong>Data Integrity</strong> to automate the extraction and normalization of financial data, reducing manual processing time by 40% (applicable to AP/AR reconciliation).",
                         "<strong>Due Diligence Support:</strong> Analyzed business models to identify key financial variables, serving as inputs for cash flow forecasting and financial modeling."
                     ]
                 }
@@ -84,20 +84,20 @@ const CV = () => {
             projects: {
                 title: "Key Projects",
                 project1: {
-                    title: "Real-time Financial Data Automation",
-                    role: "Python / Financial Automation",
+                    title: "Financial Control Automation Tool",
+                    role: "Python / Financial Control",
                     time: "Sep – Oct 2024",
-                    desc: "Developed a Python-based system for real-time financial data processing and visualization.",
+                    desc: "Developed a Python-based system for real-time financial data processing, <strong>Error Detection</strong>, and <strong>Data Reconciliation</strong>.",
                     bullets: [
                         "Built <strong>real-time data processing</strong> capabilities, highly applicable for tracking Corporate Opt-out fee revenues instantaneously.",
                         "Optimized API usage costs for AI LLM models to maintain positive Unit Economics and steady Gross Margins."
                     ]
                 },
                 project2: {
-                    title: "DApp for Rental Management (Blockchain)",
-                    role: "Smart Contract & Reconciliation",
+                    title: "Secure Asset Management DApp",
+                    role: "Smart Contract & Compliance",
                     time: "Sep 2025 – Present",
-                    desc: "Engineered a decentralized solution emphasizing security, compliance, and smart financial controls.",
+                    desc: "Engineered a decentralized solution emphasizing security, data transparency, and smart financial controls.",
                     bullets: [
                         "Designed <strong>Smart Contract & Reconciliation</strong> logic to manage distributed cash flows autonomously.",
                         "Ensured financial data security compliance aligning with <strong>Singapore standards (PDPA)</strong> and <strong>Singapore GAAP</strong> tax exemption models."
@@ -132,12 +132,11 @@ const CV = () => {
             },
             certifications: {
                 title: "Certifications",
-                seriesLabel: "Google Data Analytics Professional Certificate Series",
+                seriesLabel: "Data-Driven Decision Making (Coursera)",
                 certs: [
+                    { name: "CFA Level 1 Candidate", date: "May 2026", id: "Registered", link: "#" },
                     { name: "Foundation: Data, Data, Everywhere", date: "Jan 2025", id: "M20DV1BFH6MO", link: "https://www.coursera.org/account/accomplishments/verify/M20DV1BFH6MO" },
-                    { name: "Ask Questions to Make Data-Driven Decisions", date: "Mar 2025", id: "BKTV0G1OB2W7", link: "https://www.coursera.org/account/accomplishments/verify/BKTV0G1OB2W7" },
-                    { name: "Prepare Data for Exploration", date: "Mar 2025", id: "1IM6N4SS8ZAW", link: "https://www.coursera.org/account/accomplishments/verify/1IM6N4SS8ZAW" },
-                    { name: "Process Data from Dirty to Clean", date: "Apr 2025", id: "V1D6DCTX4B6G", link: "https://www.coursera.org/account/accomplishments/verify/V1D6DCTX4B6G" }
+                    { name: "Ask Questions to Make Data-Driven Decisions", date: "Mar 2025", id: "BKTV0G1OB2W7", link: "https://www.coursera.org/account/accomplishments/verify/BKTV0G1OB2W7" }
                 ]
             },
             skills: {
@@ -154,7 +153,7 @@ const CV = () => {
         },
         vi: {
             header: {
-                role: "PHÂN TÍCH TÀI CHÍNH | VẬN HÀNH & KẾ TOÁN",
+                role: "PHÂN TÍCH & KIỂM SOÁT TÀI CHÍNH (INTERN/FRESHER) | CFA LEVEL 1 CANDIDATE",
                 name: "Nguyễn Trung Hiếu",
                 location: "TP. Hồ Chí Minh, Việt Nam"
             },
@@ -168,7 +167,7 @@ const CV = () => {
             },
             summary: {
                 profileTitle: "Giới thiệu",
-                profileText: "Sinh viên năm 3 chuyên ngành Fintech với nền tảng vững chắc về <strong>Finance Operations</strong> và kiến thức <strong>Kế toán</strong> nền tảng. Định hướng trở thành <strong>Chuyên viên Phân tích Tài chính (Finance Analyst)</strong>, có khả năng ứng dụng <strong>Python</strong> và <strong>AI</strong> để tự động hóa quy trình xử lý dữ liệu tài chính và đối soát. Đã đảm bảo tính chính xác dữ liệu trong báo cáo đầu tư và phát triển công cụ giảm 40% thời gian xử lý thủ công.",
+                profileText: "Sinh viên năm 3 chuyên ngành Fintech với nền tảng vững chắc về <strong>Finance Operations</strong> và kiến thức <strong>Kế toán</strong> nền tảng. Định hướng trở thành <strong>Chuyên viên Phân tích & Kiểm soát Tài chính (Intern/Fresher)</strong>, có khả năng ứng dụng <strong>Python</strong> và <strong>SQL</strong> để kiểm soát dữ liệu và tối ưu hóa hiệu suất tài chính. Đã đảm bảo tính chính xác dữ liệu trong báo cáo đầu tư và phát triển công cụ thực tế giúp giảm 40% thời gian xử lý thủ công.",
                 highlightsTitle: "Điểm nhấn Quan trọng",
                 efficiency: "Tự động hóa Tài chính",
                 efficiencyDesc: "Phát triển công cụ Python tự động hóa trích xuất và chuẩn hóa dữ liệu tài chính, giảm 40% thời gian xử lý thủ công.",
@@ -184,11 +183,11 @@ const CV = () => {
                 title: "Kinh nghiệm Làm việc",
                 ctgroup: {
                     title: "Thực tập sinh Quan hệ Đầu tư",
-                    company: "CT Group",
+                    company: "Technology Enterprise",
                     time: "11/2025 – Hiện tại",
                     bullets: [
-                        "<strong>Analytical Rigor:</strong> Đảm bảo tính chính xác tuyệt đối của dữ liệu tài chính trong báo cáo đầu tư 50 trang; thiết lập quy trình kiểm soát sai lệch dữ liệu (Anomalies detection).",
-                        "<strong>Financial Automation:</strong> Phát triển công cụ Python tự động hóa trích xuất và chuẩn hóa dữ liệu tài chính, giảm 40% thời gian xử lý thủ công (Áp dụng cho đối soát AP/AR).",
+                        "<strong>Analytical Rigor:</strong> Đảm bảo tính chính xác tuyệt đối của dữ liệu tài chính trong báo cáo đầu tư 50 trang; kiểm soát các biến số tài chính và thiết lập quy trình phát hiện sai lệch dữ liệu (Anomalies detection).",
+                        "<strong>Financial Automation:</strong> Phát triển công cụ Python tập trung vào <strong>Data Integrity</strong> (Tính toàn vẹn dữ liệu) để tự động hóa trích xuất và chuẩn hóa dữ liệu tài chính, giảm 40% thời gian thủ công (Áp dụng cho đối soát AP/AR).",
                         "<strong>Due Diligence Support:</strong> Phân tích mô hình kinh doanh để xác định các biến số tài chính then chốt, phục vụ việc lập mô hình dự báo dòng tiền (Financial Modeling)."
                     ]
                 }
@@ -196,23 +195,23 @@ const CV = () => {
             projects: {
                 title: "Dự án Tiêu biểu",
                 project1: {
-                    title: "Tự động hóa Dữ liệu Real-time",
-                    role: "Python / Financial Automation",
+                    title: "Financial Control Automation Tool",
+                    role: "Python / Khảo sát & Đối soát",
                     time: "09 – 10/2024",
-                    desc: "Hệ thống tự động hóa xử lý và trực quan hóa dữ liệu tài chính thời gian thực bằng Python.",
+                    desc: "Hệ thống tự động hóa xử lý dữ liệu tài chính thời gian thực bằng Python, tập trung vào <strong>Error Detection</strong> (Phát hiện lỗi) và <strong>Data Reconciliation</strong> (Đối soát dữ liệu).",
                     bullets: [
                         "Xây dựng tính năng <strong>xử lý dữ liệu thời gian thực (Real-time data)</strong>, ứng dụng cho việc theo dõi doanh thu phí Corporate Opt-out.",
                         "Quản lý và tối ưu hóa chi phí API gọi các mô hình LLM từ Google Cloud nhằm duy trì biên lợi nhuận gộp (Unit Economics)."
                     ]
                 },
                 project2: {
-                    title: "DApp Quản lý Cho thuê (Blockchain)",
-                    role: "Smart Contract & Reconciliation",
+                    title: "Secure Asset Management DApp",
+                    role: "Smart Contract & Bảo mật",
                     time: "09/2025 – Hiện tại",
-                    desc: "Thiết kế giải pháp tài chính phi tập trung định hướng tự động hóa đối soát và bảo mật.",
+                    desc: "Thiết kế giải pháp quản lý tài sản an toàn phi tập trung, định hướng minh bạch dữ liệu.",
                     bullets: [
                         "Phát triển logic <strong>Smart Contract & Reconciliation</strong> để tự động hóa quản lý các dòng tiền phân tán.",
-                        "Đảm bảo luồng dữ liệu tài chính tuân thủ chuẩn mực bảo mật <strong>Singapore (PDPA)</strong> và mô hình miễn thuế <strong>Singapore GAAP</strong>."
+                        "Đảm bảo luồng dữ liệu tài chính tuân thủ chuẩn mực bảo mật <strong>Singapore (PDPA)</strong>."
                     ]
                 }
             },
@@ -244,12 +243,11 @@ const CV = () => {
             },
             certifications: {
                 title: "Chứng chỉ Chuyên môn",
-                seriesLabel: "Chuỗi Chứng chỉ Google Data Analytics",
+                seriesLabel: "Data-Driven Decision Making (Coursera)",
                 certs: [
+                    { name: "CFA Level 1 Candidate", date: "05/2026", id: "Đã đăng ký", link: "#" },
                     { name: "Foundation: Data, Data, Everywhere", date: "01/2025", id: "M20DV1BFH6MO", link: "https://www.coursera.org/account/accomplishments/verify/M20DV1BFH6MO" },
-                    { name: "Ask Questions to Make Data-Driven Decisions", date: "03/2025", id: "BKTV0G1OB2W7", link: "https://www.coursera.org/account/accomplishments/verify/BKTV0G1OB2W7" },
-                    { name: "Prepare Data for Exploration", date: "03/2025", id: "1IM6N4SS8ZAW", link: "https://www.coursera.org/account/accomplishments/verify/1IM6N4SS8ZAW" },
-                    { name: "Process Data from Dirty to Clean", date: "04/2025", id: "V1D6DCTX4B6G", link: "https://www.coursera.org/account/accomplishments/verify/V1D6DCTX4B6G" }
+                    { name: "Ask Questions to Make Data-Driven Decisions", date: "03/2025", id: "BKTV0G1OB2W7", link: "https://www.coursera.org/account/accomplishments/verify/BKTV0G1OB2W7" }
                 ]
             },
             skills: {
