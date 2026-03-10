@@ -134,9 +134,11 @@ const CV = () => {
                 title: "Certifications",
                 seriesLabel: "Data-Driven Decision Making (Coursera)",
                 certs: [
-                    { name: "CFA Level 1 Candidate", date: "May 2026", id: "Registered", link: "#" },
+                    { name: "CFA Level 1 Candidate", date: "Dec 2026", id: "Self-studying", link: "#" },
                     { name: "Foundation: Data, Data, Everywhere", date: "Jan 2025", id: "M20DV1BFH6MO", link: "https://www.coursera.org/account/accomplishments/verify/M20DV1BFH6MO" },
-                    { name: "Ask Questions to Make Data-Driven Decisions", date: "Mar 2025", id: "BKTV0G1OB2W7", link: "https://www.coursera.org/account/accomplishments/verify/BKTV0G1OB2W7" }
+                    { name: "Ask Questions to Make Data-Driven Decisions", date: "Mar 2025", id: "BKTV0G1OB2W7", link: "https://www.coursera.org/account/accomplishments/verify/BKTV0G1OB2W7" },
+                    { name: "Prepare Data for Exploration", date: "Mar 2025", id: "1IM6N4SS8ZAW", link: "https://www.coursera.org/account/accomplishments/verify/1IM6N4SS8ZAW" },
+                    { name: "Process Data from Dirty to Clean", date: "Apr 2025", id: "V1D6DCTX4B6G", link: "https://www.coursera.org/account/accomplishments/verify/V1D6DCTX4B6G" }
                 ]
             },
             skills: {
@@ -245,9 +247,11 @@ const CV = () => {
                 title: "Chứng chỉ Chuyên môn",
                 seriesLabel: "Data-Driven Decision Making (Coursera)",
                 certs: [
-                    { name: "CFA Level 1 Candidate", date: "05/2026", id: "Đã đăng ký", link: "#" },
+                    { name: "CFA Level 1 Candidate", date: "12/2026", id: "Đang tự học", link: "#" },
                     { name: "Foundation: Data, Data, Everywhere", date: "01/2025", id: "M20DV1BFH6MO", link: "https://www.coursera.org/account/accomplishments/verify/M20DV1BFH6MO" },
-                    { name: "Ask Questions to Make Data-Driven Decisions", date: "03/2025", id: "BKTV0G1OB2W7", link: "https://www.coursera.org/account/accomplishments/verify/BKTV0G1OB2W7" }
+                    { name: "Ask Questions to Make Data-Driven Decisions", date: "03/2025", id: "BKTV0G1OB2W7", link: "https://www.coursera.org/account/accomplishments/verify/BKTV0G1OB2W7" },
+                    { name: "Prepare Data for Exploration", date: "03/2025", id: "1IM6N4SS8ZAW", link: "https://www.coursera.org/account/accomplishments/verify/1IM6N4SS8ZAW" },
+                    { name: "Process Data from Dirty to Clean", date: "04/2025", id: "V1D6DCTX4B6G", link: "https://www.coursera.org/account/accomplishments/verify/V1D6DCTX4B6G" }
                 ]
             },
             skills: {
