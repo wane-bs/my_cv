@@ -302,17 +302,17 @@ const HarvardCVTemplate = ({ data, language }) => {
           
           <View style={styles.skillRow}>
             <Text style={styles.skillCategory}>{t.skills.cat1}:</Text>
-            <Text style={styles.skillList}>AP/AR Management, Cash Flow Forecasting, Unit Economics, LTV/CAC, SaaS Metrics, Reconciliation, Spreadsheets</Text>
+            <Text style={styles.skillList}>{t.skills.cat1List?.join(', ')}</Text>
           </View>
           
           <View style={styles.skillRow}>
             <Text style={styles.skillCategory}>{t.skills.cat2}:</Text>
-            <Text style={styles.skillList}>Python for Finance, SQL (Large Datasets), Advanced Excel (Power Query), API Integration, Stripe/QuickBooks, Data Normalization</Text>
+            <Text style={styles.skillList}>{t.skills.cat2List?.join(', ')}</Text>
           </View>
 
           <View style={styles.skillRow}>
             <Text style={styles.skillCategory}>{t.skills.cat3}:</Text>
-            <Text style={styles.skillList}>Relentlessly Resourceful, Micro-transactions, Default Alive, Financial Engineering, GAAP Standards, Data Integrity, PDPA</Text>
+            <Text style={styles.skillList}>{t.skills.cat3List?.join(', ')}</Text>
           </View>
 
           <View style={styles.skillRow}>
