@@ -61,6 +61,18 @@ export const cvContent = {
                     "<strong>Focus:</strong> Addressed technical infrastructure barriers and secure data management protocols.",
                     "<strong>Link:</strong> <a href=\"https://wane-bs.github.io/dsr_ly_thuyet/\">wane-bs.github.io/dsr_ly_thuyet/</a>"
                 ]
+            },
+            project3: {
+                title: "FINANCIAL ANALYSIS & SOLVENCY PROJECT: HVN (2011 – 2025)",
+                role: "Financial Analysis & Solvency Modeling",
+                time: "Mar 2026 – Apr 2026",
+                desc: "Quantitative assessment, solvency modeling, and valuation using Python Streamlit.",
+                bullets: [
+                    "<strong>Quantitative Assessment:</strong> Applied Altman Z''-Score, Beneish M-Score, and Sloan Accruals to detect bankruptcy risks and earnings manipulation.",
+                    "<strong>Solvency Modeling:</strong> Developed Liquidity Runway and DSCR frameworks to measure survival capacity under liquidity stress scenarios.",
+                    "<strong>Valuation:</strong> Executed DCF and EV Multiples valuation with macro Stress Testing (FX rates and fuel costs sensitivity).",
+                    "<strong>Link:</strong> <a href=\"https://phantichtcdn-wane-hieu.streamlit.app/\">Dashboard</a> | <a href=\"https://github.com/wane-bs/phantichtcdn\">GitHub</a>"
+                ]
             }
         },
         research: {
@@ -172,6 +184,18 @@ export const cvContent = {
                 bullets: [
                     "<strong>Tiêu điểm:</strong> Tập trung vào các rào cản hạ tầng kỹ thuật và giao thức quản lý dữ liệu an toàn.",
                     "<strong>Link:</strong> <a href=\"https://wane-bs.github.io/dsr_ly_thuyet/\">wane-bs.github.io/dsr_ly_thuyet/</a>"
+                ]
+            },
+            project3: {
+                title: "Phân tích Tài chính & Khả năng Thanh toán: HVN (2011 – 2025)",
+                role: "Phân tích & Mô hình hóa Tài chính",
+                time: "03/2026 – 04/2026",
+                desc: "Đánh giá định lượng, mô hình hóa khả năng thanh toán và định giá sử dụng Python Streamlit.",
+                bullets: [
+                    "<strong>Đánh giá Định lượng:</strong> Ứng dụng mô hình Altman Z''-Score, Beneish M-Score và Sloan Accruals để phát hiện rủi ro phá sản và thao túng lợi nhuận.",
+                    "<strong>Mô hình Khả năng Thanh toán:</strong> Xây dựng khung đánh giá Liquidity Runway (Đường băng thanh khoản) và DSCR để đo lường khả năng sống sót trong các kịch bản căng thẳng thanh khoản.",
+                    "<strong>Định giá:</strong> Thực hiện định giá theo phương pháp DCF và Bội số EV kết hợp Stress Testing vĩ mô (Độ nhạy tỷ giá hối đoái và chi phí nhiên liệu).",
+                    "<strong>Link:</strong> <a href=\"https://phantichtcdn-wane-hieu.streamlit.app/\">Dashboard</a> | <a href=\"https://github.com/wane-bs/phantichtcdn\">GitHub</a>"
                 ]
             }
         },

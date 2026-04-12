@@ -236,6 +236,23 @@ const HarvardCVTemplate = ({ data, language }) => {
               </View>
             ))}
           </View>
+          
+          {/* Project 3 */}
+          <View style={styles.entryHeader}>
+            <Text style={styles.entryTitle}>{t.projects.project3.title}</Text>
+            <Text style={styles.entryDate}>{t.projects.project3.time}</Text>
+          </View>
+          <Text style={styles.paragraph}>
+            {t.projects.project3.role}: {renderRichText(t.projects.project3.desc)}
+          </Text>
+          <View style={styles.bulletList}>
+            {t.projects.project3.bullets.map((bullet, idx) => (
+              <View key={idx} style={styles.bulletItem}>
+                <Text style={styles.bulletPoint}>•</Text>
+                <Text style={styles.bulletText}>{renderRichText(bullet)}</Text>
+              </View>
+            ))}
+          </View>
         </View>
 
         {/* Research & Extra-curricular */}
