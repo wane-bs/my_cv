@@ -271,6 +271,26 @@ const CV = () => {
                                 </ul>
                             </div>
                         </div>
+
+                        {/* Project 3 */}
+                        <div className="bg-[#DEE2E6] p-6 rounded-xl shadow-sm border border-[#DEE2E6] flex flex-col h-full hover:shadow-md transition-shadow">
+                            <div className="flex items-start justify-between mb-3 gap-2">
+                                <h3 className="font-bold text-lg text-[#212529]">{t.projects.project3.title}</h3>
+                                <span className="text-xs font-bold text-gray-800 bg-gray-300 px-2.5 py-1 rounded-lg whitespace-nowrap">{t.projects.project3.role}</span>
+                            </div>
+                            <p className="text-xs text-slate-500 mb-2">{t.projects.project3.time}</p>
+                            <p className="text-sm text-slate-700 mb-4 flex-grow" dangerouslySetInnerHTML={{ __html: t.projects.project3.desc }} />
+                            <div className="pt-3 border-t border-[#DEE2E6] mt-auto">
+                                <ul className="text-sm text-slate-700 space-y-1.5">
+                                    {t.projects.project3.bullets.map((b, i) => (
+                                        <li key={i} className="flex items-start gap-2">
+                                            <ChevronRight size={14} className="text-gray-900 mt-1 flex-shrink-0" />
+                                            <span dangerouslySetInnerHTML={{ __html: b }} />
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
