@@ -90,10 +90,10 @@ export const cvContent = {
             title: "Certifications",
             seriesLabel: "Google Data Analytics Professional Certificate",
             certs: [
-                { name: "Ask Questions to Make Data-Driven Decisions", date: "2025", id: "", link: "#" },
-                { name: "Prepare Data for Exploration", date: "2025", id: "", link: "#" },
-                { name: "Foundations: Data, Data, Everywhere", date: "2025", id: "", link: "#" },
-                { name: "Process Data from Dirty to Clean", date: "2025", id: "", link: "#" }
+                { name: "Ask Questions to Make Data-Driven Decisions", date: "2025", id: "BKTV0G1OB2W7", link: "https://www.coursera.org/account/accomplishments/verify/BKTV0G1OB2W7" },
+                { name: "Prepare Data for Exploration", date: "2025", id: "1IM6N4SS8ZAW", link: "https://www.coursera.org/account/accomplishments/verify/1IM6N4SS8ZAW" },
+                { name: "Foundations: Data, Data, Everywhere", date: "2025", id: "M20DV1BFH6MO", link: "https://www.coursera.org/account/accomplishments/verify/M20DV1BFH6MO" },
+                { name: "Process Data from Dirty to Clean", date: "2025", id: "V1D6DCTX4B6G", link: "https://www.coursera.org/account/accomplishments/verify/V1D6DCTX4B6G" }
             ]
         },
         skills: {
@@ -202,10 +202,10 @@ export const cvContent = {
             title: "Chứng chỉ Chuyên môn",
             seriesLabel: "Google Data Analytics Professional Certificate",
             certs: [
-                { name: "Ask Questions to Make Data-Driven Decisions", date: "2025", id: "", link: "#" },
-                { name: "Prepare Data for Exploration", date: "2025", id: "", link: "#" },
-                { name: "Foundations: Data, Data, Everywhere", date: "2025", id: "", link: "#" },
-                { name: "Process Data from Dirty to Clean", date: "2025", id: "", link: "#" }
+                { name: "Ask Questions to Make Data-Driven Decisions", date: "2025", id: "BKTV0G1OB2W7", link: "https://www.coursera.org/account/accomplishments/verify/BKTV0G1OB2W7" },
+                { name: "Prepare Data for Exploration", date: "2025", id: "1IM6N4SS8ZAW", link: "https://www.coursera.org/account/accomplishments/verify/1IM6N4SS8ZAW" },
+                { name: "Foundations: Data, Data, Everywhere", date: "2025", id: "M20DV1BFH6MO", link: "https://www.coursera.org/account/accomplishments/verify/M20DV1BFH6MO" },
+                { name: "Process Data from Dirty to Clean", date: "2025", id: "V1D6DCTX4B6G", link: "https://www.coursera.org/account/accomplishments/verify/V1D6DCTX4B6G" }
             ]
         },
         skills: {
