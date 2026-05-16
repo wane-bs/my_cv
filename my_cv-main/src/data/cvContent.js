@@ -1,7 +1,7 @@
 export const cvContent = {
     en: {
         header: {
-            role: "ERP FRESHER CONSULTANT | FINTECH & DATA AUTOMATION",
+            role: "DATA ANALYST INTERN | FINTECH & DATA AUTOMATION",
             name: "Nguyen Trung Hieu",
             location: "Ho Chi Minh City, Vietnam"
         },
@@ -15,7 +15,7 @@ export const cvContent = {
         },
         summary: {
             profileTitle: "Professional Summary",
-            profileText: "3rd-year <strong>Fintech</strong> student and <strong>CFA Level 1</strong> self-studying candidate with strong systems thinking. Experienced in using <strong>Python</strong> for financial data automation, optimizing data integrity and reporting efficiency by 40%. Aspiring <strong>Oracle NetSuite ERP Consultant</strong>, focusing on Business Process Mapping, requirement gathering, and data-driven operational optimization in a cloud environment.",
+            profileText: "3rd-year <strong>Fintech</strong> student (3.5-year program) and <strong>CFA Level 1</strong> candidate with strong systems thinking. Experienced in using <strong>Python</strong> for large-scale financial data automation, optimizing data integrity and reporting efficiency by 40%. Aspiring <strong>Data Analyst / Product Analyst</strong>, focusing on financial data modeling, building BI dashboards (Streamlit), and data-driven product research.",
             highlightsTitle: "Key Highlights",
             efficiency: "Process Optimization",
             efficiencyDesc: "Developed automated workflows to collect and verify financial data, reducing manual errors.",
@@ -53,13 +53,14 @@ export const cvContent = {
                 ]
             },
             project2: {
-                title: "Secure Asset Management DApp",
-                role: "Decentralized Storage & API",
-                time: "Sep 2024 – Oct 2024",
-                desc: "Designed a decentralized storage solution using IPFS and simulated API scenarios for secure digital signatures and banking transactions.",
+                title: "Quantitative Financial Analysis Automation (fiinpro_tt)",
+                role: "Quantitative Financial Developer",
+                time: "Mar 2026",
+                desc: "Automated deep quantitative analysis system using FiinPro data to diagnose financial stability and evaluate corporate valuation.",
                 bullets: [
-                    "<strong>Focus:</strong> Addressed technical infrastructure barriers and secure data management protocols.",
-                    "<strong>Link:</strong> <a href=\"https://wane-bs.github.io/dsr_ly_thuyet/\">wane-bs.github.io/dsr_ly_thuyet/</a>"
+                    "<strong>Machine Learning Integration:</strong> Applied ElasticNet and PLSR to identify key variables, replacing complex models to avoid overfitting on short time-series financial data.",
+                    "<strong>Dashboarding:</strong> Built a Streamlit Dashboard to visualize structural analysis and composite scores (Health, Growth, Valuation).",
+                    "<strong>Link:</strong> <a href=\"https://wane-bs.github.io/fiinpro_tt/\">Dashboard</a> | <a href=\"https://github.com/wane-bs/fiinpro_tt\">GitHub</a>"
                 ]
             },
             project3: {
@@ -110,11 +111,11 @@ export const cvContent = {
         },
         skills: {
             title: "Skills & Languages",
-            cat1: "Functional Consulting",
+            cat1: "Data Analysis & Business Intelligence",
             cat2: "Technical",
             cat3: "Professional",
-            cat1List: ["Business Process Mapping", "Requirement Gathering", "Workflow Design", "System Data Control"],
-            cat2List: ["SQL", "Python for Finance (Automation)", "Advanced Excel"],
+            cat1List: ["Business Process Analysis", "Financial Modeling", "Data Visualization (BI)", "Product Research"],
+            cat2List: ["SQL", "Python (Pandas, Numpy, ML)", "Streamlit / Power BI", "Advanced Excel"],
             cat3List: ["Solution Presentation", "Critical Thinking", "Fast Tech Adoption", "Collaborative Systems"],
             langs: "Languages",
             langItems: [
@@ -125,7 +126,7 @@ export const cvContent = {
     },
     vi: {
         header: {
-            role: "ERP FRESHER CONSULTANT | FINTECH & DATA AUTOMATION",
+            role: "THỰC TẬP SINH PHÂN TÍCH DỮ LIỆU | FINTECH & DATA AUTOMATION",
             name: "Nguyễn Trung Hiếu",
             location: "TP. Hồ Chí Minh, Việt Nam"
         },
@@ -139,7 +140,7 @@ export const cvContent = {
         },
         summary: {
             profileTitle: "Tóm tắt Chuyên môn",
-            profileText: "Sinh viên năm 3 chuyên ngành <strong>Công nghệ Tài chính (Fintech)</strong> và ứng viên tự học <strong>CFA Level 1</strong> với tư duy hệ thống mạnh mẽ. Có kinh nghiệm sử dụng <strong>Python</strong> trong tự động hóa dữ liệu tài chính, giúp tối ưu hóa tính toàn vẹn của dữ liệu và hiệu suất báo cáo lên 40%. Định hướng trở thành <strong>Tư vấn viên ERP Oracle NetSuite</strong>, tập trung vào thiết lập quy trình kinh doanh (Business Process Mapping), thu thập yêu cầu và tối ưu hóa vận hành dựa trên dữ liệu trong môi trường điện toán đám mây.",
+            profileText: "Sinh viên năm 3 chuyên ngành <strong>Công nghệ Tài chính (Fintech)</strong> (chương trình 3.5 năm) và ứng viên <strong>CFA Level 1</strong> với tư duy hệ thống mạnh mẽ. Có kinh nghiệm sử dụng <strong>Python</strong> trong tự động hóa dữ liệu tài chính lớn, tối ưu hóa tính toàn vẹn dữ liệu và hiệu suất báo cáo lên 40%. Định hướng trở thành <strong>Chuyên viên Phân tích Dữ liệu / Nghiên cứu Sản phẩm</strong>, tập trung vào mô hình hóa dữ liệu tài chính, xây dựng BI Dashboard (Streamlit) và nghiên cứu sản phẩm dựa trên dữ liệu.",
             highlightsTitle: "Điểm nhấn Quan trọng",
             efficiency: "Tối ưu hóa Quy trình",
             efficiencyDesc: "Phát triển quy trình tự động phân tích dữ liệu, giảm thiểu lỗi thủ công.",
@@ -177,13 +178,14 @@ export const cvContent = {
                 ]
             },
             project2: {
-                title: "Ứng dụng phi tập trung (DApp) quản lý tài sản",
-                role: "Lưu trữ Phi tập trung & API",
-                time: "09/2024 – 10/2024",
-                desc: "Thiết kế giải pháp lưu trữ phi tập trung sử dụng IPFS và mô phỏng các kịch bản API cho chữ ký số bảo mật và giao dịch ngân hàng.",
+                title: "Hệ thống Tự động hóa Phân tích BCTC Định lượng (fiinpro_tt)",
+                role: "Phát triển Mô hình Định lượng",
+                time: "03/2026",
+                desc: "Xây dựng hệ thống chẩn đoán sức khỏe tài chính và định giá doanh nghiệp tự động dựa trên dữ liệu lớn từ FiinPro.",
                 bullets: [
-                    "<strong>Tiêu điểm:</strong> Tập trung vào các rào cản hạ tầng kỹ thuật và giao thức quản lý dữ liệu an toàn.",
-                    "<strong>Link:</strong> <a href=\"https://wane-bs.github.io/dsr_ly_thuyet/\">wane-bs.github.io/dsr_ly_thuyet/</a>"
+                    "<strong>Machine Learning:</strong> Ứng dụng ElasticNet và PLSR để xác định biến số quan trọng, tránh Overfitting trên dữ liệu chuỗi thời gian ngắn.",
+                    "<strong>Trực quan hóa Dữ liệu:</strong> Xây dựng Streamlit Dashboard phân tích cơ cấu tài chính và chấm điểm tổng hợp (Sức khỏe, Tăng trưởng, Định giá).",
+                    "<strong>Link:</strong> <a href=\"https://wane-bs.github.io/fiinpro_tt/\">Dashboard</a> | <a href=\"https://github.com/wane-bs/fiinpro_tt\">GitHub</a>"
                 ]
             },
             project3: {
@@ -234,11 +236,11 @@ export const cvContent = {
         },
         skills: {
             title: "Kỹ năng & Ngôn ngữ",
-            cat1: "Tư vấn chức năng",
+            cat1: "Phân tích Dữ liệu & BI",
             cat2: "Kỹ thuật",
             cat3: "Chuyên nghiệp",
-            cat1List: ["Thiết lập quy trình kinh doanh (Mapping)", "Thu thập yêu cầu", "Thiết kế luồng công việc", "Kiểm soát dữ liệu hệ thống"],
-            cat2List: ["SQL", "Python cho Tài chính (Tự động hóa)", "Excel nâng cao"],
+            cat1List: ["Phân tích Quy trình Kinh doanh", "Mô hình hóa Tài chính", "Trực quan hóa Dữ liệu (BI)", "Nghiên cứu Sản phẩm"],
+            cat2List: ["SQL", "Python (Pandas, Numpy, ML)", "Streamlit / Power BI", "Excel nâng cao"],
             cat3List: ["Thuyết trình giải pháp", "Tư duy phản biện", "Thích nghi công nghệ nhanh", "Triển khai hệ thống cộng tác"],
             langs: "Ngôn ngữ",
             langItems: [
