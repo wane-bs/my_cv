@@ -30,15 +30,24 @@ const Footer = () => {
         <ul className="mb-12 mt-6 flex-wrap space-x-2 lg:space-x-4">
           {menu.footer.map((menu) => (
             <li className="inline-block" key={menu.name}>
-              <Link
-                href={`${menu.url}/#!`}
-                onClick={(e) => {
-                  e.preventDefault();
-                }}
-                className="p-2 font-bold text-dark hover:text-primary dark:text-darkmode-light lg:p-4"
-              >
-                {menu.name}
-              </Link>
+              {menu.url.startsWith("/") ? (
+                <Link
+                  href={menu.url}
+                  className="p-2 font-bold text-dark hover:text-primary dark:text-darkmode-light lg:p-4"
+                >
+                  {menu.name}
+                </Link>
+              ) : (
+                <a
+                  href={menu.url}
+                  onClick={(e) => {
+                    e.preventDefault();
+                  }}
+                  className="p-2 font-bold text-dark hover:text-primary dark:text-darkmode-light lg:p-4"
+                >
+                  {menu.name}
+                </a>
+              )}
             </li>
           ))}
         </ul>

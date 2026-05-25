@@ -22,7 +22,7 @@ const CoverLetter = ({ dataEn, dataVi }) => {
               {lang === 'vi' ? 'English' : 'Tiếng Việt'}
             </button>
           </div>
-          <h1 dangerouslySetInnerHTML={markdownify(title)} className="h2 mb-8 text-center" />
+          {markdownify(title, "h1", "h2 mb-8 text-center")}
           <div className="content prose mx-auto dark:prose-invert">
             <MDXRemote {...mdxContent} />
           </div>

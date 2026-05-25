@@ -22,7 +22,7 @@ const ProjectSingle = ({ frontmatter, content, mdxContent }) => {
           
           <article className="row justify-center">
             <div className="md:col-10 text-center">
-              <h1 dangerouslySetInnerHTML={markdownify(title)} className="h2 mb-4" />
+              {markdownify(title, "h1", "h2 mb-4")}
               <ul className="mb-8 flex flex-wrap items-center justify-center space-x-4 text-light dark:text-darkmode-light">
                 <li>
                   <span className="font-primary text-sm">
