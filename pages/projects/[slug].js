@@ -60,7 +60,7 @@ const ProjectSingle = ({ frontmatter, content, mdxContent }) => {
                 <div className="mb-8 flex flex-wrap gap-2">
                   <strong className="mr-2 flex items-center">Tags:</strong>
                   {tags.map((tag, i) => (
-                    <span key={i} className="rounded bg-theme-light px-3 py-1 text-sm dark:bg-darkmode-theme-light">
+                    <span key={i} className="rounded bg-theme-light text-dark px-3 py-1 text-sm dark:bg-darkmode-theme-dark dark:text-darkmode-light">
                       {tag}
                     </span>
                   ))}

@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "Geeky Nextjs",
-    "base_url": "/",
+    "base_url": "https://wane-bs.github.io/my_cv",
     "favicon": "/images/favicon.png",
     "logo": "/images/logo.png",
     "logo_white": "/images/logo-light.png",
