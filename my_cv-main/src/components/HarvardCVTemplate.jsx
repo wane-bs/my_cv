@@ -29,46 +29,53 @@ const styles = StyleSheet.create({
     paddingLeft: 48,
     paddingRight: 48,
     fontFamily: 'Tinos',
-    fontSize: 11,
-    color: '#000000',
-    lineHeight: 1.4,
+    fontSize: 9.5,
+    color: '#111111',
+    lineHeight: 1.35,
   },
   headerContainer: {
     textAlign: 'center',
-    marginBottom: 16,
+    marginBottom: 12,
   },
   name: {
     fontSize: 20,
     fontWeight: 'bold',
-    marginBottom: 4,
+    marginBottom: 5,
     textTransform: 'uppercase',
+    color: '#111111',
   },
   contactInfo: {
-    fontSize: 10,
+    fontSize: 8.5,
+    color: '#4D4D4D',
     marginBottom: 4,
   },
   section: {
     marginBottom: 12,
   },
   sectionTitle: {
-    fontSize: 12,
+    fontSize: 11,
     fontWeight: 'bold',
     textTransform: 'uppercase',
-    borderBottomWidth: 1,
-    borderBottomColor: '#000000',
+    borderBottomWidth: 1.5,
+    borderBottomColor: '#D3D3D3',
     paddingBottom: 2,
     marginBottom: 6,
+    color: '#111111',
   },
   entryHeader: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginBottom: 2,
+    marginBottom: 1,
   },
   entryTitle: {
     fontWeight: 'bold',
+    fontSize: 10,
+    color: '#111111',
   },
   entryLocation: {
     fontStyle: 'italic',
+    fontSize: 9.5,
+    color: '#4D4D4D',
   },
   entrySubtitleRow: {
     flexDirection: 'row',
@@ -77,13 +84,17 @@ const styles = StyleSheet.create({
   },
   entryRole: {
     fontStyle: 'italic',
+    fontSize: 9.5,
+    color: '#111111',
   },
   entryDate: {
     fontStyle: 'normal',
+    fontSize: 9.5,
+    color: '#4D4D4D',
   },
   bulletList: {
-    paddingLeft: 12,
-    marginBottom: 6,
+    paddingLeft: 10,
+    marginBottom: 4,
   },
   bulletItem: {
     flexDirection: 'row',
@@ -91,16 +102,22 @@ const styles = StyleSheet.create({
   },
   bulletPoint: {
     width: 10,
-    fontSize: 10,
+    fontSize: 9.5,
+    color: '#111111',
   },
   bulletText: {
     flex: 1,
+    fontSize: 9.5,
+    color: '#111111',
   },
   bold: {
     fontWeight: 'bold',
   },
   paragraph: {
     marginBottom: 6,
+    fontSize: 9.5,
+    color: '#111111',
+    textAlign: 'justify',
   },
   skillRow: {
     flexDirection: 'row',
@@ -109,9 +126,13 @@ const styles = StyleSheet.create({
   skillCategory: {
     fontWeight: 'bold',
     width: 120,
+    fontSize: 9.5,
+    color: '#111111',
   },
   skillList: {
     flex: 1,
+    fontSize: 9.5,
+    color: '#111111',
   }
 });
 
@@ -146,7 +167,7 @@ const HarvardCVTemplate = ({ data, language }) => {
         <View style={styles.headerContainer}>
           <Text style={styles.name}>{t.header.name}</Text>
           <Text style={styles.contactInfo}>
-            {t.header.location} • (+84) 812-339-125 • trunghieuwane@gmail.com
+            (+84) 812-339-125   |   trunghieuwane@gmail.com   |   github.com/wane-bs   |   {t.header.location}
           </Text>
         </View>
 
@@ -156,25 +177,6 @@ const HarvardCVTemplate = ({ data, language }) => {
           <Text style={styles.paragraph}>
             {renderRichText(t.summary.profileText)}
           </Text>
-        </View>
-
-        {/* Education */}
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>{t.summary.educationTitle}</Text>
-          <View style={styles.entryHeader}>
-            <Text style={styles.entryTitle}>{t.summary.university}</Text>
-            <Text style={styles.entryLocation}>{t.header.location}</Text>
-          </View>
-          <View style={styles.entrySubtitleRow}>
-            <Text style={styles.entryRole}>{t.summary.degree}</Text>
-            <Text style={styles.entryDate}>{t.summary.timeEdu}</Text>
-          </View>
-          <View style={styles.bulletList}>
-            <View style={styles.bulletItem}>
-              <Text style={styles.bulletPoint}>•</Text>
-              <Text style={styles.bulletText}>GPA: 2.9 (7.4) - {t.summary.degreeStatus}</Text>
-            </View>
-          </View>
         </View>
 
         {/* Experience */}
@@ -294,6 +296,25 @@ const HarvardCVTemplate = ({ data, language }) => {
                 <Text style={styles.bulletText}>{renderRichText(bullet)}</Text>
               </View>
             ))}
+          </View>
+        </View>
+
+        {/* Education */}
+        <View style={styles.section}>
+          <Text style={styles.sectionTitle}>{t.summary.educationTitle}</Text>
+          <View style={styles.entryHeader}>
+            <Text style={styles.entryTitle}>{t.summary.university}</Text>
+            <Text style={styles.entryLocation}>{t.header.location}</Text>
+          </View>
+          <View style={styles.entrySubtitleRow}>
+            <Text style={styles.entryRole}>{t.summary.degree}</Text>
+            <Text style={styles.entryDate}>{t.summary.timeEdu}</Text>
+          </View>
+          <View style={styles.bulletList}>
+            <View style={styles.bulletItem}>
+              <Text style={styles.bulletPoint}>•</Text>
+              <Text style={styles.bulletText}>GPA: 2.9 (7.4) - {t.summary.degreeStatus}</Text>
+            </View>
           </View>
         </View>
 
