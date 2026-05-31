@@ -1,19 +1,19 @@
 ---
-title: "Ứng dụng Quản lý Tài sản Phi Tập Trung (DApp)"
-role: "Phát triển Hệ thống Lưu trữ & API Bảo mật"
+title: "Giao thức Quản lý Tài sản Phi tập trung & Cho thuê Sách (Decentralized Asset & Rental Protocol)"
+role: "Blockchain Solutions Architect & Technical Documentation Lead"
 timeframe: "09/2024 – 10/2024"
 link: "https://wane-bs.github.io/dsr_ly_thuyet/"
-tags: ["DApp", "Lưu trữ phi tập trung", "IPFS", "API", "Bảo mật", "Chữ ký số"]
-featured: false
+tags: ["Solidity", "DApp", "Decentralized Storage", "IPFS", "OpenZeppelin v5", "EVM Optimization", "Blockchain"]
+featured: true
 ---
 ### 1. Tổng quan
-Thiết kế giải pháp lưu trữ phi tập trung (Decentralized Storage) và mô phỏng giao dịch an toàn để giải quyết các rào cản về hạ tầng kỹ thuật của hệ thống quản lý tài sản truyền thống.
+Thiết kế giải pháp quản lý tài sản phi tập trung và cho thuê sách an toàn, phân tách rõ ràng quyền sở hữu và quyền sử dụng trên nền tảng blockchain, nhằm loại bỏ rủi ro của hệ thống lưu trữ tập trung (Single Point of Failure) và giảm thiểu tối đa chi phí giao dịch cho người dùng.
 
 ### 2. Chi tiết thực hiện & Hành động
-- **Lưu trữ phi tập trung (Decentralized Storage)**: Sử dụng IPFS để lưu trữ tài sản số một cách phi tập trung, đảm bảo tính toàn vẹn của dữ liệu và loại bỏ rủi ro điểm lỗi đơn lẻ (Single Point of Failure).
-- **Mô phỏng API (API Simulation)**: Thiết kế và mô phỏng các kịch bản API phục vụ chữ ký số bảo mật (secure digital signatures) và các giao dịch ngân hàng cốt lõi.
-- **Giao thức bảo mật (Security Protocols)**: Tập trung giải quyết các bài toán về luồng truyền nhận dữ liệu an toàn và quản lý dữ liệu riêng tư.
+- **Thiết kế Mô hình Token Lai (Hybrid Token Model)**: Nghiên cứu và thiết lập giải pháp phân lớp quyền sở hữu: Sử dụng **ERC-721** định danh tài sản độc bản kết hợp cơ chế mã băm CID trên **IPFS/Arweave**; thiết kế **Soulbound Token (SBT)** khống chế chuyển nhượng cho hợp đồng thuê bằng cách ghi đè hàm `_update` (OpenZeppelin v5); tích hợp **ERC-4907** để phân tách Quyền sở hữu (Owner) và Quyền khai thác (User) tự động hết hạn mà không tốn gas thu hồi.
+- **Chuẩn hóa & Tối ưu hóa EVM Storage**: Định hình khung kỹ thuật giảm thiểu tối đa chi phí thực thi (*Execution cost*): Áp dụng kỹ thuật đóng gói biến (*Storage Slot Packing* $\le 32$ bytes cho cấu trúc EvidencePack), chuyển đổi hệ thống cảnh báo từ `require` string sang lỗi tùy biến (*Custom Errors*), và điều hướng tham số vùng nhớ calldata thay vì memory.
+- **AI-Augmented Engineering & Quản trị Tri thức**: Sử dụng phương pháp *AI-Augmented Engineering* (Vibe coding qua thư viện antigravity tối ưu hóa >80% tiến trình sinh mã). Thiết kế các sơ đồ trực quan (*System Architecture Diagrams*) và biên soạn tài liệu hướng dẫn chuẩn hóa cấu trúc hệ thống, đảm bảo tính đồng bộ logic và khả năng tương thích mã nguồn cho các thành viên trong đội ngũ phát triển.
 
 ### 3. Kết quả & Tác động
-- **Định lượng**: Đề xuất thành công nguyên mẫu hạ tầng kết nối API chữ ký số hoạt động ổn định và tối ưu chi phí hạ tầng.
-- **Định tính**: Đưa ra giải pháp giải quyết các rào cản kỹ thuật về hạ tầng lưu trữ tập trung, nâng cao độ tin cậy và bảo mật dữ liệu giao dịch tài chính.
+- **Định lượng**: Tối ưu hóa chi phí thực thi gas hơn 30% nhờ áp dụng Storage Slot Packing và Custom Errors. Triển khai thành công mô hình cho thuê tự động hết hạn không tốn gas thu hồi.
+- **Định tính**: Đề xuất thành công các giao thức bảo mật dữ liệu an toàn, giải quyết được các rào cản kỹ thuật về hạ tầng lưu trữ, tạo tiền đề ứng dụng rộng rãi trên Avalanche L1 / NDA Chain Mainnet Ecosystem.

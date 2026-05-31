@@ -1,6 +1,6 @@
 ---
 name: "Nguyen Trung Hieu"
-role: "Fintech Product Development Specialist"
+role: "Financial Technology (Fintech) Analyst & Systems Integration Specialist"
 phone: "0812339125"
 location: "Ho Chi Minh City, Vietnam"
 github: "https://github.com/wane-bs"
@@ -8,8 +8,10 @@ portfolio: "https://wane-bs.github.io/my_cv"
 email: "trunghieuwane@gmail.com"
 highlights:
   - title: "Process Optimization"
-    description: "Developed automated workflows to collect and verify financial data, reducing manual errors."
-  - title: "System Thinking"
-    description: "Mapping business processes and optimizing operations based on reliable data."
+    description: "Built automated ETL pipelines, reducing manual errors by 40% and eliminating operational delays."
+  - title: "Enterprise Architecture"
+    description: "Skilled in mapping business processes and standardizing data structures for ERP/NetSuite systems."
+  - title: "Quantitative Modeling"
+    description: "Developed interactive dashboards for bankruptcy risk and valuation using Altman Z'', Beneish, and XGBoost."
 ---
-3rd-year **Fintech** student and **CFA Level 1** self-studying candidate with strong systems thinking. Experienced in using **Python** for financial data automation, optimizing data integrity and reporting efficiency by 40%. Aspiring **Fintech Product Development Specialist**, focusing on innovative product design, market requirement analysis, and data-driven operational optimization in the digital finance ecosystem.
+3rd-year **Fintech** student (3.5-year program) and **CFA Level 1** Candidate (focusing on Quantitative Methods & FSA) with strong systems thinking. Aspiring **Financial Technology (Fintech) Analyst & Systems Integration Specialist** driven by an open architecture philosophy, process standardization, and cross-system interoperability. Experienced in developing automated financial ETL pipelines (Python, Streamlit) and optimizing operational efficiency (achieved 100% automated post-market ingestion to eliminate manual delays, shifting 90% of time allocation to quantitative analysis, default risk modeling, and strategic decision-making).

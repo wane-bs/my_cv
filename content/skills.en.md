@@ -3,24 +3,48 @@ title: "Skills"
 description: "Skills & Languages"
 ---
 
-## Fintech Product Development
-- Product Lifecycle Management (PLM)
-- Market Research & Requirement Analysis
-- UI/UX Design Logic
-- Business Process Mapping & Workflow Design
-- System Integration & Data Control
+## Data Engineering
+- Financial ETL Pipelines
+- Data Scraping & Ingestion
+- In-memory Stream Processing (io.BytesIO)
+- Dynamic XML/HTML/CSV Parsing
+- Data Cleansing & Normalization
+- TTM (Trailing Twelve Months) Rolling Calculations
+- SQL query optimization
 
-## Technical Skills
-- SQL
-- Python for Finance (Automation)
-- Advanced Excel
+## Quantitative Finance & Risk Modeling
+- Financial Statement Analysis (FSA)
+- Corporate Bankruptcy Prediction
+- Fraud Detection Modeling
+- Altman Z''-Score (Sector-Adjusted)
+- Beneish M-Score & Sloan Accruals Ratio
+- Cash Flow Credit Scoring
+- DCF & WACC Valuation, EV Multiples
+- Macro Stress Testing (FX & Fuel price sensitivity)
 
-## Professional Skills
-- Solution Presentation
-- Critical Thinking
-- Fast Tech Adoption
-- Collaborative Systems
+## Machine Learning & Analytics
+- Predictive Modeling (XGBoost Classifier)
+- Explainable AI (SHAP Framework)
+- Feature Engineering (VIP Score, Dimensionality reduction)
+- Regularized Regression (ElasticNet) & PLSR
+- Time-series Decomposition (STL) & Cross-Correlation (CCF)
+- Synthetic Data Generation (Imbalanced default distribution simulation)
+
+## Data Visualization & UI
+- Full-Stack Streamlit Dashboard Development
+- Advanced Dynamic Plotly (Multi-Axis & Subplots)
+- Risk Matrix Heatmaps & Radar Risk Profiling
+- Vital Signs Combo Chart
+
+## System Standardization & Infrastructure
+- Process Standardization Frameworks
+- Management Information Systems (MIS)
+- Oracle NetSuite ERP Architecture
+- Cross-System Interoperability
+- Hybrid Token Models (ERC-721, Soulbound Token SBT, ERC-4907)
+- EVM Storage Slot Packing & Custom Errors
+- Local Environment Isolation & Self-hosted Sandbox
 
 ## Languages
 - **Vietnamese**: Native
-- **English**: Intermediate
+- **English**: Intermediate (CFA Candidate reading standard)

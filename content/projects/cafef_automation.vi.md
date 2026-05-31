@@ -1,18 +1,19 @@
 ---
-title: "Tự động hóa & Trực quan hóa Dữ liệu Tài chính"
-role: "Lập trình viên Python"
-timeframe: "09/2023 – 10/2023"
+title: "Hệ thống Tự động hóa Đường ống Dữ liệu Thị trường Chứng khoán Lịch sử (CafeF Pipeline)"
+role: "Lead FinTech Developer / Data Engineer"
+timeframe: "09/2024"
 link: "https://github.com/wane-bs/cafef-stock-automation"
-tags: ["Python", "Trích xuất Dữ liệu", "CafeF", "Ichimoku", "Phân tích kỹ thuật", "Tự động hóa"]
+tags: ["Python", "Data Ingestion", "CafeF", "Ichimoku", "ETL", "io.BytesIO", "Regex", "Tự động hóa"]
 featured: true
 ---
 ### 1. Tổng quan
-Tự động hóa quá trình trích xuất dữ liệu thị trường chứng khoán từ CafeF và áp dụng các mô hình phân tích kỹ thuật Ichimoku.
+Xây dựng đường ống dữ liệu ETL (Extract - Transform - Load) tự động, độc lập, có khả năng tự phục hồi (Self-healing) để cung cấp dữ liệu sạch cho các thuật toán phân tích kỹ thuật sau phiên giao dịch chỉ với một nút bấm (One-click execution).
 
 ### 2. Chi tiết thực hiện & Hành động
-- **Trích xuất dữ liệu**: Xây dựng script Python để tự động crawl dữ liệu giao dịch từ CafeF, khắc phục việc thu thập thủ công mất thời gian và dễ sai sót.
-- **Mô hình hóa phân tích kỹ thuật**: Triển khai mô hình phân tích kỹ thuật Ichimoku dựa trên dữ liệu thu thập được để tự động hóa việc đưa ra nhận định xu hướng thị trường.
+- **Quét lùi & Kiểm thực URL**: Phát triển thuật toán *Dynamic Backwards Scanning* sử dụng vòng lặp quét lùi ngày (timedelta) để định vị URL dữ liệu khả dụng gần nhất, kết hợp kiểm thực *HTTP HEAD Request* nhằm tiết kiệm băng thông và tránh bị chặn truy cập (Rate limiting).
+- **Stream Processing vào RAM**: Triển khai cơ chế tải luồng (*Streaming*) phân đoạn (chunk_size=8192) trực tiếp vào bộ nhớ đệm RAM (*In-memory Buffer* qua io.BytesIO), loại bỏ hoàn toàn ràng buộc I/O vật lý trên ổ đĩa.
+- **Xử lý mã hóa & Parser dự phòng**: Thiết kế hệ thống dự phòng đa bảng mã (*Multi-encoding Fallback*) và trình phân tích chuỗi văn bản thuần bằng biểu thức chính quy (*Fallback Manual Parser*) để trích xuất dữ liệu khi cấu trúc tệp CSV bị lỗi nghiêm trọng. Tự động chuẩn hóa tên cột cấu trúc (Open, High, Low, Close, Volume) và phân loại lưu trữ thông minh theo sàn (HSX, HNX, UPCOM) bằng mô hình Regex định dạng chuẩn.
 
 ### 3. Kết quả & Tác động
-- **Định lượng**: Tối ưu hóa thời gian lấy dữ liệu lịch sử giá của hàng loạt mã cổ phiếu nhanh chóng chỉ trong vài giây.
-- **Định tính**: Đảm bảo tính ổn định của hệ thống và độ tin cậy của dữ liệu, cung cấp các đánh giá tự động, chính xác dựa trên dữ liệu thị trường thời gian thực (real-time).
+- **Định lượng**: Tự động hóa 100% quy trình trích xuất và làm sạch dữ liệu thô sau phiên qua cơ chế kích hoạt đơn tác vụ, giảm thời gian xử lý thủ công xuống 0; triệt tiêu 100% lỗi treo tiến trình (*hanging*) nhờ cấu hình TIMEOUT tối ưu.
+- **Định tính**: Loại bỏ hoàn toàn độ trễ vận hành thủ công, cung cấp dữ liệu sạch, có độ tin cậy tuyệt đối hỗ trợ các thuật toán phân tích kỹ thuật sau phiên.
