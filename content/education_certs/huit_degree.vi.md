@@ -1,5 +1,5 @@
 ---
-title: "Cử nhân Công nghệ Tài chính (Fintech)"
+title: "Sinh viên Công nghệ Tài chính (Fintech)"
 date: "2023-09-01T00:00:00Z"
 image: "/images/certs/huit.jpg"
 categories: ["Học vấn"]
