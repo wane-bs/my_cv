@@ -1,0 +1,257 @@
+%-------------------------
+% Resume in Latex
+% Author : Harshibar
+% Based off of: https://github.com/jakeryang/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[margin=1in]{geometry}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% only for pdflatex
+% \input{glyphtounicode}
+
+% fontawesome
+\usepackage{fontawesome5}
+
+% fixed width
+\usepackage[scale=0.90,lf]{FiraMono}
+
+% light-grey
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+\DeclareTextFontCommand{\texteb}{\ebseries}
+
+% custom underline
+\usepackage{contour}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+% custom font: helvetica-style
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault} 
+%% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+
+\raggedbottom
+\setlength{\tabcolsep}{0in}
+
+% sans serif sections
+\titleformat {\section}{
+    \bfseries \vspace{2pt} \raggedright \large % header section
+}{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-4pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\ % top row of resume entry
+      \textit{#3} & {\color{dark-grey} \small #4}\\ % second row of resume entry
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & {\color{dark-grey}\small #2} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% CHANGED default leftmargin 0.15 in
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+\color{text-grey}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge NGUYEN TRUNG HIEU} \\ \vspace{5pt}
+    \small \faPhone* \texttt{0812339125} \hspace{1pt} $|$
+    \hspace{1pt} \faEnvelope \hspace{2pt} \texttt{trunghieuwane@gmail.com} \hspace{1pt} $|$ 
+    \hspace{1pt} \faGithub \hspace{2pt} \href{https://github.com/wane-bs}{\myuline {github.com/wane-bs}} \hspace{1pt} $|$
+    \hspace{1pt} \faMapMarker* \hspace{2pt}\texttt{Ho Chi Minh City, Vietnam}
+    \\ \vspace{-3pt}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{SUMMARY}
+\small{3rd-year \textbf{Fintech} student (3.5-year program) and \textbf{CFA Level 1 Candidate} (focusing on Quantitative Methods \& FSA) with strong systems thinking. Aspiring \textbf{Financial Technology (Fintech) Analyst \& Systems Integration Specialist} driven by an open architecture philosophy, process standardization, and cross-system interoperability. Experienced in developing automated financial ETL pipelines (Python, Streamlit) and optimizing operational efficiency (achieved 100\% automated post-market ingestion to eliminate manual delays, shifting 90\% of time to quantitative analysis, default risk modeling, and strategic decision-making). Leveraging Business Analysis (BA) and ERP process mapping experience as a strategic foundation to structure enterprise data workflows for AI-First Data Analysis (D.A) implementation.}
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Suitecloud Viet Nam}{Apr. 2026 -- Present}
+      {Business Analysis Intern}{Ho Chi Minh City, Vietnam}
+      \resumeItemListStart
+        \resumeItem{\textbf{Mapped and standardized} 8 of 16 comprehensive To-Be process workflows (100\% Inventory and part of Sales modules) using Draw.io to align legacy business logic with NetSuite standards, establishing a clean, structured foundation for data pipeline integration.}
+        \resumeItem{\textbf{Structured} custom data fields and UI layouts for system integration, transforming raw accounting data into standardized formats to streamline technical handoffs and automate cross-system data mapping.}
+        \resumeItem{\textbf{Configured} centralized inventory reporting screens and packaged 3 core business test scenarios, enabling automated stock reconciliation between ERP, legacy MISA, and manufacturing systems to eliminate data asymmetry.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Technology Enterprise}{Nov. 2025 -- Mar. 2026}
+      {Investor Relations Intern (International Team)}{Ho Chi Minh City, Vietnam}
+      \resumeItemListStart
+        \resumeItem{\textbf{Analyzed} business models (BMC) and value chains of 8 international UAV companies, modeling CapEx and periodic OpEx (SaaS/RaaS/Drone-as-a-Service) for hybrid drone security systems integrated with Edge AI for threat detection under 3 seconds.}
+        \resumeItem{\textbf{Co-structured and standardized} corporate bond and IPO financial dossiers, ensuring compliance with international capital market standards.}
+        \resumeItem{\textbf{Developed} automated Python workflows to scrape and reconcile competitor financial data, reducing manual data processing errors and boosting quantitative analysis accuracy by 40\%.}
+        \resumeItem{\textbf{Consolidated} multi-source market data into a 50-page investment dossier for executive strategic planning, proposing a security drone model that projects a 40\% to 50\% reduction in security personnel overhead.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \resumeSubHeadingListStart
+      \resumeSubheading
+        {Historical Stock Data ETL Pipeline (CafeF Pipeline)}{Sep. 2024}
+        {Lead FinTech Developer / Data Engineer}{\href{https://github.com/wane-bs/cafef-stock-automation}{\myuline{GitHub}}}
+        \resumeItemListStart
+          \resumeItem{\textbf{Engineered} an automated, self-healing ETL pipeline to stream, clean, and ingest historical stock data from CafeF, completely eliminating manual post-market data collection time.}
+          \resumeItem{\textbf{Developed} a Dynamic Backwards Scanning algorithm with date-subtraction loops and HTTP HEAD request validation, optimizing bandwidth usage and preventing server rate-limiting.}
+          \resumeItem{\textbf{Implemented} in-memory stream processing using \texttt{io.BytesIO} to buffer chunk-based streams (chunk size 8KB) directly into RAM, bypassing disk I/O constraints to accelerate data loading.}
+          \resumeItem{\textbf{Designed} a multi-encoding fallback system and regular-expression manual parser to extract raw data from corrupt CSV formats, standardizing columns (OHLCV) and sorting indices (HSX, HNX, UPCOM) with 100\% data consistency.}
+        \resumeItemListEnd
+
+      \resumeSubheading
+        {Solvency Dashboard \& Digital Solution}{Oct. 2025 -- Apr. 2026}
+        {Tech Lead \& PM / Quantitative Financial Developer}{\href{https://phantichtcdn-wane-hieu.streamlit.app/}{\myuline{Dashboard}} $|$ \href{https://github.com/wane-bs/phantichtcdn}{\myuline{GitHub}}}
+        \resumeItemListStart
+          \resumeItem{\textbf{Won 1st Place} at the departmental ``Tai Tri Hoi Tu'' Fintech competition by directing a cross-functional team of finance and software engineering students to build an enterprise solvency dashboard for Vietnam Airlines (HVN).}
+          \resumeItem{\textbf{Engineered} the core \texttt{ETLProcessor} pipeline class to automatically parse sheet formatting variations, impute missing values, and execute Trailing Twelve Months (TTM) rolling cash calculations and annualization scaling.}
+          \resumeItem{\textbf{Trained} an XGBoost classifier with SHAP framework integration for explainable default forecasting, and developed Plotly visualizations showing sector-adjusted Altman Z''-Score, Beneish M-Score, and stress testing scenarios.}
+        \resumeItemListEnd
+
+      \resumeSubheading
+        {Quantitative Financial Statement Analysis Automation}{Mar. 2026}
+        {Developer \& Analyst}{\href{https://github.com/wane-bs/fiinpro_tt}{\myuline{GitHub}} $|$ \href{https://wane-bs.github.io/fiinpro_tt/}{\myuline{Dashboard}}}
+        \resumeItemListStart
+          \resumeItem{\textbf{Built} an automated corporate diagnostic system in Python to process multi-sheet FiinPro datasets, generating vertical analysis, 3-factor DuPont models, and multi-method valuations (DCF, Sum-of-the-Parts, Forward P/E).}
+          \resumeItem{\textbf{Applied} regularized regression (ElasticNet) and Partial Least Squares Regression (PLSR) to compute Variable Importance in Projection (VIP) scores, preventing model overfitting on short-series data (solving $P \gg N$ problem).}
+          \resumeItem{\textbf{Implemented} Seasonal-Trend Decomposition (STL) and Cross-Correlation Functions (CCF) to separate structural trends from seasonal noise, exporting 40+ structured files to a dynamic Streamlit dashboard.}
+        \resumeItemListEnd
+
+      \resumeSubheading
+        {Decentralized Asset \& Rental Protocol (Book Rental DApp)}{Sep. 2024 -- Oct. 2024}
+        {Solutions Architect \& Tech Doc Lead}{\href{https://wane-bs.github.io/dsr_ly_thuyet/}{\myuline{Demo}}}
+        \resumeItemListStart
+          \resumeItem{\textbf{Designed} a secure decentralized book rental protocol on EVM, partitioning ownership and usage rights via custom ERC-721 tokens, Soulbound Tokens (SBT) for rental restrictions, and ERC-4907 for gasless automatic rental expirations.}
+          \resumeItem{\textbf{Optimized} EVM gas execution costs by over 30\% by implementing storage slot packing (bundling data within 32-byte fields for the \texttt{EvidencePack} struct), custom Solidity errors, and calldata memory parameter passing.}
+          \resumeItem{\textbf{Leveraged} AI-augmented engineering workflows to generate and optimize over 80\% of smart contract code, and authored detailed system architecture diagrams and integration guides to synchronize team development.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+%-----------RESEARCH-----------
+\section{RESEARCH}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Impact of Fintech on Financial Inclusion}{Oct. 2023 -- Dec. 2024}
+      {Lead Researcher}{}
+      \resumeItemListStart
+        \resumeItem{\textbf{Investigated} the impact of the financial technology ecosystem on financial inclusion across the top 20 GDP-leading provinces in Vietnam (2017--2023) using panel data regression analysis in Stata 17.}
+        \resumeItem{\textbf{Evaluated} OLS, Fixed Effects (FEM), and Random Effects (REM) models, applying Generalized Least Squares (GLS) estimation to correct for autocorrelation and heteroscedasticity within the panel dataset.}
+        \resumeItem{\textbf{Discovered} that Fintech has the strongest positive impact on inclusion with a GLS coefficient of 7.56 (highly statistically significant at the 1\% level, $p < 0.01$), and identified structural barriers (low R\&D investment under 0.5\% GDP and regional infrastructure asymmetry).}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION & CERTIFICATIONS-----------
+\section{EDUCATION \& CERTIFICATIONS}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Ho Chi Minh City University of Industry and Trade (HUIT)}{Sep. 2023 -- Present}
+      {Bachelor of Science in Financial Technology (Fintech); GPA: 2.9/4.0}{Ho Chi Minh City, Vietnam}
+      \resumeItemListStart
+        \resumeItem{\textbf{Core Coursework}: Financial Modeling, Corporate Financial Analysis, Quantitative Methods, Management Information Systems.}
+        \resumeItem{\textbf{Extracurriculars}: Accelerated 3.5-year program; balanced coursework with inter-university Fintech hackathons, professional certification courses, and language development.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {CFA Institute}{Present}
+      {CFA Level 1 Candidate (Target Exam: 2027)}{International}
+      \resumeItemListStart
+        \resumeItem{\textbf{Preparation Focus}: Preparing for CFA Level 1 (focusing on Quantitative Methods \& Financial Statement Analysis) to bridge academic finance theory and practical systems integration.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Google (via Coursera)}{2025}
+      {Google Data Analytics Professional Certificate}{Online}
+      \resumeItemListStart
+        \resumeItem{\textbf{Completed Modules}: Ask Questions to Make Data-Driven Decisions (\href{https://www.coursera.org/account/accomplishments/verify/BKTV0G1OB2W7}{\myuline{BKTV0G1OB2W7}}), Prepare Data for Exploration (\href{https://www.coursera.org/account/accomplishments/verify/1IM6N4SS8ZAW}{\myuline{1IM6N4SS8ZAW}}), Foundations: Data, Data, Everywhere (\href{https://www.coursera.org/account/accomplishments/verify/M20DV1BFH6MO}{\myuline{M20DV1BFH6MO}}), Process Data from Dirty to Clean (\href{https://www.coursera.org/account/accomplishments/verify/V1D6DCTX4B6G}{\myuline{V1D6DCTX4B6G}}).}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------SKILLS-----------
+\section{SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Data Engineering} {: Financial ETL Pipelines, Web Scraping \& Ingestion, In-Memory Stream Processing (\texttt{io.BytesIO}), TTM Rolling Calculations, SQL Query Optimization} \\ \vspace{2pt}
+     \textbf{Quantitative \& ML} {: Financial Statement Analysis (FSA), Altman Z''-Score, Beneish M-Score, DCF/WACC, XGBoost Classification, SHAP (Explainable AI), Regularized Regression (ElasticNet/PLSR), STL Decomposition, Cross-Correlation (CCF)} \\ \vspace{2pt}
+     \textbf{Tools \& Frameworks} {: Python, SQL, Stata 17, Streamlit, Plotly, EVM Solidity (ERC-721/4907, Soulbound Tokens), Git, Oracle NetSuite ERP Architecture} \\ \vspace{2pt}
+     \textbf{Languages} {: Vietnamese (Native), English (Intermediate -- CFA candidate reading proficiency)}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
