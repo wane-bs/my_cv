@@ -2,7 +2,7 @@
 title: "Financial Solvency Dashboard & Digital Solution (\"Tai Tri Hoi Tu\" Competition)"
 role: "Tech Lead & Solution Architect / Quantitative Financial Developer"
 timeframe: "Oct 2025 – Apr 2026 (Inherited & Developed)"
-link: "https://phantichtcdn-wane-hieu.streamlit.app/"
+link: "https://github.com/wane-bs/Tai_lanh_-_Talent"
 tags: ["Python", "Streamlit", "Plotly", "XGBoost", "SHAP", "Altman Z''-Score", "Beneish M-Score", "System Design"]
 featured: true
 ---

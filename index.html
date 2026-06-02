@@ -196,7 +196,7 @@
             </div>
             <div class="resume-date text-md-right">
                 <span class="text-primary">10/2025 – 04/2026</span>
-                <div class="mt-2"><a href="https://phantichtcdn-wane-hieu.streamlit.app/" class="btn btn-sm btn-primary text-white my-1 mx-1" target="_blank">Dashboard</a> <a href="https://github.com/wane-bs/phantichtcdn" class="btn btn-sm btn-primary text-white my-1 mx-1" target="_blank">GitHub</a> </div>
+                <div class="mt-2"><a href="https://github.com/wane-bs/Tai_lanh_-_Talent" class="btn btn-sm btn-primary text-white my-1 mx-1" target="_blank">GitHub</a></div>
             </div>
         </div>
 
@@ -205,28 +205,43 @@
                 <h3 class="mb-0">Hệ thống Tự động hóa Phân tích BCTC Định lượng</h3>
                 <div class="subheading mb-3">Quantitative Financial Developer / Financial Analyst</div>
                 <div><h5 class="text-primary mt-4 mb-2 font-weight-bold">Tổng quan</h5>
-<p class='mb-2'>Xây dựng hệ thống tự động hóa phân tích BCTC định lượng chuyên sâu với triết lý "Hệ thống không dự báo — Hệ thống chẩn đoán". Dự án tập trung vào việc giải mã hình thái tài chính, xác định vị thế trong chu kỳ và đánh giá định giá doanh nghiệp dựa trên dữ liệu từ nền tảng FiinPro.</p>
+<p class='mb-2'>Xây dựng hệ thống tự động hóa phân tích BCTC định lượng chuyên sâu với triết lý "Hệ thống không dự báo — Hệ thống chẩn đoán" dưới áp lực thời gian thực. Dự án thay thế tư duy xử lý Excel thủ công bằng pipeline tự động hóa toàn diện để bóc tách hình thái tài chính FPT, xác định vị thế chu kỳ và đánh giá định giá doanh nghiệp từ 6 sheets dữ liệu thô FiinGroup.</p>
 <h5 class="text-primary mt-4 mb-2 font-weight-bold">Chi tiết thực hiện</h5>
 <ul>
-<li><strong>Vấn đề</strong>: Chẩn đoán sự ổn định của cấu trúc tài chính và xác định các động lực thực sự (Structural Drivers) thay vì chỉ đưa ra các con số dự báo điểm. Xử lý bài toán $P \gg N$ (nhiều biến số trên tập dữ liệu chuỗi thời gian ngắn).</li>
-<li><strong>Kiến trúc & Giải pháp</strong>:</li>
-<li><strong>Pipeline 4 Chương</strong>:</li>
-<li><em>Chương 1 (Nền tảng)</em>: Phân tích trạng thái kiểm toán và áp dụng Balanced Vertical Analysis.</li>
-<li><em>Chương 2 (Hiệu suất)</em>: Phân tích DuPont 3 nhân tố và đánh giá chất lượng dòng tiền.</li>
-<li><em>Chương 3 (Định giá)</em>: Tích hợp đa phương pháp (DCF, SoTP - Sum-of-the-parts, P/E Forward Band).</li>
-<li><em>Chương 4 (Cấu trúc & Chu kỳ)</em>: Sử dụng kỹ thuật STL Decomposition để tách Trend/Seasonal và Cross-Correlation (CCF) để tìm độ trễ chu kỳ.</li>
-<li><strong>Machine Learning (Dual-Auditor)</strong>: Ứng dụng <strong>ElasticNet</strong> (Regularization) và <strong>PLSR</strong> (Dimension Reduction) để xác định VIP Score (Tầm quan trọng biến), thay thế Random Forest để tránh Overfitting trên tập dữ liệu nhỏ.</li>
-<li><strong>Composite Score v2</strong>: Hệ thống hóa điểm tổng hợp dựa trên 3 trụ cột: Sức khỏe (30%), Tăng trưởng (35%) và Định giá (35%).</li>
+<li><strong>Vấn đề</strong>: Chẩn đoán sự ổn định của cấu trúc tài chính và xác định các động lực thực sự (Structural Drivers) thay vì dự báo điểm số. Giải quyết bài toán mẫu nhỏ, đa cộng tuyến hoàn hảo ($N \in [40, 60], P \gg N$).</li>
+<li><strong>Kiến trúc &amp; Giải pháp</strong>:
+  <ul>
+  <li><strong>Pipeline 4 Chương nâng cấp</strong>:
+    <ul>
+    <li><em>Chương 1 (Nền tảng)</em>: Ứng dụng *Balanced Vertical Analysis* qua hàm <code>np.where</code> và cơ chế bù trừ không âm <code>max(..., 0)</code> để bảo đảm cơ cấu luôn cân bằng tuyệt đối 100%:
+      $$\text{Tỷ lệ common-size} = \text{np.where}\left(\text{Denominator} \neq 0, \frac{\text{Numerator}}{\text{Denominator}} \times 100, \text{np.nan}\right)$$</li>
+    <li><em>Chương 2 (Hiệu suất)</em>: DuPont động bóc tách $\Delta\text{ROE}$ từng quý và đánh giá chất lượng dòng tiền qua hệ số Sloan Accrual.</li>
+    <li><em>Chương 3 (Định giá)</em>: Tích hợp mô hình định giá từng phần SoTP (Sum-of-the-parts) kết hợp DCF thích ứng với cấu trúc đa ngành của FPT.</li>
+    <li><em>Chương 4 (Cấu trúc &amp; Chu kỳ)</em>: Phân rã chuỗi cộng tính bằng <code>STL</code> (period=4, robust=True IRLS) với cơ chế fallback sang Trung bình trượt trung tâm khi $N &lt; 8$ để xóa nhiễu biên, kết hợp tương quan chéo CCF tại các độ trễ $k \in [-4, +4]$ để xác định chỉ báo dẫn dắt.</li>
+    </ul>
+  </li>
+  <li><strong>Machine Learning (Dual-Auditor)</strong>: Thay thế Random Forest bằng khối đối chiếu kép tuyến tính có ràng buộc: <strong>ElasticNet</strong> (phạt L1/L2) và <strong>PLSR</strong> ($H=3$ components) để tối đa hóa hiệp phương sai, tính toán điểm VIP Score:
+    $$\text{VIP}_j = \sqrt{P \frac{\sum_{h=1}^H R^2(y, t_h) \left( w_{hj} / \|w_h\| \right)^2}{\sum_{h=1}^H R^2(y, t_h)}}$$</li>
+  <li><strong>Composite Score v2</strong>: Thang điểm tổng hợp trong $[-100, 100]$ dựa trên: Sức khỏe (30% - màng lọc rủi ro) — Tăng trưởng &amp; Chu kỳ (35% - động cơ hiệu suất) — Định giá (35% - chốt chặn bảo vệ vốn).</li>
+  </ul>
+</li>
 </ul>
-<h5 class="text-primary mt-4 mb-2 font-weight-bold">Kết quả & Tác động</h5>
+<h5 class="text-primary mt-4 mb-2 font-weight-bold">Kết quả &amp; Tác động</h5>
 <ul>
-<li><strong>Định lượng</strong>: Tự động hóa quy trình phân tích dữ liệu từ 6 sheets FiinPro, xuất ra hơn 40 tệp kết quả phân tích chuyên sâu (CSV) và hiển thị trực quan trên Streamlit Dashboard.</li>
-<li><strong>Định tính</strong>: Cung cấp hệ thống chẩn đoán ổn định, loại bỏ nhiễu từ các mô hình quá phức tạp, giúp nhận diện sớm các thay đổi cấu trúc trong tài chính doanh nghiệp.</li>
+<li><strong>Định lượng</strong>: Tự động hóa quy trình phân tích dữ liệu từ 6 sheets FiinPro, xuất ra hơn 40 tệp kết quả phân tích cấu trúc chuyên sâu (CSV) và trực quan hóa tức thì trên Streamlit Dashboard.</li>
+<li><strong>Định tính</strong>: Hệ thống chẩn đoán tự động nhận diện <strong>4 Mẫu hình chuyên sâu</strong>:
+  <ol>
+  <li><em>Phân kỳ Lợi nhuận - Dòng tiền</em>: Cảnh báo rủi ro lợi nhuận ảo khi Sloan Accrual Ratio &gt; 5% và $\text{CFO/NI} &lt; 0.7$ liên tiếp 3 quý.</li>
+  <li><em>Điểm kích hoạt đảo chiều cơ cấu</em>: Xác định độ trễ dẫn trước ($k^* &gt; 0$) của biến cấu trúc qua CCF để thiết lập thanh trượt giả lập kịch bản.</li>
+  <li><em>Tăng trưởng ảo bằng Đòn bẩy</em>: Phát hiện ROE tăng do đòn bẩy ($\Delta\text{Equity Multiplier}$) phình to trong khi biên an toàn và hiệu suất tài sản suy giảm.</li>
+  <li><em>Điểm đảo chiều định giá</em>: Đo lường vị thế giá thực tế trên dải định giá lịch sử ($\text{Band Position} \to 0$ hoặc $1$).</li>
+  </ol>
+</li>
 </ul>
-<h5 class="text-primary mt-4 mb-2 font-weight-bold">Cảm nhận & Bài học</h5>
+<h5 class="text-primary mt-4 mb-2 font-weight-bold">Cảm nhận &amp; Bài học</h5>
 <ul>
-<li><strong>Bài học rút ra</strong>: Tầm quan trọng của việc chọn mô hình phù hợp với đặc thù dữ liệu (ưu tiên các mô hình tuyến tính có ràng buộc như ElasticNet/PLSR cho dữ liệu tài chính chuỗi thời gian ngắn).</li>
-<li><strong>Khó khăn đã vượt qua</strong>: Xử lý triệt độ lỗi mẫu số bằng 0 (DivideByZero) và đảm bảo tính cân bằng tuyệt đối trong phân tích cơ cấu tài chính.</li>
+<li><strong>Tái phân bổ thời gian (66% Kiến trúc vs &lt;5% Lập trình)</strong>: Dịch chuyển từ gõ mã nguồn thủ công sang thiết kế kiến trúc và nghiên cứu giải pháp chuyên môn nhờ tư duy AI-First.</li>
+<li><strong>Bài học rút ra</strong>: Các mô hình tuyến tính có ràng buộc (ElasticNet/PLSR) mang lại khả năng giải thích toán học và độ ổn định cao hơn vượt trội so với các mô hình phi tuyến phức tạp trên dữ liệu tài chính chuỗi ngắn. Xử lý triệt để các biến động tài khoản bằng cơ chế Balancing Items.</li>
 </ul></div>
             </div>
             <div class="resume-date text-md-right">
