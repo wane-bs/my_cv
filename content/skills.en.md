@@ -5,7 +5,7 @@ description: "Skills & Languages"
 
 ## Programming & Databases
 - Python (Pandas, NumPy, Scikit-Learn)
-- SQL (PostgreSQL, BigQuery querying concepts)
+- SQL (BigQuery querying concepts)
 - Stata 17
 - Git & Version Control
 
