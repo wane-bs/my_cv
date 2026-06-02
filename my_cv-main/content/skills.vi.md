@@ -5,7 +5,7 @@ description: "Kỹ năng & Ngoại ngữ"
 
 ## Lập trình & Cơ sở Dữ liệu (Programming & Databases)
 - Python (Pandas, NumPy, Scikit-Learn)
-- SQL (PostgreSQL, khái niệm truy vấn BigQuery)
+- SQL (khái niệm truy vấn BigQuery)
 - Stata 17
 - Git & Quản lý phiên bản
 
