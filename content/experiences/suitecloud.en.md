@@ -9,10 +9,10 @@ tags: ["Business Analysis", "Oracle NetSuite ERP", "Process Standardization", "A
 Assigned as a Business Analyst Intern for an ERP process standardization project using Oracle NetSuite. Responsible for mapping process flows and performing Fit-Gap Analysis for Sales and Inventory modules.
 
 ### 2. Actions & Detailed Implementation
-- **Process Mapping & ERP Standardization**: Mapped As-Is and To-Be workflows for Inventory and Sales modules using Draw.io, aligning client business logic with Oracle NetSuite standard modules and resolving cross-system compatibility issues.
-- **Data & UI Structuring**: Defined custom fields, arranged logical layouts, and configured interface specifications on NetSuite to streamline system customization and facilitate developers' technical implementations.
-- **Operational Reporting Design**: Configured centralized inventory search screens and designed transactional report layouts for accountants and CFOs to eliminate data gaps between NetSuite, legacy MISA, and manufacturing systems.
+- **Process Mapping & Data Governance**: Standardized complex business workflows for Oracle NetSuite ERP integration, establishing structured data schemas and validation rules to ensure data integrity across cross-system pipelines.
+- **Data Schema Design**: Designed custom data fields and system mapping layouts, translating raw business logic into normalized database formats to streamline automated ETL handoffs.
+- **Database Reconciliation**: Built and tested automated inventory reconciliation scenarios, eliminating data asymmetry between ERP and legacy databases to ensure accuracy for management reporting.
 
 ### 3. Key Results
-- **Quantitative**: Mapped 8 of 16 comprehensive To-Be process workflows (100% of Inventory and part of Sales modules); packaged 3 core business test scenarios for UAT.
-- **Qualitative**: Standardized data inputs to prevent business logic misalignment between systems, bridging operational requirements and technical implementations.
+- **Quantitative**: Standardized schemas for 8 of 16 comprehensive workflows (100% Inventory and part of Sales); packaged 3 core data test scenarios for UAT.
+- **Qualitative**: Established robust data quality standards that prevented business logic misalignment between systems, bridging operational requirements and technical database implementations.
