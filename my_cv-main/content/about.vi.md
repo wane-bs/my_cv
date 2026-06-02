@@ -1,17 +1,17 @@
 ---
 name: "Nguyễn Trung Hiếu"
-role: "Chuyên viên Phân tích Công nghệ Tài chính & Tích hợp Hệ thống"
+role: "Chuyên viên Phân tích Rủi ro Tín dụng"
 phone: "0812339125"
 location: "TP. Hồ Chí Minh, Việt Nam"
 github: "https://github.com/wane-bs"
 portfolio: "https://wane-bs.github.io/my_cv"
 email: "trunghieuwane@gmail.com"
 highlights:
-  - title: "Tối ưu hóa Quy trình"
-    description: "Xây dựng đường ống ETL tự động, giảm 40% sai sót thủ công và triệt tiêu trễ vận hành."
-  - title: "Kiến trúc Doanh nghiệp"
-    description: "Đọc hiểu quy trình và chuẩn hóa cấu trúc dữ liệu theo hệ thống thông tin quản lý (MIS, ERP/NetSuite)."
-  - title: "Mô hình Định lượng"
-    description: "Xây dựng dashboard chẩn đoán rủi ro thanh toán và định giá đa mô hình (Altman Z'', Beneish, XGBoost)."
+  - title: "Mô hình hóa Rủi ro"
+    description: "Huấn luyện mô hình XGBoost dự báo vỡ nợ tín dụng và ứng dụng SHAP để giải thích quyết định rủi ro."
+  - title: "Kỹ thuật Dữ liệu"
+    description: "Xây dựng đường ống ETL tự động trong Python và thiết kế cơ sở dữ liệu quan hệ SQL."
+  - title: "Chuẩn hóa Quy trình"
+    description: "Chuẩn hóa quy trình nghiệp vụ và cấu trúc dữ liệu theo tiêu chuẩn tích hợp hệ thống ERP/NetSuite."
 ---
-Sinh viên năm 3 chuyên ngành **Công nghệ Tài chính (Fintech)** (chương trình 3.5 năm) và ứng viên **CFA Level 1** (tập trung nghiên cứu Quantitative Methods & FSA) với tư duy hệ thống mạnh mẽ. Định hướng trở thành **Chuyên viên Phân tích Công nghệ Tài chính & Tích hợp Hệ thống (Fintech Analyst & Systems Integration Specialist)** với triết lý kiến trúc hệ thống mở, ưu tiên chuẩn hóa quy trình và khả năng tương thích mã nguồn. Có kinh nghiệm xây dựng đường ống ETL dữ liệu tài chính tự động (Python, Streamlit), tối ưu hóa 100% quy trình thu thập và làm sạch dữ liệu sau phiên giao dịch thông qua cơ chế kích hoạt đơn tác vụ (one-click execution), dịch chuyển thành công 90% quỹ thời gian sang phân tích định lượng, thiết lập mô hình dự báo rủi ro và ra quyết định. Định hướng tích hợp kinh nghiệm phân tích nghiệp vụ (BA) và chuẩn hóa quy trình ERP làm bước đệm chiến lược nhằm cấu trúc hóa luồng dữ liệu doanh nghiệp phục vụ cho các mô hình phân tích dữ liệu (D.A) hướng AI-First.
+Sinh viên năm 3 chuyên ngành **Công nghệ Tài chính (Fintech)** (chương trình 3.5 năm) và ứng viên **CFA Level 1** với nền tảng định lượng vững chắc và tư duy hệ thống phân tích. Định hướng trở thành **Chuyên viên Phân tích Rủi ro Tín dụng (Credit Risk Data Analyst)** tại MoMo, đam mê ứng dụng dữ liệu thay thế trong việc chấm điểm tín dụng cá nhân và thúc đẩy tài chính toàn diện. Có kinh nghiệm xây dựng các đường ống dữ liệu tài chính ETL tự động (Python, SQL) và huấn luyện các mô hình học máy (XGBoost, ElasticNet) để dự báo khả năng vỡ nợ tín dụng. Thành thạo việc chuyển đổi quy trình giao dịch phức tạp và dữ liệu thô thành các chỉ số rủi ro trực quan (khung SHAP), kết nối hiệu quả giữa kỹ thuật dữ liệu và kiểm soát chính sách rủi ro.

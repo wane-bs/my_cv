@@ -1,19 +1,19 @@
 ---
-title: "Giải pháp Chuyển đổi số Tài chính & Dự báo Rủi ro Phá sản (Cuộc thi \"Tài trí hội tụ\")"
-role: "Tech Lead & Solution Architect / Quantitative Financial Developer"
+title: "Dashboard Khả năng Thanh toán & Dự báo Rủi ro Vỡ nợ (Cuộc thi \"Tài trí hội tụ\")"
+role: "Tech Lead & PM / Nhà phát triển Định lượng (Quantitative Developer)"
 timeframe: "10/2025 – 04/2026 (Kế thừa và Phát triển)"
 link: "https://github.com/wane-bs/Tai_lanh_-_Talent"
-tags: ["Python", "Streamlit", "Plotly", "XGBoost", "SHAP", "Altman Z''-Score", "Beneish M-Score", "Kiến trúc Hệ thống"]
+tags: ["Python", "SQL", "XGBoost", "SHAP", "Altman Z''-Score", "Mô hình hóa Rủi ro Vỡ nợ", "Streamlit"]
 featured: true
 ---
 ### 1. Tổng quan
-Nghiên cứu, thiết kế giải pháp công nghệ tài chính và chẩn đoán rủi ro đa mô hình (Altman Z''-Score, Beneish M-Score, Machine Learning) tích hợp công cụ định giá và Stress Testing vĩ mô, có khả năng tự vận hành độc lập (Local Sandbox) và trực quan hóa các chỉ số sinh tử của doanh nghiệp lớn (Vietnam Airlines - HVN).
+Nghiên cứu, thiết kế giải pháp công nghệ tài chính và dự báo rủi ro vỡ nợ doanh nghiệp dựa trên các tỷ số tài chính truyền thống và mô hình học máy có khả năng giải thích, triển khai trong môi trường sandbox nội bộ phục vụ phân tích rủi ro.
 
 ### 2. Chi tiết thực hiện & Hành động
-- **Thiết kế Giải pháp & ETLProcessor (Tech Lead & Solution Architect)**: Chủ trì phân tích kiến trúc hệ thống, quy hoạch luồng dữ liệu của giải pháp. Xây dựng lớp cấu trúc `ETLProcessor` tự động nhận dạng định dạng bảng (*Auto-Detection Format*), xử lý ma trận khuyết thiếu, và kỹ thuật tính toán dòng tiền lũy kế di động 4 quý (*TTM Rolling*) kết hợp hiệu chỉnh quy đổi năm chưa kết thúc (*Annualization Scaling*).
-- **Hồi quy Học máy & Offline Fallback (Quantitative Developer)**: Triển khai thuật toán XGBoost chẩn đoán xác suất vỡ nợ kết hợp framework SHAP (*Explainable AI*) để giải thích đặc trưng đóng góp của từng biến số tài chính. Thiết kế cơ chế *Local Caching* (.arff/.csv) kết hợp thuật toán sinh dữ liệu giả lập (*Synthetic Data Fallback*) mô phỏng phân phối vỡ nợ để hệ thống tự vận hành ổn định khi mất kết nối mạng. Xử lý triệt để các điểm dị biệt tài chính (np.inf sang median) trước khi đưa vào mô hình phân loại.
-- **Trực quan hóa Dashboard & Đồng nhất Nghiệp vụ (Project Manager)**: Phát triển ứng dụng Streamlit, thiết kế đồ thị tài chính trục kép chuyên sâu bằng *Plotly* bao gồm: Bản đồ nhiệt xác suất vỡ nợ (PD% Heatmap), Dải biên an toàn Altman Z''-Score (có hiệu chỉnh loại bỏ hàng tồn kho dở dang cho ngành Bất động sản), Đường ngưỡng gian lận Beneish M-Score, Đồ thị giải thích thuật toán SHAP, và Đồ thị Radar chấm điểm tín dụng dòng tiền 6 chiều (*Cash Flow Scorecard*). Điều phối liên ngành giữa chuyên gia tài chính và lập trình viên để đảm bảo tính nhất quán logic nghiệp vụ và mã nguồn.
+- **Học máy & Phân tích Rủi ro**: Huấn luyện bộ phân loại XGBoost dự báo xác suất vỡ nợ tín dụng (đạt các chỉ số AUC/Gini kiểm định mô hình ở mức cao). Tích hợp **framework SHAP (Explainable AI)** để giải thích rõ ràng các trọng số rủi ro đóng góp (ví dụ: đòn bẩy tài chính, áp lực dòng tiền), phục vụ việc chấm điểm rủi ro minh bạch.
+- **Đường ống nạp dữ liệu Python & SQL**: Phát triển lớp xử lý dữ liệu lõi `ETLProcessor` để làm sạch dữ liệu thô, xử lý các điểm dị biệt tài chính (np.inf sang median), xử lý các điểm khuyết thiếu và tính toán các chỉ số tín dụng di động lũy kế 12 tháng (TTM rolling indicators).
+- **Trực quan hóa Rủi ro & Điều phối Nhóm**: Xây dựng ứng dụng Streamlit trực quan hóa thẻ điểm rủi ro (credit scorecards), bản đồ nhiệt PD và các kịch bản stress-testing vĩ mô. Điều phối nhóm liên phòng ban giữa tài chính và phần mềm để đồng bộ hóa mã nguồn và các quy tắc chính sách tín dụng.
 
 ### 3. Kết quả & Tác động
-- **Định lượng**: Đạt **Giải Nhất cuộc thi chuyên môn \"Tài trí hội tụ\"** cấp Khoa nhờ giải pháp công nghệ tài chính đột phá. Xây dựng thành công Dashboard chẩn đoán dữ liệu tài chính lịch sử 15 năm (2011-2025) của HVN, tích hợp Stress Testing vĩ mô (tỷ giá FX, giá nhiên liệu) chạy ổn định 100% trong Local Sandbox.
-- **Định tính**: Hợp nhất thành công hệ thống chỉ số tài chính kế toán truyền thống và học máy giải thích được, cho phép người dùng đối chiếu trực quan giữa dòng tiền thực tế và lợi nhuận danh nghĩa thông qua biểu đồ hợp nhất (*Vital Signs Combo Chart*), hỗ trợ ra quyết định quản trị rủi ro chính xác theo thời gian thực.
+- **Định lượng**: Đạt **Giải Nhất cuộc thi chuyên môn \"Tài trí hội tụ\"**. Triển khai thành công công cụ dự báo mặc định hiển thị 15 năm (2011-2025) dữ liệu lịch sử và các kịch bản stress-testing giả lập rủi ro tín dụng của danh mục đầu tư dưới biến động thị trường.
+- **Định tính**: Hợp nhất các chỉ số kế toán và đầu ra của mô hình học máy thành biểu đồ *Vital Signs Combo Chart*, cho phép đối soát thời gian thực giữa lợi nhuận danh nghĩa và rủi ro vỡ nợ dòng tiền thực tế.

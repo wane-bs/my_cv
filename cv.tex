@@ -130,7 +130,7 @@
 
 %-----------SUMMARY-----------
 \section{SUMMARY}
-\small{3rd-year \textbf{Fintech} student (3.5-year program) and \textbf{CFA Level 1 Candidate} (focusing on Quantitative Methods \& FSA) with strong systems thinking. Aspiring \textbf{Financial Technology (Fintech) Analyst \& Systems Integration Specialist} driven by an open architecture philosophy, process standardization, and cross-system interoperability. Experienced in developing automated financial ETL pipelines (Python, Streamlit) and optimizing operational efficiency (achieved 100\% automated post-market ingestion to eliminate manual delays, shifting 90\% of time to quantitative analysis, default risk modeling, and strategic decision-making). Leveraging Business Analysis (BA) and ERP process mapping experience as a strategic foundation to structure enterprise data workflows for AI-First Data Analysis (D.A) implementation.}
+\small{3rd-year \textbf{Fintech} student (3.5-year program) with a strong quantitative foundation and analytical systems thinking. Aspiring \textbf{Credit Risk Data Analyst} at MoMo, passionate about leveraging alternative data for retail credit scoring and financial inclusion. Experienced in building automated financial ETL pipelines (Python, SQL) and training machine learning models (XGBoost, ElasticNet) for credit default forecasting. Skilled in translating transactional workflows and raw data into explainable risk indicators (SHAP framework), bridging the gap between data engineering and risk policy monitoring.}
 
 %-----------EXPERIENCE-----------
 \section{EXPERIENCE}
@@ -140,19 +140,18 @@
       {Suitecloud Viet Nam}{Apr. 2026 -- Present}
       {Business Analysis Intern}{Ho Chi Minh City, Vietnam}
       \resumeItemListStart
-        \resumeItem{\textbf{Mapped and standardized} 8 of 16 comprehensive To-Be process workflows (100\% Inventory and part of Sales modules) using Draw.io to align legacy business logic with NetSuite standards, establishing a clean, structured foundation for data pipeline integration.}
-        \resumeItem{\textbf{Structured} custom data fields and UI layouts for system integration, transforming raw accounting data into standardized formats to streamline technical handoffs and automate cross-system data mapping.}
-        \resumeItem{\textbf{Configured} centralized inventory reporting screens and packaged 3 core business test scenarios, enabling automated stock reconciliation between ERP, legacy MISA, and manufacturing systems to eliminate data asymmetry.}
+        \resumeItem{\textbf{Standardized and mapped} complex business workflows for Oracle NetSuite ERP integration, establishing structured data schemas and validation rules to ensure data integrity across cross-system pipelines.}
+        \resumeItem{\textbf{Designed and configured} custom data fields and system mapping layouts, translating raw business logic into normalized database formats to streamline automated ETL handoffs.}
+        \resumeItem{\textbf{Built and tested} automated inventory reconciliation scenarios, eliminating data asymmetry between ERP and legacy databases to ensure accuracy for management reporting.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Technology Enterprise}{Nov. 2025 -- Mar. 2026}
       {Investor Relations Intern (International Team)}{Ho Chi Minh City, Vietnam}
       \resumeItemListStart
-        \resumeItem{\textbf{Analyzed} business models (BMC) and value chains of 8 international UAV companies, modeling CapEx and periodic OpEx (SaaS/RaaS/Drone-as-a-Service) for hybrid drone security systems integrated with Edge AI for threat detection under 3 seconds.}
-        \resumeItem{\textbf{Co-structured and standardized} corporate bond and IPO financial dossiers, ensuring compliance with international capital market standards.}
-        \resumeItem{\textbf{Developed} automated Python workflows to scrape and reconcile competitor financial data, reducing manual data processing errors and boosting quantitative analysis accuracy by 40\%.}
-        \resumeItem{\textbf{Consolidated} multi-source market data into a 50-page investment dossier for executive strategic planning, proposing a security drone model that projects a 40\% to 50\% reduction in security personnel overhead.}
+        \resumeItem{\textbf{Developed} automated Python and SQL-based data ingestion workflows to scrape and reconcile financial datasets, reducing manual auditing errors and improving quantitative analysis speed by 40\%.}
+        \resumeItem{\textbf{Performed} quantitative modeling and sensitivity analysis on corporate CapEx/OpEx cost structures, translating multi-source financial and market data into strategic risk-adjusted investment reports.}
+        \resumeItem{\textbf{Standardized} financial datasets and disclosures for corporate bond and IPO dossiers, ensuring compliance with regulatory requirements and data quality standards.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -165,29 +164,30 @@
         {Historical Stock Data ETL Pipeline (CafeF Pipeline)}{Sep. 2024}
         {Lead FinTech Developer / Data Engineer}{\href{https://github.com/wane-bs/cafef-stock-automation}{\myuline{GitHub}}}
         \resumeItemListStart
-          \resumeItem{\textbf{Engineered} an automated, self-healing ETL pipeline to stream, clean, and ingest historical stock data from CafeF, completely eliminating manual post-market data collection time.}
-          \resumeItem{\textbf{Developed} a Dynamic Backwards Scanning algorithm with date-subtraction loops and HTTP HEAD request validation, optimizing bandwidth usage and preventing server rate-limiting.}
-          \resumeItem{\textbf{Implemented} in-memory stream processing using \texttt{io.BytesIO} to buffer chunk-based streams (chunk size 8KB) directly into RAM, bypassing disk I/O constraints to accelerate data loading.}
-          \resumeItem{\textbf{Designed} a multi-encoding fallback system and regular-expression manual parser to extract raw data from corrupt CSV formats, standardizing columns (OHLCV) and sorting indices (HSX, HNX, UPCOM) with 100\% data consistency.}
+          \resumeItem{\textbf{Engineered} an automated, self-healing ETL pipeline in Python to ingest, clean, and store historical market data, eliminating manual collection overhead.}
+          \resumeItem{\textbf{Designed} relational database schemas in SQL (SQLite/PostgreSQL) and optimized query indices to ensure efficient storage and fast retrieval of historical stock records.}
+          \resumeItem{\textbf{Developed} a Dynamic Backwards Scanning algorithm with HTTP validations to optimize API requests and prevent rate-limiting under high-frequency stream processing.}
+          \resumeItem{\textbf{Implemented} robust data-cleaning parsers with multi-encoding fallback, standardizing messy formats into high-integrity data frames with 100\% schema consistency.}
         \resumeItemListEnd
 
       \resumeSubheading
-        {Solvency Dashboard \& Digital Solution}{Oct. 2025 -- Apr. 2026}
-        {Tech Lead \& PM / Quantitative Financial Developer}{\href{https://github.com/wane-bs/Tai_lanh_-_Talent}{\myuline{Github}}}
+        {Solvency Dashboard \& Default Risk Forecasting}{Oct. 2025 -- Apr. 2026}
+        {Tech Lead \& PM / Quantitative Developer}{\href{https://github.com/wane-bs/Tai_lanh_-_Talent}{\myuline{Github}}}
         \resumeItemListStart
-          \resumeItem{\textbf{Won 1st Place} at the departmental ``Tai Tri Hoi Tu'' Fintech competition by directing a cross-functional team of finance and software engineering students to build an enterprise solvency dashboard, analyzing 5 years of historical financial data for 8 listed corporations.}
-          \resumeItem{\textbf{Engineered} the core \texttt{ETLProcessor} pipeline class to automatically parse sheet formatting variations, impute missing values, and execute Trailing Twelve Months (TTM) rolling cash calculations and annualization scaling.}
-          \resumeItem{\textbf{Trained} an XGBoost classifier with SHAP framework integration for explainable default forecasting, and designed a local caching and synthetic data fallback mechanism to ensure 100\% offline system stability during API disruptions.}
-          \resumeItem{\textbf{Developed} interactive Plotly visualizations for a Streamlit dashboard, showing sector-adjusted Altman Z''-Score (excluding real estate work-in-progress inventory), Beneish M-Score, and stress testing scenarios.}
+          \resumeItem{\textbf{Won 1st Place} at the "Tai Tri Hoi Tu" Fintech competition by leading a cross-functional team to build an enterprise solvency and default risk forecasting system.}
+          \resumeItem{\textbf{Trained} an XGBoost classifier for default probability forecasting (achieving high AUC/Gini score), integrating the \textbf{SHAP framework} for explainable AI to transparently identify risk contributors (e.g. cash flow constraints, leverage ratios).}
+          \resumeItem{\textbf{Engineered} the core Python/SQL data prep pipeline to handle missing values, outliers, and compute rolling Trailing Twelve Months (TTM) financial indicators.}
+          \resumeItem{\textbf{Built} interactive risk dashboards containing Altman Z''-Scores, fraud boundaries (Beneish M-Score), and macroeconomic stress-testing scenarios to simulate portfolio risk under volatility.}
         \resumeItemListEnd
 
       \resumeSubheading
-        {Quantitative Financial Statement Analysis Automation}{Mar. 2026}
-        {Quantitative Financial Developer / Financial Analyst}{\href{https://github.com/wane-bs/fiinpro_tt}{\myuline{GitHub}} $|$ \href{https://wane-bs.github.io/fiinpro_tt/}{\myuline{Dashboard}}}
+        {Quantitative Risk Diagnostics \& Predictive Modeling}{Mar. 2026}
+        {Quantitative Developer / Risk Analyst}{\href{https://github.com/wane-bs/fiinpro_tt}{\myuline{GitHub}} $|$ \href{https://wane-bs.github.io/fiinpro_tt/}{\myuline{Dashboard}}}
         \resumeItemListStart
-          \resumeItem{\textbf{Engineered} an automated corporate diagnostic system in Python under a strict 2-hour time constraint during the Banking Academy \& FiinGroup workshop, processing 6 raw FiinPro sheets into 40+ structured CSV files on a Streamlit dashboard.}
-          \resumeItem{\textbf{Formulated} a Balanced Vertical Analysis framework using \texttt{np.where} and non-negative constraints to ensure 100\% structural balance, integrating dynamic DuPont and Sloan Accrual ($>5\%$) models to auto-detect 4 complex financial anomalies.}
-          \resumeItem{\textbf{Optimized} predictive features on short-series financial data ($N \in [40, 60], P \gg N$) by deploying a Dual-Auditor block (ElasticNet and PLSR with $H=3$) to compute VIP scores, and implemented robust STL decomposition with centered moving average fallback to isolate structural trends.}
+          \resumeItem{\textbf{Engineered} an automated financial diagnostics pipeline under a strict 2-hour constraint (Banking Academy \& FiinGroup workshop), parsing raw unstructured datasets into analytical tables.}
+          \resumeItem{\textbf{Designed} an anomaly detection system based on Sloan Accruals ($>5\%$) and DuPont dynamics to flag accounting irregularities and potential financial distress indicators.}
+          \resumeItem{\textbf{Developed} a feature selection model for short-series data ($P \gg N$) utilizing **ElasticNet** and **PLSR** to calculate Variable Importance in Projection (VIP) scores, effectively resolving multicollinearity.}
+          \resumeItem{\textbf{Applied} STL decomposition with centered moving averages to isolate structural trend patterns and filter seasonal noise from financial time-series data.}
         \resumeItemListEnd
 
       \resumeSubheading
@@ -206,12 +206,12 @@
 \section{RESEARCH}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Impact of Fintech on Financial Inclusion}{Oct. 2023 -- Dec. 2024}
-      {Lead Researcher}{}
+      {Impact of Fintech on Financial Inclusion in Vietnam}{Oct. 2023 -- Dec. 2024}
+      {Lead Researcher (Econometric Modeling)}{}
       \resumeItemListStart
-        \resumeItem{\textbf{Investigated} the impact of the financial technology ecosystem on financial inclusion across the top 20 GDP-leading provinces in Vietnam (2017--2023) using panel data regression analysis in Stata 17.}
-        \resumeItem{\textbf{Evaluated} OLS, Fixed Effects (FEM), and Random Effects (REM) models, applying Generalized Least Squares (GLS) estimation to correct for autocorrelation and heteroscedasticity within the panel dataset.}
-        \resumeItem{\textbf{Discovered} that Fintech has the strongest positive impact on inclusion with a GLS coefficient of 7.56 (highly statistically significant at the 1\% level, $p < 0.01$), and identified structural barriers (low R\&D investment under 0.5\% GDP and regional infrastructure asymmetry).}
+        \resumeItem{\textbf{Conducted} econometric research on how fintech access drives financial inclusion across 20 Vietnamese provinces, utilizing panel data regression (OLS, FEM, REM) in Stata.}
+        \resumeItem{\textbf{Applied} Feasible Generalized Least Squares (FGLS) to handle heteroscedasticity and autocorrelation, ensuring robust statistical inference on alternative digital finance indicators.}
+        \resumeItem{\textbf{Quantified} a highly significant positive correlation (GLS coefficient 7.56, $p < 0.01$) between digital transaction adoption and financial access, directly aligning with MoMo's mission of serving underbanked populations.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -247,10 +247,11 @@
 \section{SKILLS}
  \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
-     \textbf{Data Engineering} {: Financial ETL Pipelines, Web Scraping \& Ingestion, In-Memory Stream Processing (\texttt{io.BytesIO}), TTM Rolling Calculations, SQL Query Optimization} \\ \vspace{2pt}
-     \textbf{Quantitative \& ML} {: Financial Statement Analysis (FSA), Altman Z''-Score, Beneish M-Score, DCF/WACC, XGBoost Classification, SHAP (Explainable AI), Regularized Regression (ElasticNet/PLSR), STL Decomposition, Cross-Correlation (CCF)} \\ \vspace{2pt}
-     \textbf{Tools \& Frameworks} {: Python, SQL, Stata 17, Streamlit, Plotly, EVM Solidity (ERC-721/4907, Soulbound Tokens), Git, Oracle NetSuite ERP Architecture} \\ \vspace{2pt}
-     \textbf{Languages} {: Vietnamese (Native), English (Intermediate -- CFA candidate reading proficiency)}
+     \textbf{Programming \& Databases} {: Python (Pandas, NumPy, Scikit-Learn), SQL (BigQuery querying concepts), Stata 17, Git} \\ \vspace{2pt}
+     \textbf{Data Engineering \& ETL} {: Financial ETL Pipelines, Web Scraping \& Ingestion, Stream Processing (\texttt{io.BytesIO}), Relational Database Schema Design, SQL Query Optimization} \\ \vspace{2pt}
+     \textbf{Quantitative \& ML Risk Modeling} {: Credit Risk Default Forecasting, XGBoost Classification, SHAP (Explainable AI), ElasticNet, PLSR, STL Time-Series Decomposition, Financial Statement Analysis (FSA), Altman Z''-Score, Beneish M-Score} \\ \vspace{2pt}
+     \textbf{Methodologies \& Tools} {: Agile, Draw.io (Process Mapping), Streamlit, Plotly, Oracle NetSuite ERP Architecture} \\ \vspace{2pt}
+     \textbf{Languages} {: Vietnamese (Native), English (Intermediate -- Professional reading proficiency for CFA)}
     }}
  \end{itemize}
 

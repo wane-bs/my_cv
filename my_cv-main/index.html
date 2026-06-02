@@ -28,6 +28,18 @@
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
 
+    <!-- MathJax for rendering LaTeX formulas -->
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']],
+          processEscapes: true
+        }
+      };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
   </head>
 
   <body id="page-top">
@@ -80,7 +92,7 @@
       <div class="subheading mb-5">TP. Hồ Chí Minh, Việt Nam · 0812339125 ·
         <a href="mailto:trunghieuwane@gmail.com">trunghieuwane@gmail.com</a>
       </div>
-      <div class="mb-5"><p class='mb-2'>Sinh viên năm 3 chuyên ngành <strong>Công nghệ Tài chính (Fintech)</strong> (chương trình 3.5 năm) và ứng viên <strong>CFA Level 1</strong> (tập trung nghiên cứu Quantitative Methods & FSA) với tư duy hệ thống mạnh mẽ. Định hướng trở thành <strong>Chuyên viên Phân tích Công nghệ Tài chính & Tích hợp Hệ thống (Fintech Analyst & Systems Integration Specialist)</strong> với triết lý kiến trúc hệ thống mở, ưu tiên chuẩn hóa quy trình và khả năng tương thích mã nguồn. Có kinh nghiệm xây dựng đường ống ETL dữ liệu tài chính tự động (Python, Streamlit), tối ưu hóa 100% quy trình thu thập và làm sạch dữ liệu sau phiên giao dịch thông qua cơ chế kích hoạt đơn tác vụ (one-click execution), dịch chuyển thành công 90% quỹ thời gian sang phân tích định lượng, thiết lập mô hình dự báo rủi ro và ra quyết định. Định hướng tích hợp kinh nghiệm phân tích nghiệp vụ (BA) và chuẩn hóa quy trình ERP làm bước đệm chiến lược nhằm cấu trúc hóa luồng dữ liệu doanh nghiệp phục vụ cho các mô hình phân tích dữ liệu (D.A) hướng AI-First.</p></div>
+      <div class="mb-5"><p class='mb-2'>Sinh viên năm 3 chuyên ngành <strong>Công nghệ Tài chính (Fintech)</strong> (chương trình 3.5 năm) và ứng viên <strong>CFA Level 1</strong> với nền tảng định lượng vững chắc và tư duy hệ thống phân tích. Định hướng trở thành <strong>Chuyên viên Phân tích Rủi ro Tín dụng (Credit Risk Data Analyst)</strong> tại MoMo, đam mê ứng dụng dữ liệu thay thế trong việc chấm điểm tín dụng cá nhân và thúc đẩy tài chính toàn diện. Có kinh nghiệm xây dựng các đường ống dữ liệu tài chính ETL tự động (Python, SQL) và huấn luyện các mô hình học máy (XGBoost, ElasticNet) để dự báo khả năng vỡ nợ tín dụng. Thành thạo việc chuyển đổi quy trình giao dịch phức tạp và dữ liệu thô thành các chỉ số rủi ro trực quan (khung SHAP), kết nối hiệu quả giữa kỹ thuật dữ liệu và kiểm soát chính sách rủi ro.</p></div>
       <ul class="list-inline list-social-icons mb-0">
         <li class="list-inline-item">
           <a href="https://github.com/wane-bs" target="_blank">
@@ -107,14 +119,14 @@
 <p class='mb-2'>Đảm nhận vị trí Thực tập sinh BA trong dự án chuẩn hóa quy trình ERP trên nền tảng Oracle NetSuite. Chịu trách nhiệm thiết lập sơ đồ luồng nghiệp vụ và thực hiện phân tích chênh lệch (Fit-Gap Analysis) cho phân hệ Kho và Bán hàng.</p>
 <h5 class="text-primary mt-4 mb-2 font-weight-bold">2. Chi tiết thực hiện & Hành động</h5>
 <ul>
-<li><strong>Khảo sát & Mô hình hóa quy trình (Process Mapping)</strong>: Nghiên cứu tài liệu khảo sát, phân rã quy trình As-Is và thiết kế luồng nghiệp vụ To-Be cho khối Bán hàng và Kho trên Draw.io, đối chiếu logic nghiệp vụ với các phân hệ tiêu chuẩn của NetSuite để giải quyết các xung đột tương thích hệ thống.</li>
-<li><strong>Quy hoạch cấu trúc dữ liệu màn hình (Data & UI Structuring)</strong>: Định nghĩa các trường dữ liệu tùy biến (Custom Fields), sắp xếp logic nội dung và bố cục giao diện hiển thị trên NetSuite nhằm tối ưu hóa và làm mịn yêu cầu kỹ thuật chuyển giao cho đội ngũ phát triển.</li>
-<li><strong>Thiết kế báo cáo tác nghiệp (Operational Reporting Design)</strong>: Cấu hình màn hình tra cứu kho tập trung và thiết kế định dạng báo cáo giao dịch để loại bỏ sự bất đối xứng dữ liệu giữa NetSuite, phần mềm MISA cũ và hệ thống sản xuất nội bộ.</li>
+<li><strong>Mô hình hóa quy trình & Quản trị dữ liệu (Data Governance)</strong>: Chuẩn hóa quy trình nghiệp vụ phức tạp để tích hợp ERP Oracle NetSuite, thiết lập cấu trúc bảng dữ liệu (schema) và quy tắc kiểm định dữ liệu (validation rules) nhằm bảo đảm tính toàn vẹn dữ liệu liên hệ thống.</li>
+<li><strong>Thiết kế cấu trúc dữ liệu (Data Schema Design)</strong>: Định nghĩa các trường dữ liệu tùy biến (Custom Fields) và quy hoạch sơ đồ ánh xạ hệ thống, chuyển đổi logic nghiệp vụ thô thành các định dạng dữ liệu chuẩn hóa để tối ưu hóa quy trình ETL tự động.</li>
+<li><strong>Đối chiếu cơ sở dữ liệu (Database Reconciliation)</strong>: Xây dựng và kiểm thử các kịch bản đối chiếu tồn kho tự động, triệt tiêu sự bất đối xứng dữ liệu giữa ERP, cơ sở dữ liệu MISA cũ và các hệ thống sản xuất.</li>
 </ul>
 <h5 class="text-primary mt-4 mb-2 font-weight-bold">3. Kết quả & Tác động</h5>
 <ul>
-<li><strong>Định lượng</strong>: Số hóa thành công 8/16 sơ đồ luồng nghiệp vụ tương lai (đạt 100% phân hệ Kho và một phần Bán hàng); Thiết lập hoàn chỉnh 03 kịch bản kiểm thử nghiệp vụ lõi phục vụ nghiệm thu (UAT).</li>
-<li><strong>Định tính</strong>: Chuẩn hóa dữ liệu đầu vào giúp triệt tiêu các xung đột logic nghiệp vụ liên hệ thống, bắc cầu hiệu quả giữa yêu cầu vận hành doanh nghiệp và giải pháp lập trình thực tế.</li>
+<li><strong>Định lượng</strong>: Chuẩn hóa thành công cấu trúc dữ liệu cho 8/16 quy trình nghiệp vụ lõi (100% phân hệ Kho và một phần Bán hàng); Thiết lập 03 kịch bản kiểm thử dữ liệu phục vụ nghiệm thu (UAT).</li>
+<li><strong>Định tính</strong>: Thiết lập thành công các tiêu chuẩn chất lượng dữ liệu giúp loại bỏ sai lệch logic nghiệp vụ giữa các hệ thống, kết nối hiệu quả nhu cầu vận hành và kiến trúc cơ sở dữ liệu kỹ thuật.</li>
 </ul></div>
             </div>
             <div class="resume-date text-md-right">
@@ -122,7 +134,7 @@
                 
             </div>
         </div>
-
+        
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
                 <h3 class="mb-0">Thực tập sinh Quan hệ Nhà đầu tư (International Team)</h3>
@@ -131,14 +143,14 @@
 <p class='mb-2'>Hỗ trợ nhóm Quốc tế (International Team) tại doanh nghiệp công nghệ trong việc phân tích đầu tư, nghiên cứu thị trường ngách UAV (Kinh tế tầm thấp), và chuẩn hóa tài liệu gọi vốn trên thị trường vốn.</p>
 <h5 class="text-primary mt-4 mb-2 font-weight-bold">2. Chi tiết thực hiện & Hành động</h5>
 <ul>
-<li><strong>Phân tích Quy trình & Nghiên cứu UAV (Low-Altitude Economy)</strong>: Phân tích chuỗi giá trị và mô hình kinh doanh (BMC) của 8 doanh nghiệp UAV quốc tế. Nghiên cứu giải pháp tuần tra đô thị sử dụng thiết bị bay không người lái phân lớp lai (Multirotor an ninh sâu & Fixed-wing giám sát rộng) tích hợp Edge AI để phát hiện đe dọa với độ trễ phản hồi &lt; 3 giây, thiết lập mô hình doanh thu kép CapEx (bán phần cứng) và OpEx (dịch vụ định kỳ SaaS/RaaS/Drone-as-a-Service).</li>
-<li><strong>Hỗ trợ Thị trường Vốn (Capital Markets Support)</strong>: Hỗ trợ xây dựng, thẩm định và chuẩn hóa các hồ sơ tài chính cho quy trình phát hành công cụ nợ (Trái phiếu doanh nghiệp) và chuẩn bị hồ sơ IPO.</li>
-<li><strong>Tự động hóa & Báo cáo Quản trị</strong>: Phát triển đường ống tự động bằng Python để đối soát và thu thập dữ liệu tài chính của đối thủ cạnh tranh. Hợp nhất dữ liệu thành báo cáo đầu tư chi tiết dài 50 trang hỗ trợ Ban điều hành ra quyết định.</li>
+<li><strong>Mô hình hóa Tài chính Định lượng</strong>: Thực hiện phân tích độ nhạy trên cấu trúc chi phí CapEx/OpEx doanh nghiệp, chuyển dịch dữ liệu thị trường và tài chính đa nguồn thành báo cáo phân tích rủi ro đầu tư chiến lược.</li>
+<li><strong>Thẩm định & Chuẩn hóa dữ liệu tài chính</strong>: Xây dựng, thẩm định và chuẩn hóa bộ dữ liệu tài chính phục vụ quy trình phát hành trái phiếu doanh nghiệp và chuẩn bị IPO, bảo đảm các tiêu chí khắt khe về chất lượng dữ liệu và tuân thủ pháp lý.</li>
+<li><strong>Tự động hóa & Thu thập dữ liệu</strong>: Phát triển đường ống tự động tích hợp Python và SQL để thu thập và đối soát các chỉ tiêu tài chính của đối thủ cạnh tranh, gia tăng tốc độ xử lý phân tích và loại bỏ lỗi nhập liệu thủ công.</li>
 </ul>
 <h5 class="text-primary mt-4 mb-2 font-weight-bold">3. Kết quả & Tác động</h5>
 <ul>
-<li><strong>Định lượng</strong>: Giảm thiểu lỗi thủ công và tăng độ chính xác trong phân tích định lượng thêm 40% nhờ tự động hóa Python; Dự thảo giải pháp giúp tối ưu hóa chi phí nhân sự an ninh từ 40% đến 50%.</li>
-<li><strong>Định tính</strong>: Cung cấp báo cáo trực quan và bộ dữ liệu tài chính chuẩn hóa giúp hỗ trợ Ban điều hành đàm phán và thuyết phục các nhóm nhà đầu tư hiệu quả.</li>
+<li><strong>Định lượng</strong>: Tăng 40% tốc độ phân tích định lượng tài chính và loại bỏ hoàn toàn các sai sót dữ liệu nhờ tối ưu hóa mã nguồn Python/SQL; Xây dựng mô hình nhạy chi phí hỗ trợ dự toán giảm thiểu 40% - 50% chi phí vận hành.</li>
+<li><strong>Định tính</strong>: Xây dựng cơ sở dữ liệu tài chính có độ tin cậy cao giúp nâng cao tính thuyết phục cho Ban điều hành khi đàm phán và trình bày trước các quỹ đầu tư lớn.</li>
 </ul></div>
             </div>
             <div class="resume-date text-md-right">
@@ -146,134 +158,8 @@
                 
             </div>
         </div>
-        </div>
-
-<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
-<div class='my-auto'>
-<h2 class='mb-5'>Dự Án</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-                <h3 class="mb-0">Hệ thống Tự động hóa Đường ống Dữ liệu Thị trường Chứng khoán Lịch sử (CafeF Pipeline)</h3>
-                <div class="subheading mb-3">Lead FinTech Developer / Data Engineer</div>
-                <div><h5 class="text-primary mt-4 mb-2 font-weight-bold">1. Tổng quan</h5>
-<p class='mb-2'>Xây dựng đường ống dữ liệu ETL (Extract - Transform - Load) tự động, độc lập, có khả năng tự phục hồi (Self-healing) để cung cấp dữ liệu sạch cho các thuật toán phân tích kỹ thuật sau phiên giao dịch chỉ với một nút bấm (One-click execution).</p>
-<h5 class="text-primary mt-4 mb-2 font-weight-bold">2. Chi tiết thực hiện & Hành động</h5>
-<ul>
-<li><strong>Quét lùi & Kiểm thực URL</strong>: Phát triển thuật toán <em>Dynamic Backwards Scanning</em> sử dụng vòng lặp quét lùi ngày (timedelta) để định vị URL dữ liệu khả dụng gần nhất, kết hợp kiểm thực <em>HTTP HEAD Request</em> nhằm tiết kiệm băng thông và tránh bị chặn truy cập (Rate limiting).</li>
-<li><strong>Stream Processing vào RAM</strong>: Triển khai cơ chế tải luồng (<em>Streaming</em>) phân đoạn (chunk_size=8192) trực tiếp vào bộ nhớ đệm RAM (<em>In-memory Buffer</em> qua io.BytesIO), loại bỏ hoàn toàn ràng buộc I/O vật lý trên ổ đĩa.</li>
-<li><strong>Xử lý mã hóa & Parser dự phòng</strong>: Thiết kế hệ thống dự phòng đa bảng mã (<em>Multi-encoding Fallback</em>) và trình phân tích chuỗi văn bản thuần bằng biểu thức chính quy (<em>Fallback Manual Parser</em>) để trích xuất dữ liệu khi cấu trúc tệp CSV bị lỗi nghiêm trọng. Tự động chuẩn hóa tên cột cấu trúc (Open, High, Low, Close, Volume) và phân loại lưu trữ thông minh theo sàn (HSX, HNX, UPCOM) bằng mô hình Regex định dạng chuẩn.</li>
-</ul>
-<h5 class="text-primary mt-4 mb-2 font-weight-bold">3. Kết quả & Tác động</h5>
-<ul>
-<li><strong>Định lượng</strong>: Tự động hóa 100% quy trình trích xuất và làm sạch dữ liệu thô sau phiên qua cơ chế kích hoạt đơn tác vụ, giảm thời gian xử lý thủ công xuống 0; triệt tiêu 100% lỗi treo tiến trình (<em>hanging</em>) nhờ cấu hình TIMEOUT tối ưu.</li>
-<li><strong>Định tính</strong>: Loại bỏ hoàn toàn độ trễ vận hành thủ công, cung cấp dữ liệu sạch, có độ tin cậy tuyệt đối hỗ trợ các thuật toán phân tích kỹ thuật sau phiên.</li>
-</ul></div>
-            </div>
-            <div class="resume-date text-md-right">
-                <span class="text-primary">09/2024</span>
-                <div class="mt-2"><a href="https://github.com/wane-bs/cafef-stock-automation" class="btn btn-sm btn-primary text-white my-1 mx-1" target="_blank">GitHub</a></div>
-            </div>
-        </div>
         
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-                <h3 class="mb-0">Giải pháp Chuyển đổi số Tài chính & Dự báo Rủi ro Phá sản (Cuộc thi "Tài trí hội tụ")</h3>
-                <div class="subheading mb-3">Tech Lead & Solution Architect / Quantitative Financial Developer</div>
-                <div><h5 class="text-primary mt-4 mb-2 font-weight-bold">1. Tổng quan</h5>
-<p class='mb-2'>Nghiên cứu, thiết kế giải pháp công nghệ tài chính và chẩn đoán rủi ro đa mô hình (Altman Z''-Score, Beneish M-Score, Machine Learning) tích hợp công cụ định giá và Stress Testing vĩ mô, có khả năng tự vận hành độc lập (Local Sandbox) và trực quan hóa các chỉ số sinh tử của doanh nghiệp lớn (Vietnam Airlines - HVN). <strong>Đạt Giải Nhất cuộc thi chuyên môn cấp Khoa (Khoa Công nghệ Tài chính - HUIT)</strong>.</p>
-<h5 class="text-primary mt-4 mb-2 font-weight-bold">2. Chi tiết thực hiện & Hành động</h5>
-<ul>
-<li><strong>Thiết kế Giải pháp & ETLProcessor (Tech Lead & Solution Architect)</strong>: Chủ trì phân tích kiến trúc hệ thống, quy hoạch luồng dữ liệu của giải pháp. Xây dựng lớp cấu trúc <code>ETLProcessor</code> tự động nhận dạng định dạng bảng (<em>Auto-Detection Format</em>), xử lý ma trận khuyết thiếu, và kỹ thuật tính toán dòng tiền lũy kế di động 4 quý (<em>TTM Rolling</em>) kết hợp hiệu chỉnh quy đổi năm chưa kết thúc (<em>Annualization Scaling</em>).</li>
-<li><strong>Hồi quy Học máy & Offline Fallback (Quantitative Developer)</strong>: Triển khai thuật toán XGBoost chẩn đoán xác suất vỡ nợ kết hợp framework SHAP (<em>Explainable AI</em>) để giải thích đặc trưng đóng góp của từng biến số tài chính. Thiết kế cơ chế <em>Local Caching</em> (.arff/.csv) kết hợp thuật toán sinh dữ liệu giả lập (<em>Synthetic Data Fallback</em>) mô phỏng phân phối vỡ nợ để hệ thống tự vận hành ổn định khi mất kết nối mạng. Xử lý triệt để các điểm dị biệt tài chính (np.inf sang median) trước khi đưa vào mô hình phân loại.</li>
-<li><strong>Trực quan hóa Dashboard & Đồng nhất Nghiệp vụ (Project Manager)</strong>: Phát triển ứng dụng Streamlit, thiết kế đồ thị tài chính trục kép chuyên sâu bằng <em>Plotly</em> bao gồm: Bản đồ nhiệt xác suất vỡ nợ (PD% Heatmap), Dải biên an toàn Altman Z''-Score (có hiệu chỉnh loại bỏ hàng tồn kho dở dang cho ngành Bất động sản), Đường ngưỡng gian lận Beneish M-Score, Đồ thị giải thích thuật toán SHAP, và Đồ thị Radar chấm điểm tín dụng dòng tiền 6 chiều (<em>Cash Flow Scorecard</em>). Điều phối liên ngành giữa chuyên gia tài chính và lập trình viên để đảm bảo tính nhất quán logic nghiệp vụ và mã nguồn.</li>
-</ul>
-<h5 class="text-primary mt-4 mb-2 font-weight-bold">3. Kết quả & Tác động</h5>
-<ul>
-<li><strong>Định lượng</strong>: Đạt <strong>Giải Nhất cuộc thi chuyên môn "Tài trí hội tụ"</strong> cấp Khoa nhờ giải pháp công nghệ tài chính đột phá. Xây dựng thành công Dashboard chẩn đoán dữ liệu tài chính lịch sử 15 năm (2011-2025) của HVN, tích hợp Stress Testing vĩ mô (tỷ giá FX, giá nhiên liệu) chạy ổn định 100% trong Local Sandbox.</li>
-<li><strong>Định tính</strong>: Hợp nhất thành công hệ thống chỉ số tài chính kế toán truyền thống và học máy giải thích được, cho phép người dùng đối chiếu trực quan giữa dòng tiền thực tế và lợi nhuận danh nghĩa thông qua biểu đồ hợp nhất (<em>Vital Signs Combo Chart</em>), hỗ trợ ra quyết định quản trị rủi ro chính xác theo thời gian thực.</li>
-</ul></div>
-            </div>
-            <div class="resume-date text-md-right">
-                <span class="text-primary">10/2025 – 04/2026</span>
-                <div class="mt-2"><a href="https://github.com/wane-bs/Tai_lanh_-_Talent" class="btn btn-sm btn-primary text-white my-1 mx-1" target="_blank">GitHub</a></div>
-            </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-                <h3 class="mb-0">Hệ thống Tự động hóa Phân tích BCTC Định lượng</h3>
-                <div class="subheading mb-3">Quantitative Financial Developer / Financial Analyst</div>
-                <div><h5 class="text-primary mt-4 mb-2 font-weight-bold">Tổng quan</h5>
-<p class='mb-2'>Xây dựng hệ thống tự động hóa phân tích BCTC định lượng chuyên sâu với triết lý "Hệ thống không dự báo — Hệ thống chẩn đoán" dưới áp lực thời gian thực. Dự án thay thế tư duy xử lý Excel thủ công bằng pipeline tự động hóa toàn diện để bóc tách hình thái tài chính FPT, xác định vị thế chu kỳ và đánh giá định giá doanh nghiệp từ 6 sheets dữ liệu thô FiinGroup.</p>
-<h5 class="text-primary mt-4 mb-2 font-weight-bold">Chi tiết thực hiện</h5>
-<ul>
-<li><strong>Vấn đề</strong>: Chẩn đoán sự ổn định của cấu trúc tài chính và xác định các động lực thực sự (Structural Drivers) thay vì dự báo điểm số. Giải quyết bài toán mẫu nhỏ, đa cộng tuyến hoàn hảo ($N \in [40, 60], P \gg N$).</li>
-<li><strong>Kiến trúc &amp; Giải pháp</strong>:
-  <ul>
-  <li><strong>Pipeline 4 Chương nâng cấp</strong>:
-    <ul>
-    <li><em>Chương 1 (Nền tảng)</em>: Ứng dụng *Balanced Vertical Analysis* qua hàm <code>np.where</code> và cơ chế bù trừ không âm <code>max(..., 0)</code> để bảo đảm cơ cấu luôn cân bằng tuyệt đối 100%:
-      $$\text{Tỷ lệ common-size} = \text{np.where}\left(\text{Denominator} \neq 0, \frac{\text{Numerator}}{\text{Denominator}} \times 100, \text{np.nan}\right)$$</li>
-    <li><em>Chương 2 (Hiệu suất)</em>: DuPont động bóc tách $\Delta\text{ROE}$ từng quý và đánh giá chất lượng dòng tiền qua hệ số Sloan Accrual.</li>
-    <li><em>Chương 3 (Định giá)</em>: Tích hợp mô hình định giá từng phần SoTP (Sum-of-the-parts) kết hợp DCF thích ứng với cấu trúc đa ngành của FPT.</li>
-    <li><em>Chương 4 (Cấu trúc &amp; Chu kỳ)</em>: Phân rã chuỗi cộng tính bằng <code>STL</code> (period=4, robust=True IRLS) với cơ chế fallback sang Trung bình trượt trung tâm khi $N &lt; 8$ để xóa nhiễu biên, kết hợp tương quan chéo CCF tại các độ trễ $k \in [-4, +4]$ để xác định chỉ báo dẫn dắt.</li>
-    </ul>
-  </li>
-  <li><strong>Machine Learning (Dual-Auditor)</strong>: Thay thế Random Forest bằng khối đối chiếu kép tuyến tính có ràng buộc: <strong>ElasticNet</strong> (phạt L1/L2) và <strong>PLSR</strong> ($H=3$ components) để tối đa hóa hiệp phương sai, tính toán điểm VIP Score:
-    $$\text{VIP}_j = \sqrt{P \frac{\sum_{h=1}^H R^2(y, t_h) \left( w_{hj} / \|w_h\| \right)^2}{\sum_{h=1}^H R^2(y, t_h)}}$$</li>
-  <li><strong>Composite Score v2</strong>: Thang điểm tổng hợp trong $[-100, 100]$ dựa trên: Sức khỏe (30% - màng lọc rủi ro) — Tăng trưởng &amp; Chu kỳ (35% - động cơ hiệu suất) — Định giá (35% - chốt chặn bảo vệ vốn).</li>
-  </ul>
-</li>
-</ul>
-<h5 class="text-primary mt-4 mb-2 font-weight-bold">Kết quả &amp; Tác động</h5>
-<ul>
-<li><strong>Định lượng</strong>: Tự động hóa quy trình phân tích dữ liệu từ 6 sheets FiinPro, xuất ra hơn 40 tệp kết quả phân tích cấu trúc chuyên sâu (CSV) và trực quan hóa tức thì trên Streamlit Dashboard.</li>
-<li><strong>Định tính</strong>: Hệ thống chẩn đoán tự động nhận diện <strong>4 Mẫu hình chuyên sâu</strong>:
-  <ol>
-  <li><em>Phân kỳ Lợi nhuận - Dòng tiền</em>: Cảnh báo rủi ro lợi nhuận ảo khi Sloan Accrual Ratio &gt; 5% và $\text{CFO/NI} &lt; 0.7$ liên tiếp 3 quý.</li>
-  <li><em>Điểm kích hoạt đảo chiều cơ cấu</em>: Xác định độ trễ dẫn trước ($k^* &gt; 0$) của biến cấu trúc qua CCF để thiết lập thanh trượt giả lập kịch bản.</li>
-  <li><em>Tăng trưởng ảo bằng Đòn bẩy</em>: Phát hiện ROE tăng do đòn bẩy ($\Delta\text{Equity Multiplier}$) phình to trong khi biên an toàn và hiệu suất tài sản suy giảm.</li>
-  <li><em>Điểm đảo chiều định giá</em>: Đo lường vị thế giá thực tế trên dải định giá lịch sử ($\text{Band Position} \to 0$ hoặc $1$).</li>
-  </ol>
-</li>
-</ul>
-<h5 class="text-primary mt-4 mb-2 font-weight-bold">Cảm nhận &amp; Bài học</h5>
-<ul>
-<li><strong>Tái phân bổ thời gian (66% Kiến trúc vs &lt;5% Lập trình)</strong>: Dịch chuyển từ gõ mã nguồn thủ công sang thiết kế kiến trúc và nghiên cứu giải pháp chuyên môn nhờ tư duy AI-First.</li>
-<li><strong>Bài học rút ra</strong>: Các mô hình tuyến tính có ràng buộc (ElasticNet/PLSR) mang lại khả năng giải thích toán học và độ ổn định cao hơn vượt trội so với các mô hình phi tuyến phức tạp trên dữ liệu tài chính chuỗi ngắn. Xử lý triệt để các biến động tài khoản bằng cơ chế Balancing Items.</li>
-</ul></div>
-            </div>
-            <div class="resume-date text-md-right">
-                <span class="text-primary">03/2026</span>
-                <div class="mt-2"><a href="https://github.com/wane-bs/fiinpro_tt" class="btn btn-sm btn-primary text-white my-1 mx-1" target="_blank">GitHub</a> <a href="https://wane-bs.github.io/fiinpro_tt/" class="btn btn-sm btn-primary text-white my-1 mx-1" target="_blank">Dashboard</a> </div>
-            </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-                <h3 class="mb-0">Giao thức Quản lý Tài sản Phi tập trung & Cho thuê Sách (Decentralized Asset & Rental Protocol)</h3>
-                <div class="subheading mb-3">Blockchain Solutions Architect & Technical Documentation Lead</div>
-                <div><h5 class="text-primary mt-4 mb-2 font-weight-bold">1. Tổng quan</h5>
-<p class='mb-2'>Thiết kế giải pháp quản lý tài sản phi tập trung và cho thuê sách an toàn, phân tách rõ ràng quyền sở hữu và quyền sử dụng trên nền tảng blockchain, nhằm loại bỏ rủi ro của hệ thống lưu trữ tập trung (Single Point of Failure) và giảm thiểu tối đa chi phí giao dịch cho người dùng.</p>
-<h5 class="text-primary mt-4 mb-2 font-weight-bold">2. Chi tiết thực hiện & Hành động</h5>
-<ul>
-<li><strong>Thiết kế Mô hình Token Lai (Hybrid Token Model)</strong>: Nghiên cứu và thiết lập giải pháp phân lớp quyền sở hữu: Sử dụng <strong>ERC-721</strong> định danh tài sản độc bản kết hợp cơ chế mã băm CID trên <strong>IPFS/Arweave</strong>; thiết kế <strong>Soulbound Token (SBT)</strong> khống chế chuyển nhượng cho hợp đồng thuê bằng cách ghi đè hàm <code>_update</code> (OpenZeppelin v5); tích hợp <strong>ERC-4907</strong> để phân tách Quyền sở hữu (Owner) và Quyền khai thác (User) tự động hết hạn mà không tốn gas thu hồi.</li>
-<li><strong>Chuẩn hóa & Tối ưu hóa EVM Storage</strong>: Định hình khung kỹ thuật giảm thiểu tối đa chi phí thực thi (<em>Execution cost</em>): Áp dụng kỹ thuật đóng gói biến (<em>Storage Slot Packing</em> &le; 32 bytes cho cấu trúc EvidencePack), chuyển đổi hệ thống cảnh báo từ <code>require</code> string sang lỗi tùy biến (<em>Custom Errors</em>), và điều hướng tham số vùng nhớ calldata thay vì memory.</li>
-<li><strong>AI-Augmented Engineering & Quản trị Tri thức</strong>: Sử dụng phương pháp <em>AI-Augmented Engineering</em> (Vibe coding qua thư viện antigravity tối ưu hóa &gt;80% tiến trình sinh mã). Thiết kế các sơ đồ trực quan (<em>System Architecture Diagrams</em>) và biên soạn tài liệu hướng dẫn chuẩn hóa cấu trúc hệ thống, đảm bảo tính đồng bộ logic và khả năng tương thích mã nguồn cho các thành viên trong đội ngũ phát triển.</li>
-</ul>
-<h5 class="text-primary mt-4 mb-2 font-weight-bold">3. Kết quả & Tác động</h5>
-<ul>
-<li><strong>Định lượng</strong>: Tối ưu hóa chi phí thực thi gas hơn 30% nhờ áp dụng Storage Slot Packing và Custom Errors. Triển khai thành công mô hình cho thuê tự động hết hạn không tốn gas thu hồi.</li>
-<li><strong>Định tính</strong>: Đề xuất thành công các giao thức bảo mật dữ liệu an toàn, giải quyết được các rào cản kỹ thuật về hạ tầng lưu trữ, tạo tiền đề ứng dụng rộng rãi trên Avalanche L1 / NDA Chain Mainnet Ecosystem.</li>
-</ul></div>
-            </div>
-            <div class="resume-date text-md-right">
-                <span class="text-primary">09/2024 – 10/2024</span>
-                <div class="mt-2"><a href="https://wane-bs.github.io/dsr_ly_thuyet/" class="btn btn-sm btn-primary text-white my-1 mx-1" target="_blank">Demo</a></div>
-            </div>
-        </div>
-        </div>
+</div>
 </section>
 </section>
 
@@ -283,20 +169,29 @@
 
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-                <h3 class="mb-0">Nghiên cứu khoa học: Tác động của Fintech đến Phổ cập tài chính</h3>
-                <div><p class='mb-2'><strong>Vai trò</strong>: Nghiên cứu viên chính</p>
-<p class='mb-2'><strong>Thời gian</strong>: 10/2023 – 12/2024</p>
-<h5 class="text-primary mt-4 mb-2 font-weight-bold">Tổng quan</h5>
-<p class='mb-2'>Nghiên cứu tác động của hệ sinh thái Fintech đối với vấn đề phổ cập tài chính (Financial Inclusion) tại 20 tỉnh thành có quy mô kinh tế dẫn đầu Việt Nam trong giai đoạn 2017 - 2023.</p>
-<h5 class="text-primary mt-4 mb-2 font-weight-bold">Chi tiết thực hiện & Phương pháp luận</h5>
+                <h3 class="mb-0">Nghiên cứu khoa học: Tác động của Fintech đến Phổ cập tài chính tại Việt Nam</h3>
+                <div class="subheading mb-3">Nghiên cứu viên chính (Mô hình hóa lượng lượng)</div>
+                <div><h5 class="text-primary mt-4 mb-2 font-weight-bold">1. Tổng quan</h5>
+<p class='mb-2'>Thực hiện nghiên cứu lượng lượng về cách thức tiếp cận fintech thúc đẩy phổ cập tài chính tại 20 tỉnh thành hàng đầu Việt Nam từ năm 2017 đến năm 2023.</p>
+<h5 class="text-primary mt-4 mb-2 font-weight-bold">2. Chi tiết thực hiện & Phương pháp luận</h5>
 <ul>
 <li><strong>Bài toán Nghiên cứu</strong>: Lượng hóa và đánh giá khoa học tác động của công nghệ tài chính đến mức độ tiếp cận dịch vụ tài chính của người dân, đồng thời nhận diện các rào cản mang tính cấu trúc.</li>
-<li><strong>Phương pháp luận & Mô hình lượng hóa</strong>: Sử dụng phương pháp dữ liệu bảng (<em>Panel Data</em>) trên phần mềm <strong>Stata 17</strong>. Triển khai các mô hình hồi quy OLS (Bình phương nhỏ nhất), REM (Mô hình tác động ngẫu nhiên), FEM (Mô hình tác động cố định) và khắc phục khuyết tật bằng phương pháp GLS (Bình phương nhỏ nhất tổng quát).</li>
-</ul>
-<h5 class="text-primary mt-4 mb-2 font-weight-bold">Kết quả & Tác động</h5>
+<li><strong>Phương pháp luận & Mô hình lượng hóa</strong>:</li>
 <ul>
-<li><strong>Định lượng</strong>: Xác định Hệ sinh thái FinTech là biến giải thích có tác động thuận chiều mạnh nhất đến chỉ số tài chính toàn diện với hệ số hồi quy $GLS = 7.56$ (có ý nghĩa thống kê ở mức $1\%$, $p < 0.01$). Chỉ ra điểm nghẽn cấu trúc: Tỷ lệ đầu tư R&D quốc gia thấp ($&lt; 0.5\% \text{ GDP}$) và sự bất đối xứng hạ tầng công nghệ.</li>
-<li><strong>Định tính</strong>: Mô hình hóa lộ trình dịch chuyển rào cản, dự báo hai trung tâm kinh tế (TP.HCM & Đà Nẵng) sẽ giảm bớt $2/3$ các rào cản cấu trúc vào năm 2026.</li>
+<li>Sử dụng phương pháp dữ liệu bảng (<em>Panel Data</em>) trên phần mềm <strong>Stata 17</strong>.</li>
+<li>Triển khai các mô hình hồi quy OLS (Bình phương nhỏ nhất), REM (Mô hình tác động ngẫu nhiên), FEM (Mô hình tác động cố định).</li>
+<li>Áp dụng Feasible Generalized Least Squares (FGLS) để xử lý các khuyết tật phương sai thay đổi và tự tương quan, bảo đảm các suy diễn thống kê mạnh mẽ trên các chỉ báo tài chính số thay thế.</li>
+</ul>
+</ul>
+<h5 class="text-primary mt-4 mb-2 font-weight-bold">3. Kết quả & Tác động</h5>
+<ul>
+<li><strong>Định lượng</strong>: Xác định Hệ sinh thái FinTech là biến giải thích có tác động thuận chiều mạnh nhất đến chỉ số tài chính toàn diện với hệ số hồi quy $GLS = 7.56$ (có ý nghĩa thống kê cực kỳ cao ở mức $1\%$, $p < 0.01$). Kết quả này trực tiếp đồng thuận với sứ mệnh phục vụ nhóm khách hàng chưa được tiếp cận ngân hàng truyền thống (underbanked) của MoMo.</li>
+<li><strong>Định tính</strong>: Mô hình hóa thành công lộ trình dịch chuyển rào cản hạ tầng công nghệ tại các trung tâm kinh tế lớn.</li>
+</ul>
+<h5 class="text-primary mt-4 mb-2 font-weight-bold">4. Cảm nhận & Bài học</h5>
+<ul>
+<li><strong>Bài học rút ra</strong>: Thành thạo tư duy lượng hóa nghiên cứu học thuật, cách xử lý dữ liệu bảng và ứng dụng kiểm định khuyết tật mô hình hồi quy để đưa ra kết luận khoa học vững chắc.</li>
+<li><strong>Khó khăn đã vượt qua</strong>: Xử lý vấn đề tự tương quan (autocorrelation) và phương sai thay đổi (heteroscedasticity) của dữ liệu bảng thông qua kiểm định và hiệu chỉnh bằng ước lượng FGLS.</li>
 </ul></div>
             </div>
             <div class="resume-date text-md-right">
@@ -304,7 +199,8 @@
                 
             </div>
         </div>
-        </div>
+        
+</div>
 </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
@@ -314,8 +210,8 @@
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
                 <h3 class="mb-0">Sinh viên Công nghệ Tài chính (Fintech)</h3>
+                
                 <div><p class='mb-2'><strong>Trường Đại học</strong>: Trường Đại học Công Thương TP.HCM (HUIT)</p>
-<p class='mb-2'><strong>Thời gian</strong>: 09/2023 – Hiện tại</p>
 <p class='mb-2'><strong>GPA</strong>: 2.9/4.0</p>
 <h5 class="text-primary mt-4 mb-2 font-weight-bold">Tổng quan</h5>
 <p class='mb-2'>Chương trình cử nhân Công nghệ Tài chính (Fintech) năm 3 (chương trình 3.5 năm), tập trung vào tư duy hệ thống và ứng dụng công nghệ vào vận hành tài chính.</p>
@@ -326,7 +222,7 @@
 </ul></div>
             </div>
             <div class="resume-date text-md-right">
-                <span class="text-primary">09/2023 – Hiện tại</span>
+                <span class="text-primary">2023</span>
                 
             </div>
         </div>
@@ -334,8 +230,8 @@
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
                 <h3 class="mb-0">Chứng chỉ Chuyên nghiệp Phân tích Dữ liệu Google</h3>
+                
                 <div><p class='mb-2'><strong>Tổ chức cấp</strong>: Google (qua Coursera)</p>
-<p class='mb-2'><strong>Thời gian</strong>: 2025</p>
 <h5 class="text-primary mt-4 mb-2 font-weight-bold">Tổng quan</h5>
 <p class='mb-2'>Chứng chỉ chuyên nghiệp của Google nhằm cung cấp nền tảng vững chắc về phân tích dữ liệu, từ việc đặt câu hỏi đến làm sạch và chuẩn bị dữ liệu.</p>
 <h5 class="text-primary mt-4 mb-2 font-weight-bold">Chi tiết các học phần</h5>
@@ -359,81 +255,76 @@
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
                 <h3 class="mb-0">CFA Institute - Ứng viên CFA Level 1</h3>
-                <div><p class='mb-2'><strong>Vai trò</strong>: Ứng viên (Tự học)</p>
-<p class='mb-2'><strong>Thời gian</strong>: Hiện tại (Mục tiêu: Kỳ thi năm 2027)</p>
-<h5 class="text-primary mt-4 mb-2 font-weight-bold">Tổng quan</h5>
+                <div class="subheading mb-3">Ứng viên (Tự học)</div>
+                <div><h5 class="text-primary mt-4 mb-2 font-weight-bold">1. Tổng quan</h5>
 <p class='mb-2'>Tự học và chuẩn bị cho kỳ thi CFA Level 1 nhằm làm chủ các nguyên lý tài chính quốc tế và củng cố nền tảng lý thuyết cho các dự án phát triển sản phẩm Fintech định lượng.</p>
-<h5 class="text-primary mt-4 mb-2 font-weight-bold">Chi tiết thực hiện & Kiến thức cốt lõi</h5>
+<h5 class="text-primary mt-4 mb-2 font-weight-bold">2. Chi tiết thực hiện & Kiến thức cốt lõi</h5>
 <ul>
 <li><strong>Phương pháp định lượng (Quantitative Methods)</strong>: Thống kê mô tả, phân phối xác suất, ước lượng và kiểm định giả thuyết làm cơ sở cho phân tích dữ liệu.</li>
 <li><strong>Phân tích báo cáo tài chính (Financial Statement Analysis - FSA)</strong>: Cơ cấu bảng cân đối kế toán, báo cáo kết quả hoạt động kinh doanh, báo cáo lưu chuyển tiền tệ, và đánh giá chất lượng lợi nhuận/dòng tiền.</li>
 </ul>
-<h5 class="text-primary mt-4 mb-2 font-weight-bold">Mục tiêu tích hợp hệ thống</h5>
-<p class='mb-2'>Ứng dụng lý thuyết tài chính chuẩn hóa từ CFA để nâng cấp các thuật toán định giá tài sản tự xây dựng (<strong>DCF, WACC</strong>), mô hình hóa rủi ro kế toán nâng cao (<strong>Altman Z''-Score</strong>), và tối ưu hóa tính năng trích xuất đặc trưng (<em>Feature Engineering</em>) cho các đường ống dữ liệu tự động.</p>
-<h5 class="text-primary mt-4 mb-2 font-weight-bold">Cảm nhận & Bài học</h5>
+<h5 class="text-primary mt-4 mb-2 font-weight-bold">3. Mục tiêu tích hợp hệ thống</h5>
+<ul>
+<li><strong>Ứng dụng thực tiễn</strong>: Ứng dụng lý thuyết tài chính chuẩn hóa từ CFA để nâng cấp các thuật toán định giá tài sản tự xây dựng (<strong>DCF, WACC</strong>), mô hình hóa rủi ro kế toán nâng cao (<strong>Altman Z''-Score</strong>), và tối ưu hóa tính năng trích xuất đặc trưng (<em>Feature Engineering</em>) cho các đường ống dữ liệu tự động.</li>
+</ul>
+<h5 class="text-primary mt-4 mb-2 font-weight-bold">4. Cảm nhận & Bài học</h5>
 <ul>
 <li><strong>Bài học rút ra</strong>: Rút ngắn khoảng cách giữa lý thuyết tài chính và ứng dụng lập trình thực tế, xây dựng tư duy chẩn đoán tài chính doanh nghiệp bài bản hơn.</li>
 <li><strong>Khó khăn đã vượt qua</strong>: Tự cân đối và sắp xếp thời gian hợp lý giữa việc học trên lớp, đi làm thực tập và tự nghiên cứu khối lượng kiến thức lớn của CFA.</li>
 </ul></div>
             </div>
             <div class="resume-date text-md-right">
-                <span class="text-primary">Hiện tại</span>
+                <span class="text-primary">Hiện tại (Mục tiêu: Kỳ thi năm 2027)</span>
                 
             </div>
         </div>
-        </div>
+        
+</div>
 </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
 
     <div class="my-auto">
         <h2 class="mb-5">Kỹ Năng</h2>
-        <h5 class="text-primary mt-4 mb-2 font-weight-bold">Kỹ nghệ Dữ liệu (Data Engineering)</h5>
+        <h5 class="text-primary mt-4 mb-2 font-weight-bold">Lập trình & Cơ sở Dữ liệu (Programming & Databases)</h5>
+<ul>
+<li>Python (Pandas, NumPy, Scikit-Learn)</li>
+<li>SQL (PostgreSQL, khái niệm truy vấn BigQuery)</li>
+<li>Stata 17</li>
+<li>Git & Quản lý phiên bản</li>
+</ul>
+<h5 class="text-primary mt-4 mb-2 font-weight-bold">Kỹ nghệ Dữ liệu & ETL (Data Engineering & ETL)</h5>
 <ul>
 <li>Financial ETL Pipelines (Đường ống ETL tài chính)</li>
 <li>Data Scraping & Ingestion (Thu thập và nạp dữ liệu tự động)</li>
-<li>In-memory Stream Processing (Xử lý luồng trong RAM - io.BytesIO)</li>
-<li>Dynamic XML/HTML/CSV Parsing & Normalization</li>
-<li>TTM (Trailing Twelve Months) Rolling Calculations</li>
-<li>SQL (Tối ưu hóa truy vấn)</li>
+<li>Stream In-memory Processing (Xử lý luồng trong bộ nhớ đệm - io.BytesIO)</li>
+<li>Relational Database Schema Design (Thiết kế cơ sở dữ liệu quan hệ)</li>
+<li>Tối ưu hóa truy vấn SQL</li>
+<li>Data Cleansing & Normalization (Làm sạch và chuẩn hóa dữ liệu)</li>
 </ul>
-<h5 class="text-primary mt-4 mb-2 font-weight-bold">Tài chính Định lượng & Mô hình hóa Rủi ro (Quantitative Finance & Risk)</h5>
+<h5 class="text-primary mt-4 mb-2 font-weight-bold">Tài chính Định lượng & Mô hình hóa Rủi ro (Quantitative & ML Risk Modeling)</h5>
 <ul>
-<li>Financial Statement Analysis (Phân tích BCTC doanh nghiệp)</li>
-<li>Corporate Bankruptcy Prediction (Dự báo rủi ro phá sản doanh nghiệp)</li>
-<li>Altman Z''-Score (Hiệu chỉnh theo ngành) & Beneish M-Score</li>
-<li>Sloan Accruals Ratio & Cash Flow Credit Scoring</li>
-<li>Định giá doanh nghiệp (DCF, WACC, Bội số EV)</li>
-<li>Macro Stress Testing (Tỷ giá FX & chi phí nhiên liệu)</li>
-</ul>
-<h5 class="text-primary mt-4 mb-2 font-weight-bold">Học máy & Phân tích Dữ liệu (Machine Learning & Analytics)</h5>
-<ul>
+<li>Credit Risk Default Forecasting (Dự báo vỡ nợ tín dụng)</li>
 <li>Mô hình phân loại XGBoost Classifier</li>
 <li>Trí tuệ nhân tạo giải thích được (SHAP Framework)</li>
-<li>Kỹ nghệ đặc trưng (VIP Score, giảm chiều dữ liệu)</li>
 <li>Mô hình hồi quy ElasticNet & PLSR</li>
-<li>STL Decomposition (Phân rã chuỗi thời gian) & Cross-Correlation (CCF)</li>
-<li>Synthetic Data Generation (Sinh dữ liệu giả lập mặc định)</li>
+<li>Lựa chọn Đặc trưng (Feature Selection - VIP Score, giảm chiều dữ liệu)</li>
+<li>STL Decomposition (Phân rã chuỗi thời gian) & Tương quan chéo (CCF)</li>
+<li>Phân tích BCTC (FSA) & Altman Z''-Score (Hiệu chỉnh theo ngành)</li>
+<li>Phát hiện ranh giới gian lận (Beneish M-Score & Sloan Accruals Ratio)</li>
 </ul>
-<h5 class="text-primary mt-4 mb-2 font-weight-bold">Trực quan hóa Dữ liệu & Giao diện (Data Visualization & UI)</h5>
+<h5 class="text-primary mt-4 mb-2 font-weight-bold">Phương pháp luận & Công cụ (Methodologies & Tools)</h5>
 <ul>
+<li>Quy trình Agile</li>
+<li>Vẽ sơ đồ quy trình nghiệp vụ (Draw.io)</li>
 <li>Phát triển Streamlit Dashboard (Full-Stack)</li>
 <li>Biểu đồ Plotly động nâng cao (Multi-Axis & Subplots)</li>
-<li>Bản đồ nhiệt rủi ro (Risk Heatmaps) & Biểu đồ Radar sinh tử</li>
-<li>Biểu đồ hợp nhất Vital Signs Combo Chart</li>
-</ul>
-<h5 class="text-primary mt-4 mb-2 font-weight-bold">Chuẩn hóa Hệ thống & Hạ tầng (Standardization & Infrastructure)</h5>
-<ul>
-<li>Khung chuẩn hóa quy trình & Hệ thống thông tin quản lý (MIS)</li>
-<li>Kiến trúc Oracle NetSuite ERP & Tương thích chéo hệ thống</li>
-<li>Mô hình token lai Web3 (ERC-721, Soulbound Token SBT, ERC-4907)</li>
-<li>Tối ưu hóa EVM Storage Slot Packing & Custom Errors</li>
-<li>Local Environment Isolation & Self-hosted Sandbox</li>
+<li>Kiến trúc Oracle NetSuite ERP</li>
 </ul>
 <h5 class="text-primary mt-4 mb-2 font-weight-bold">Ngoại ngữ (Languages)</h5>
 <ul>
 <li><strong>Tiếng Việt</strong>: Bản ngữ (Native)</li>
-<li><strong>Tiếng Anh</strong>: Trung cấp (Intermediate) (Đọc dịch tài liệu CFA tốt)</li>
+<li><strong>Tiếng Anh</strong>: Trung cấp (Đọc hiểu chuyên sâu phục vụ nghiên cứu CFA)</li>
 </ul>
     </div>
     

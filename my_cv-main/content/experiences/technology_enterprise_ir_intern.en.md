@@ -9,10 +9,10 @@ tags: ["Business Process Analysis", "Python Automation", "Capital Markets", "Bon
 Supported the International Team in investment analysis, niche market research (UAV / Low-Altitude Economy), and documentation standardization for capital market fundraising.
 
 ### 2. Actions & Detailed Implementation
-- **Business Process Analysis & UAV Niche Research**: Analyzed the value chain and business models (BMC) of 8 international UAV companies. Studied urban security patrol systems using hybrid drones (multirotor for deep-in patrols & fixed-wing for wide-area surveillance) integrated with Edge AI for threat detection under 3 seconds, establishing CapEx and periodic OpEx (SaaS/RaaS/Drone-as-a-Service) models.
-- **Capital Markets Support**: Directly assisted in structuring, evaluating, and standardizing financial dossiers for corporate bond issuance processes and IPO preparations.
-- **Automation & Management Reporting**: Developed automated Python workflows to scrape and reconcile competitor financial data. Consolidated multi-source data into a comprehensive 50-page investment dossier for executive strategic planning.
+- **Quantitative Financial Modeling**: Performed sensitivity analysis on corporate CapEx/OpEx cost structures, translating multi-source financial and market data into strategic risk-adjusted investment reports.
+- **Capital Markets & Data Quality**: Structured, evaluated, and standardized financial datasets and disclosures for corporate bond issuance processes and IPO preparations, ensuring regulatory compliance.
+- **Automation & Data Ingestion**: Developed automated Python and SQL-based data ingestion workflows to scrape and reconcile financial datasets, improving quantitative analysis speed and reducing manual auditing errors.
 
 ### 3. Key Results
-- **Quantitative**: Reduced manual errors and boosted quantitative analysis accuracy by 40% via Python automation; proposed drone patrol models reducing security personnel overhead by 40% to 50%.
-- **Qualitative**: Delivered structured, standardized financial portfolios that successfully aided the executive board in negotiating and presenting to diverse investor groups.
+- **Quantitative**: Improved quantitative analysis speed by 40% and eliminated manual data errors via Python/SQL scripting; optimized cost projections to predict a 40% to 50% reduction in operating overhead.
+- **Qualitative**: Built high-integrity financial datasets that supported the executive board in negotiating and presenting to institutional investors.

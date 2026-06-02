@@ -1,17 +1,17 @@
 ---
 name: "Nguyen Trung Hieu"
-role: "Financial Technology (Fintech) Analyst & Systems Integration Specialist"
+role: "Credit Risk Data Analyst"
 phone: "0812339125"
 location: "Ho Chi Minh City, Vietnam"
 github: "https://github.com/wane-bs"
 portfolio: "https://wane-bs.github.io/my_cv"
 email: "trunghieuwane@gmail.com"
 highlights:
-  - title: "Process Optimization"
-    description: "Built automated ETL pipelines, reducing manual errors by 40% and eliminating operational delays."
-  - title: "Enterprise Architecture"
-    description: "Skilled in mapping business processes and standardizing data structures for ERP/NetSuite systems."
-  - title: "Quantitative Modeling"
-    description: "Developed interactive dashboards for bankruptcy risk and valuation using Altman Z'', Beneish, and XGBoost."
+  - title: "Risk Modeling"
+    description: "Trained XGBoost default prediction models and applied explainable AI (SHAP) to interpret credit risk."
+  - title: "Data Engineering"
+    description: "Built automated, self-healing ETL pipelines in Python and designed relational databases in SQL."
+  - title: "Process Standardization"
+    description: "Standardized business workflows and mapped complex data structures for ERP/NetSuite systems."
 ---
-3rd-year **Fintech** student (3.5-year program) and **CFA Level 1** Candidate (focusing on Quantitative Methods & FSA) with strong systems thinking. Aspiring **Financial Technology (Fintech) Analyst & Systems Integration Specialist** driven by an open architecture philosophy, process standardization, and cross-system interoperability. Experienced in developing automated financial ETL pipelines (Python, Streamlit) and optimizing operational efficiency (achieved 100% automated post-market ingestion to eliminate manual delays, shifting 90% of time allocation to quantitative analysis, default risk modeling, and strategic decision-making). Strategically utilizing Business Analysis (BA) and ERP process mapping experience as a foundation to structure enterprise data workflows for AI-First Data Analysis (D.A) implementation.
+3rd-year **Fintech** student (3.5-year program) and **CFA Level 1 Candidate** with a strong quantitative foundation and analytical systems thinking. Aspiring **Credit Risk Data Analyst** at MoMo, passionate about leveraging alternative data for retail credit scoring and financial inclusion. Experienced in building automated financial ETL pipelines (Python, SQL) and training machine learning models (XGBoost, ElasticNet) for credit default forecasting. Skilled in translating transactional workflows and raw data into explainable risk indicators (SHAP framework), bridging the gap between data engineering and risk policy monitoring.
