@@ -2,7 +2,7 @@
 title: "Giải pháp Chuyển đổi số Tài chính & Dự báo Rủi ro Phá sản (Cuộc thi \"Tài trí hội tụ\")"
 role: "Tech Lead & Solution Architect / Quantitative Financial Developer"
 timeframe: "10/2025 – 04/2026 (Kế thừa và Phát triển)"
-link: "https://phantichtcdn-wane-hieu.streamlit.app/"
+link: "https://github.com/wane-bs/Tai_lanh_-_Talent"
 tags: ["Python", "Streamlit", "Plotly", "XGBoost", "SHAP", "Altman Z''-Score", "Beneish M-Score", "Kiến trúc Hệ thống"]
 featured: true
 ---

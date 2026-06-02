@@ -197,7 +197,7 @@
             </div>
             <div class="resume-date text-md-right">
                 <span class="text-primary">Oct 2025 – Apr 2026</span>
-                <div class="mt-2"><a href="https://phantichtcdn-wane-hieu.streamlit.app/" class="btn btn-sm btn-primary text-white my-1 mx-1" target="_blank">Dashboard</a> <a href="https://github.com/wane-bs/phantichtcdn" class="btn btn-sm btn-primary text-white my-1 mx-1" target="_blank">GitHub</a> </div>
+                <div class="mt-2"><a href="https://github.com/wane-bs/Tai_lanh_-_Talent" class="btn btn-sm btn-primary text-white my-1 mx-1" target="_blank">GitHub</a></div>
             </div>
         </div>
 
@@ -207,28 +207,43 @@
                 <div class="subheading mb-3">Quantitative Financial Developer / Financial Analyst</div>
                 <div><p class='mb-2'><strong>Role</strong>: Quantitative Financial Developer / Financial Analyst</p>
 <h5 class="text-primary mt-4 mb-2 font-weight-bold">Overview</h5>
-<p class='mb-2'>Built an automated quantitative financial statement analysis system based on a "Diagnostics, not Forecasting" philosophy. The project focuses on decoding financial structure, identifying cyclical positions, and assessing corporate valuation based on FiinPro data.</p>
+<p class='mb-2'>Built an automated quantitative financial statement analysis system based on a "Diagnostics, not Forecasting" philosophy under strict time pressure. The project replaces manual Excel analysis of FPT's 6 raw sheets with a comprehensive diagnostic pipeline to decode financial shape, structural drivers, cyclical positions, and valuation.</p>
 <h5 class="text-primary mt-4 mb-2 font-weight-bold">Detailed Implementation</h5>
 <ul>
-<li><strong>Problem</strong>: Need to diagnose the stability of financial structure and identify Structural Drivers rather than just providing point forecasts. Addressed the $P \gg N$ problem (many variables on a short time series dataset).</li>
-<li><strong>Architecture & Solutions</strong>:</li>
-<li><strong>4-Chapter Pipeline</strong>:</li>
-<li><em>Chapter 1 (Foundation)</em>: Audit status analysis and Balanced Vertical Analysis.</li>
-<li><em>Chapter 2 (Performance)</em>: 3-factor DuPont analysis and cash flow quality assessment.</li>
-<li><em>Chapter 3 (Valuation)</em>: Multi-method integration (DCF, Sum-of-the-parts, P/E Forward Band).</li>
-<li><em>Chapter 4 (Structure & Cycle)</em>: STL Decomposition to separate Trend/Seasonal and Cross-Correlation (CCF) for cycle lags.</li>
-<li><strong>Machine Learning (Dual-Auditor)</strong>: Applied <strong>ElasticNet</strong> (Regularization) and <strong>PLSR</strong> (Dimension Reduction) to determine VIP Score (Variable Importance), replacing Random Forest to avoid overfitting on small datasets.</li>
-<li><strong>Composite Score v2</strong>: Synthesized a total score based on 3 pillars: Health (30%), Growth (35%), and Valuation (35%).</li>
+<li><strong>Problem</strong>: Diagnose stability of financial structure and identify Structural Drivers instead of making point forecasts. Solved the perfection collinearity problem on short-series time datasets ($N \in [40, 60], P \gg N$).</li>
+<li><strong>Architecture & Solutions</strong>:
+  <ul>
+  <li><strong>4-Chapter Pipeline</strong>:
+    <ul>
+    <li><em>Chapter 1 (Foundation)</em>: *Balanced Vertical Analysis* using <code>np.where</code> to handle DivideByZero and <code>max(..., 0)</code> bounding to guarantee exactly 100% structural balance:
+      $$\text{Common-size Ratio} = \text{np.where}\left(\text{Denominator} \neq 0, \frac{\text{Numerator}}{\text{Denominator}} \times 100, \text{np.nan}\right)$$</li>
+    <li><em>Chapter 2 (Performance)</em>: Dynamic DuPont (ROE quarterly changes) and Sloan Accrual Ratio for cash flow quality assessment.</li>
+    <li><em>Chapter 3 (Valuation)</em>: Multi-method integration (SoTP - Sum-of-the-parts and DCF) adapted for FPT's conglomerate structure.</li>
+    <li><em>Chapter 4 (Structure & Cycle)</em>: STL Decomposition (period=4, <code>robust=True</code> IRLS algorithm) with a centered moving average fallback ($window=4$, $min_periods=1$) for small samples ($N &lt; 8$) to eliminate boundary noise, and Cross-Correlation Functions (CCF) at lags $k \in [-4, +4]$ for leading indicators.</li>
+    </ul>
+  </li>
+  <li><strong>Machine Learning (Dual-Auditor)</strong>: Applied linear regularized models (<strong>ElasticNet</strong> for grouping effects and <strong>PLSR</strong> with $H=3$ components to maximize covariance) to compute VIP Scores, replacing overfitting-prone Random Forest:
+    $$\text{VIP}_j = \sqrt{P \frac{\sum_{h=1}^H R^2(y, t_h) \left( w_{hj} / \|w_h\| \right)^2}{\sum_{h=1}^H R^2(y, t_h)}}$$</li>
+  <li><strong>Composite Score v2</strong>: Scaled in $[-100, 100]$ based on Health (30%), Growth &amp; Cycle (35%), and Valuation (35%).</li>
+  </ul>
+</li>
 </ul>
-<h5 class="text-primary mt-4 mb-2 font-weight-bold">Results & Impact</h5>
+<h5 class="text-primary mt-4 mb-2 font-weight-bold">Results &amp; Impact</h5>
 <ul>
 <li><strong>Quantitative</strong>: Automated data analysis workflow from 6 FiinPro sheets, exporting over 40 in-depth analysis result files (CSV) and visualizing them on a Streamlit Dashboard.</li>
-<li><strong>Qualitative</strong>: Provided a stable diagnostic system, eliminating noise from overly complex models, helping to early detect structural changes in corporate finance.</li>
+<li><strong>Qualitative</strong>: The system successfully identifies <strong>4 Diagnostic Patterns</strong>:
+  <ol>
+  <li><em>Profit-Cash Divergence</em>: Flags fake profit when Sloan Accrual Ratio &gt; 5% and $\text{CFO/NI} &lt; 0.7$ for 3 consecutive quarters.</li>
+  <li><em>Structural Shift Trigger</em>: Sensitivity sliders via CCF lag $k^* &gt; 0$ to simulate financial scenarios.</li>
+  <li><em>Leverage-driven Growth</em>: Identifies ROE growth driven by leverage ($\Delta\text{Equity Multiplier}$) while safety margins and asset efficiency decline.</li>
+  <li><em>Valuation Band Position</em>: Pinpoints overbought/oversold boundaries ($\text{Band Position} \to 0$ or $1$) on historical dails.</li>
+  </ol>
+</li>
 </ul>
-<h5 class="text-primary mt-4 mb-2 font-weight-bold">Reflections & Learnings</h5>
+<h5 class="text-primary mt-4 mb-2 font-weight-bold">Reflections &amp; Learnings</h5>
 <ul>
-<li><strong>Learnings</strong>: The importance of choosing models suited to data characteristics (prioritizing constrained linear models like ElasticNet/PLSR for short financial time series).</li>
-<li><strong>Challenges Overcome</strong>: Thoroughly handled DivideByZero errors and ensured absolute balance in financial structure analysis.</li>
+<li><strong>Time Allocation (66% Architecture vs &lt;5% Coding)</strong>: Shifted focus from syntax coding to architectural and mathematical design using AI-First vibe coding.</li>
+<li><strong>Learnings</strong>: Constrained linear models (ElasticNet/PLSR) provide much higher mathematical explainability and stability than non-linear models on short financial time series. Handled accountants' balance adjustments via self-healing balancing items.</li>
 </ul></div>
             </div>
             <div class="resume-date text-md-right">
