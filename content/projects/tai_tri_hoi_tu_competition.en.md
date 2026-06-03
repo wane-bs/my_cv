@@ -10,9 +10,9 @@ featured: true
 Designed and implemented an enterprise-grade credit default forecasting and solvency assessment system using traditional financial ratios and explainable machine learning models, deployed in a localized sandbox for corporate analysis.
 
 ### 2. Actions & Detailed Implementation
-- **Machine Learning & Risk Analysis**: Trained an XGBoost classifier to predict credit default probabilities (achieving high AUC/Gini score metrics). Integrated the **SHAP framework** for explainable AI to transparently identify risk contributors (e.g. leverage ratios, cash flow constraints) to ensure fair risk scoring.
-- **Python & SQL Data Ingestion Pipeline**: Engineered the core `ETLProcessor` pipeline to clean raw data, handle outliers (replacing np.inf with medians), impute missing values, and calculate Trailing Twelve Months (TTM) rolling credit indicators.
-- **Risk Visualizations & Team Coordination**: Built an interactive Streamlit dashboard featuring risk scorecards, PD heatmaps, and macro stress-testing scenarios. Coordinated a cross-functional team of finance majors and software developers to synchronize codebase and credit policy rules.
+- **Credit Solutions for Thin-File Customers**: Researched and designed an automated credit scoring and decisioning product for SMEs lacking credit histories (white CIC), substituting traditional methods with 12-month rolling cash flow analysis from cash flow statements.
+- **Explainable Decisions & Automated Credit Limits**: Integrated the **SHAP framework (Explainable AI)** to auto-generate reports detailing credit score changes (reasons for score increases/decreases) for end-users and automatically recommend credit limits based on debt capacity.
+- **Product Lifecycle & Cross-Functional Coordination**: Acted as PM & Tech Lead, gathering product requirements, managing the product feature roadmap, and coordinating between the financial business team and software developers to deploy risk policies onto an interactive Streamlit dashboard.
 
 ### 3. Key Results
 - **Quantitative**: Won **1st Place** at the departmental "Tai Tri Hoi Tu" Fintech competition. Deployed a comprehensive default forecasting engine displaying 15 years (2011-2025) of data and stress tests simulating portfolio credit risk under market volatility.

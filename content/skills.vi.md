@@ -3,6 +3,13 @@ title: "Skills"
 description: "Kỹ năng & Ngoại ngữ"
 ---
 
+## Quản trị & Phát triển Sản phẩm (Product Management & Methodologies)
+- Quy trình Agile / Scrum
+- Lấy yêu cầu nghiệp vụ & Viết tài liệu đặc tả (PRD / Specs)
+- Vẽ sơ đồ quy trình nghiệp vụ (Draw.io)
+- Phát triển Product Dashboard (Streamlit & Plotly)
+- Quản trị mối quan hệ đối tác (Partnership coordination)
+
 ## Lập trình & Cơ sở Dữ liệu (Programming & Databases)
 - Python (Pandas, NumPy, Scikit-Learn)
 - SQL (khái niệm truy vấn BigQuery)
@@ -22,18 +29,16 @@ description: "Kỹ năng & Ngoại ngữ"
 - Mô hình phân loại XGBoost Classifier
 - Trí tuệ nhân tạo giải thích được (SHAP Framework)
 - Mô hình hồi quy ElasticNet & PLSR
-- Lựa chọn Đặc trưng (Feature Selection - VIP Score, giảm chiều dữ liệu)
+- Lựa chọn Đặc trưng (Feature Selection - VIP Score)
 - STL Decomposition (Phân rã chuỗi thời gian) & Tương quan chéo (CCF)
 - Phân tích BCTC (FSA) & Altman Z''-Score (Hiệu chỉnh theo ngành)
 - Phát hiện ranh giới gian lận (Beneish M-Score & Sloan Accruals Ratio)
 
 ## Phương pháp luận & Công cụ (Methodologies & Tools)
-- Quy trình Agile
-- Vẽ sơ đồ quy trình nghiệp vụ (Draw.io)
-- Phát triển Streamlit Dashboard (Full-Stack)
-- Biểu đồ Plotly động nâng cao (Multi-Axis & Subplots)
 - Kiến trúc Oracle NetSuite ERP
+- Đối chiếu cơ sở dữ liệu (Database Reconciliation)
+- Kỹ nghệ hỗ trợ bởi AI (AI-Augmented Engineering)
 
 ## Ngoại ngữ (Languages)
 - **Tiếng Việt**: Bản ngữ (Native)
-- **Tiếng Anh**: Trung cấp (Đọc hiểu chuyên sâu phục vụ nghiên cứu CFA)
+- **Tiếng Anh**: Professional Working Proficiency (Ứng viên CFA, thành thạo tiếng Anh tài chính, có kinh nghiệm biên dịch tài liệu IR và điều phối giao tiếp quốc tế)

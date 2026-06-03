@@ -9,9 +9,9 @@ tags: ["Business Analysis", "Oracle NetSuite ERP", "Process Standardization", "A
 Assigned as a Business Analyst Intern for an ERP process standardization project using Oracle NetSuite. Responsible for mapping process flows and performing Fit-Gap Analysis for Sales and Inventory modules.
 
 ### 2. Actions & Detailed Implementation
-- **Process Mapping & Data Governance**: Standardized complex business workflows for Oracle NetSuite ERP integration, establishing structured data schemas and validation rules to ensure data integrity across cross-system pipelines.
-- **Data Schema Design**: Designed custom data fields and system mapping layouts, translating raw business logic into normalized database formats to streamline automated ETL handoffs.
-- **Database Reconciliation**: Built and tested automated inventory reconciliation scenarios, eliminating data asymmetry between ERP and legacy databases to ensure accuracy for management reporting.
+- **Requirements Gathering & Flowcharting**: Conducted As-Is process mappings, gathering and consolidating operational requirements from cross-functional teams (Inventory & Sales). Visualized workflows through Draw.io diagrams and performed Fit-Gap Analysis.
+- **Business-to-Tech Communication Bridge**: Abstracted complex business rules into system specifications and data validation rules, communicating and collaborating directly with the development team to align implementation logic.
+- **Product Design & UAT Execution**: Contributed to designing custom data fields, mapping layout integrations, and structuring User Acceptance Testing (UAT) scenarios for new features on the Oracle NetSuite ERP.
 
 ### 3. Key Results
 - **Quantitative**: Standardized schemas for 8 of 16 comprehensive workflows (100% Inventory and part of Sales); packaged 3 core data test scenarios for UAT.
