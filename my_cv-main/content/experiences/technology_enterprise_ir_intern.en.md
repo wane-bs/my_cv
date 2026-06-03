@@ -9,9 +9,9 @@ tags: ["Business Process Analysis", "Python Automation", "Capital Markets", "Bon
 Supported the International Team in investment analysis, niche market research (UAV / Low-Altitude Economy), and documentation standardization for capital market fundraising.
 
 ### 2. Actions & Detailed Implementation
-- **Quantitative Financial Modeling**: Performed sensitivity analysis on corporate CapEx/OpEx cost structures, translating multi-source financial and market data into strategic risk-adjusted investment reports.
-- **Capital Markets & Data Quality**: Structured, evaluated, and standardized financial datasets and disclosures for corporate bond issuance processes and IPO preparations, ensuring regulatory compliance.
-- **Automation & Data Ingestion**: Developed automated Python and SQL-based data ingestion workflows to scrape and reconcile financial datasets, improving quantitative analysis speed and reducing manual auditing errors.
+- **Market Research & Emerging Business Models**: Conducted specialized niche market research on the UAV (Low-Altitude Economy) sector, mapping competitor intelligence and building CAPEX/OPEX frameworks to evaluate commercial viability.
+- **Documentation & Investor Communication**: Prepared bilingual investor pitch books and standardized financial reporting packs for corporate bond issuances and IPO readiness; translated external materials and authored bilingual Minutes of Meetings (MoMs) for foreign institutional partners.
+- **Automated Competitive Intelligence**: Built automated Python and SQL ingestion scripts to scrape competitor financial metrics, converting multi-source raw structures into clean datasets for executive strategy dashboards.
 
 ### 3. Key Results
 - **Quantitative**: Improved quantitative analysis speed by 40% and eliminated manual data errors via Python/SQL scripting; optimized cost projections to predict a 40% to 50% reduction in operating overhead.

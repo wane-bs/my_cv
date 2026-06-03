@@ -3,6 +3,13 @@ title: "Skills"
 description: "Skills & Languages"
 ---
 
+## Product Management & Methodologies
+- Agile / Scrum Methodologies
+- Requirements Gathering & PRD/Spec Writing
+- Business Process Mapping (Draw.io)
+- Product Dashboard Development (Streamlit & Plotly)
+- Partnership & Stakeholder Coordination
+
 ## Programming & Databases
 - Python (Pandas, NumPy, Scikit-Learn)
 - SQL (BigQuery querying concepts)
@@ -22,18 +29,16 @@ description: "Skills & Languages"
 - Predictive Modeling (XGBoost Classifier)
 - Explainable AI (SHAP Framework)
 - Linear Regularization (ElasticNet) & PLSR
-- Feature Selection (VIP Score, Dimensionality reduction)
+- Feature Selection (VIP Score)
 - Time-series Decomposition (STL) & Cross-Correlation (CCF)
 - Financial Statement Analysis (FSA) & Altman Z''-Score (Sector-Adjusted)
 - Fraud Boundary Detection (Beneish M-Score & Sloan Accruals Ratio)
 
 ## Methodologies & Tools
-- Agile Practices
-- Business Process Mapping (Draw.io)
-- Full-Stack Streamlit Dashboard Development
-- Advanced Dynamic Plotly (Multi-Axis & Subplots)
 - Oracle NetSuite ERP Architecture
+- Database Reconciliation
+- AI-Augmented Engineering (using LLM co-pilots)
 
 ## Languages
 - **Vietnamese**: Native
-- **English**: Intermediate (Professional reading proficiency for CFA)
+- **English**: Professional Working Proficiency (CFA Candidate, bilingual IR documentation, international exchange host)
