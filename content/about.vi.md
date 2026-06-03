@@ -1,6 +1,6 @@
 ---
 name: "Nguyễn Trung Hiếu"
-role: "Chuyên viên Phân tích Rủi ro Tín dụng"
+role: "Product Trainee – Credit Tech Product & Partnerships"
 phone: "0812339125"
 location: "TP. Hồ Chí Minh, Việt Nam"
 github: "https://github.com/wane-bs"
