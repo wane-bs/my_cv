@@ -1,6 +1,6 @@
 # Nguyễn Trung Hiếu - Online CV & Resume
 
-CV trực tuyến cá nhân của **Nguyễn Trung Hiếu** – Sinh viên Công nghệ Tài chính (Fintech), chuyên ngành Phân tích dữ liệu tài chính, Hệ thống thông tin và mô hình hóa rủi ro định lượng.
+CV trực tuyến cá nhân của **Nguyễn Trung Hiếu** – Sinh viên Công nghệ Tài chính (Fintech).
 
 Dự án này là trang web CV tĩnh, được tinh chỉnh gọn nhẹ từ template **Start Bootstrap - Resume**.
 
