@@ -1,2 +1,8 @@
-danh_sach_link.txt
-metadata/
+# Bỏ qua toàn bộ nội dung ở thư mục gốc
+/*
+
+# Ngoại trừ file cấu hình .gitignore này
+!.gitignore
+
+# Ngoại trừ thư mục my_cv-main chứa mã nguồn web CV đẩy lên GitHub
+!/my_cv-main/
