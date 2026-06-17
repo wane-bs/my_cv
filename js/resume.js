@@ -1,3 +1,8 @@
+/**
+ * Mục đích: Quản lý các tương tác giao diện người dùng (smooth scrolling, bộ lọc kỹ năng động, các accordion mở rộng chi tiết kỹ thuật).
+ * Input trừu tượng: Các sự kiện click chuột của người dùng trên các phần tử HTML (badges, buttons, links).
+ * Output trừu tượng: Cập nhật động trạng thái hiển thị của các phần tử DOM (cuộn trang mượt, ẩn/hiển thị chi tiết, mờ/nổi bật thẻ bento).
+ */
 (function($) {
   "use strict"; // Start of use strict
 
