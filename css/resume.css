@@ -583,3 +583,273 @@ section.portfolio-section:last-of-type {
     padding: 3rem 1rem;
   }
 }
+
+/* ==========================================================================
+   Print Stylesheet (Bản in tối ưu hóa dạng LaTeX)
+   ========================================================================== */
+@media print {
+  /* Khôi phục khoảng cách mặc định và ẩn lề trình duyệt */
+  html, body {
+    background-color: #FFFFFF !important;
+    color: #111111 !important;
+    font-size: 10pt !important;
+    line-height: 1.45 !important;
+    padding: 0 !important;
+    padding-top: 0 !important;
+    margin: 0.5in !important;
+  }
+
+  /* Ẩn các thành phần điều hướng và tương tác */
+  .navbar-top,
+  .no-print,
+  .capability-tags-container,
+  .h6,
+  .accordion-toggle-btn,
+  .btn,
+  hr {
+    display: none !important;
+  }
+
+  /* Định dạng lại khung container */
+  .container-fluid {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  section.portfolio-section {
+    padding: 12px 0 !important;
+    margin: 0 !important;
+    page-break-inside: avoid;
+    border-bottom: 1px solid #CCCCCC !important;
+  }
+
+  section.portfolio-section:last-of-type {
+    border-bottom: none !important;
+  }
+
+  h1 {
+    font-size: 22pt !important;
+    text-align: center !important;
+    margin-bottom: 5px !important;
+    font-weight: 800 !important;
+  }
+
+  .h5.mb-4.text-secondary {
+    text-align: center !important;
+    font-size: 9.5pt !important;
+    margin-bottom: 15px !important;
+    color: #333333 !important;
+  }
+
+  h2 {
+    font-size: 13pt !important;
+    border-bottom: 1px solid #111111 !important;
+    padding-bottom: 2px !important;
+    margin-bottom: 10px !important;
+    margin-top: 12px !important;
+    text-transform: uppercase !important;
+  }
+
+  /* Tự động mở rộng nội dung Accordion để in đầy đủ thông tin */
+  .accordion-details-content {
+    display: block !important;
+    border-top: none !important;
+    padding-top: 4px !important;
+    margin-top: 0 !important;
+  }
+
+  /* Định dạng lại Bento Grid thành danh sách dọc tránh bị cắt trang */
+  .bento-grid {
+    display: block !important;
+  }
+
+  .bento-card {
+    display: block !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin-bottom: 12px !important;
+    page-break-inside: avoid;
+  }
+
+  .bento-card:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  .bento-metric-container {
+    display: none !important; /* Ẩn các khối chỉ số lớn kiểu Bento */
+  }
+
+  .bento-tech-tags {
+    margin-top: 4px !important;
+    display: block !important;
+  }
+
+  .tech-badge {
+    border: 1px solid #E2E8F0 !important;
+    background-color: #F8FAFC !important;
+    font-size: 8pt !important;
+    padding: 1px 5px !important;
+    display: inline-block !important;
+    margin-right: 4px !important;
+    margin-top: 2px !important;
+  }
+
+  /* Định dạng lại dòng thời gian (Timeline) */
+  .timeline-container {
+    border-left: none !important;
+    padding-left: 0 !important;
+  }
+
+  .timeline-item {
+    margin-bottom: 12px !important;
+    page-break-inside: avoid;
+  }
+
+  .timeline-item::before {
+    display: none !important;
+  }
+
+  .timeline-role {
+    font-size: 11pt !important;
+    font-weight: bold !important;
+  }
+
+  .timeline-company {
+    font-size: 10pt !important;
+    font-weight: normal !important;
+  }
+
+  .timeline-date {
+    float: right !important;
+    font-size: 10pt !important;
+    font-weight: bold !important;
+    color: #111111 !important;
+  }
+
+  /* Sắp xếp cột Học vấn & Chứng chỉ giống LaTeX */
+  .resume-item {
+    display: flex !important;
+    justify-content: space-between !important;
+    page-break-inside: avoid;
+    margin-bottom: 8px !important;
+  }
+
+  .resume-content {
+    width: 75% !important;
+  }
+
+  .resume-date {
+    width: 25% !important;
+    text-align: right !important;
+    font-size: 10pt !important;
+    font-weight: bold !important;
+  }
+
+  /* Định dạng khối Học thuật (Academic Callout) */
+  .academic-callout-box {
+    background-color: #F8FAFC !important;
+    border: 1px solid #E2E8F0 !important;
+    padding: 8px 12px !important;
+    margin: 8px 0 !important;
+    border-radius: 4px !important;
+  }
+
+  .academic-callout-title {
+    font-size: 8pt !important;
+    font-weight: bold !important;
+  }
+
+  .academic-callout-formula {
+    font-size: 9pt !important;
+    padding: 4px 0 !important;
+  }
+
+  /* Định dạng Grid Chứng chỉ (Credentials) */
+  .credential-grid {
+    display: block !important;
+  }
+
+  .credential-card {
+    border: none !important;
+    padding: 0 !important;
+    margin-bottom: 8px !important;
+    page-break-inside: avoid;
+  }
+
+  /* Chuyển đổi overlay xác thực sang chữ tĩnh hiển thị Verification ID */
+  .credential-verify-overlay {
+    position: static !important;
+    background: none !important;
+    color: #475569 !important;
+    opacity: 1 !important;
+    padding: 0 !important;
+    text-align: left !important;
+    display: block !important;
+    margin-top: 2px !important;
+  }
+
+  .credential-verify-overlay .small,
+  .credential-verify-overlay .credential-verify-btn {
+    display: none !important;
+  }
+
+  .credential-verify-overlay .credential-id-code {
+    display: inline-block !important;
+    font-family: monospace !important;
+    font-size: 8pt !important;
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    color: #475569 !important;
+  }
+
+  .credential-verify-overlay .credential-id-code::before {
+    content: "Verification ID: ";
+    font-family: sans-serif !important;
+    font-weight: bold;
+  }
+
+  /* Định dạng Ma trận Kỹ năng */
+  .skills-box-container {
+    display: block !important;
+  }
+
+  .skills-box {
+    border: none !important;
+    padding: 0 !important;
+    margin-bottom: 8px !important;
+    page-break-inside: avoid;
+  }
+
+  .skills-box-title {
+    font-size: 10.5pt !important;
+    font-weight: bold !important;
+    margin-bottom: 4px !important;
+    border-bottom: 1px dashed #CCCCCC !important;
+    padding-bottom: 2px !important;
+  }
+
+  .skills-list {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+    list-style: none !important;
+    padding-left: 0 !important;
+  }
+
+  .skills-list li {
+    border: none !important;
+    padding: 0 !important;
+    font-size: 9pt !important;
+  }
+
+  .skills-list li::before {
+    content: "•" !important;
+    color: #111111 !important;
+    font-weight: bold !important;
+    font-size: 9pt !important;
+  }
+}
+
