@@ -584,126 +584,117 @@ section.portfolio-section:last-of-type {
   }
 }
 
+.project-date {
+  display: none;
+}
+
 /* ==========================================================================
-   Print Stylesheet (Bản in tối ưu hóa dạng LaTeX)
+   Print Stylesheet (Bản in tối ưu hóa đồng bộ LaTeX)
    ========================================================================== */
 @media print {
-  /* Khôi phục khoảng cách mặc định và ẩn lề trình duyệt */
-  html, body {
-    background-color: #FFFFFF !important;
-    color: #111111 !important;
-    font-size: 10pt !important;
-    line-height: 1.45 !important;
-    padding: 0 !important;
-    padding-top: 0 !important;
-    margin: 0.5in !important;
+  /* Thiết lập lề trang giấy */
+  @page {
+    margin: 0.4in 0.5in;
   }
 
-  /* Ẩn các thành phần điều hướng và tương tác */
+  html, body {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 9.5pt !important;
+    line-height: 1.3 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Ẩn các phần tử điều hướng, tương tác, và tóm tắt trùng lặp */
   .navbar-top,
   .no-print,
   .capability-tags-container,
   .h6,
   .accordion-toggle-btn,
   .btn,
+  .experience-summary,
+  .bento-card p.mb-3, /* Ẩn mô tả tóm tắt dự án */
   hr {
     display: none !important;
   }
 
-  /* Định dạng lại khung container */
+  /* Khung nội dung chính */
   .container-fluid {
     padding: 0 !important;
     margin: 0 !important;
   }
 
   section.portfolio-section {
-    padding: 12px 0 !important;
+    padding: 5px 0 !important;
     margin: 0 !important;
-    page-break-inside: avoid;
-    border-bottom: 1px solid #CCCCCC !important;
-  }
-
-  section.portfolio-section:last-of-type {
     border-bottom: none !important;
   }
 
+  /* Định dạng đầu trang (Header) giống LaTeX */
   h1 {
-    font-size: 22pt !important;
+    font-size: 20pt !important;
     text-align: center !important;
-    margin-bottom: 5px !important;
-    font-weight: 800 !important;
+    margin-top: 0 !important;
+    margin-bottom: 3px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
   }
 
+  h1 span {
+    color: #000000 !important;
+  }
+
+  /* Dòng thông tin liên hệ */
   .h5.mb-4.text-secondary {
     text-align: center !important;
-    font-size: 9.5pt !important;
-    margin-bottom: 15px !important;
-    color: #333333 !important;
-  }
-
-  h2 {
-    font-size: 13pt !important;
-    border-bottom: 1px solid #111111 !important;
-    padding-bottom: 2px !important;
-    margin-bottom: 10px !important;
-    margin-top: 12px !important;
-    text-transform: uppercase !important;
-  }
-
-  /* Tự động mở rộng nội dung Accordion để in đầy đủ thông tin */
-  .accordion-details-content {
-    display: block !important;
-    border-top: none !important;
-    padding-top: 4px !important;
-    margin-top: 0 !important;
-  }
-
-  /* Định dạng lại Bento Grid thành danh sách dọc tránh bị cắt trang */
-  .bento-grid {
-    display: block !important;
-  }
-
-  .bento-card {
-    display: block !important;
-    border: none !important;
-    box-shadow: none !important;
-    padding: 0 !important;
+    font-size: 8.5pt !important;
     margin-bottom: 12px !important;
-    page-break-inside: avoid;
+    color: #000000 !important;
+    font-weight: normal !important;
   }
 
-  .bento-card:hover {
-    transform: none !important;
-    box-shadow: none !important;
+  .h5.mb-4.text-secondary a {
+    color: #000000 !important;
+    text-decoration: none !important;
   }
 
-  .bento-metric-container {
-    display: none !important; /* Ẩn các khối chỉ số lớn kiểu Bento */
+  /* Tiêu đề mục (SUMMARY, EXPERIENCE, PROJECTS...) */
+  h2 {
+    font-size: 11pt !important;
+    border-bottom: 1.5px solid #D3D3D3 !important; /* Đường kẻ ngang LaTeX */
+    padding-bottom: 2px !important;
+    margin-top: 10px !important;
+    margin-bottom: 6px !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    color: #000000 !important;
   }
 
-  .bento-tech-tags {
-    margin-top: 4px !important;
-    display: block !important;
+  /* Tóm tắt nghề nghiệp */
+  #about .lead {
+    margin-bottom: 5px !important;
   }
 
-  .tech-badge {
-    border: 1px solid #E2E8F0 !important;
-    background-color: #F8FAFC !important;
-    font-size: 8pt !important;
-    padding: 1px 5px !important;
-    display: inline-block !important;
-    margin-right: 4px !important;
-    margin-top: 2px !important;
+  #about .lead p {
+    font-size: 9.5pt !important;
+    line-height: 1.35 !important;
+    text-align: justify !important;
+    margin-bottom: 0 !important;
   }
 
-  /* Định dạng lại dòng thời gian (Timeline) */
+  /* Dòng thời gian (Experience) tái cấu trúc kiểu lưới hai cột */
   .timeline-container {
     border-left: none !important;
     padding-left: 0 !important;
   }
 
   .timeline-item {
-    margin-bottom: 12px !important;
+    display: grid !important;
+    grid-template-columns: 1fr auto !important;
+    margin-bottom: 8px !important;
     page-break-inside: avoid;
   }
 
@@ -711,83 +702,251 @@ section.portfolio-section:last-of-type {
     display: none !important;
   }
 
-  .timeline-role {
-    font-size: 11pt !important;
-    font-weight: bold !important;
-  }
-
   .timeline-company {
-    font-size: 10pt !important;
-    font-weight: normal !important;
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    font-size: 9.5pt !important;
+    font-weight: bold !important;
+    color: #000000 !important;
+    margin-bottom: 0 !important;
   }
 
   .timeline-date {
-    float: right !important;
-    font-size: 10pt !important;
-    font-weight: bold !important;
-    color: #111111 !important;
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    font-size: 9.5pt !important;
+    font-weight: normal !important;
+    color: #000000 !important;
+    text-align: right !important;
+    margin-bottom: 0 !important;
   }
 
-  /* Sắp xếp cột Học vấn & Chứng chỉ giống LaTeX */
-  .resume-item {
-    display: flex !important;
-    justify-content: space-between !important;
-    page-break-inside: avoid;
+  .timeline-role {
+    grid-column: 1 / span 2 !important;
+    grid-row: 2 !important;
+    font-size: 9.5pt !important;
+    font-style: italic !important;
+    font-weight: normal !important;
+    color: #000000 !important;
+    margin-bottom: 2px !important;
+  }
+
+  .tech-details-accordion {
+    grid-column: 1 / span 2 !important;
+    grid-row: 3 !important;
+    margin-top: 2px !important;
+  }
+
+  /* Danh sách dự án (Projects) */
+  .bento-grid {
+    display: block !important;
+  }
+
+  .bento-card {
+    display: grid !important;
+    grid-template-columns: 1fr auto !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
     margin-bottom: 8px !important;
+    page-break-inside: avoid;
+    background: none !important;
+  }
+
+  .bento-card > div:first-child {
+    grid-column: 1 / span 2 !important;
+    display: grid !important;
+    grid-template-columns: 1fr auto !important;
+  }
+
+  .bento-card h3 {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    font-size: 9.5pt !important;
+    font-weight: bold !important;
+    margin: 0 !important;
+    color: #000000 !important;
+  }
+
+  .project-date {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    font-size: 9.5pt !important;
+    font-weight: normal !important;
+    text-align: right !important;
+    color: #000000 !important;
+    display: inline-block !important;
+  }
+
+  .bento-card p.text-muted {
+    grid-column: 1 / span 2 !important;
+    grid-row: 2 !important;
+    font-size: 9.5pt !important;
+    font-style: italic !important;
+    font-weight: normal !important;
+    color: #000000 !important;
+    margin-bottom: 2px !important;
+    text-transform: none !important;
+  }
+
+  .bento-card > div:last-child {
+    grid-column: 1 / span 2 !important;
+    grid-row: 3 !important;
+  }
+
+  /* Ẩn bento tags khi in để giống LaTeX */
+  .bento-tech-tags {
+    display: none !important;
+  }
+
+  /* Bullet points tối ưu khoảng cách kiểu LaTeX */
+  .accordion-details-content {
+    display: block !important;
+    border-top: none !important;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .accordion-details-content ul {
+    padding-left: 15px !important;
+    margin-top: 1px !important;
+    margin-bottom: 0 !important;
+    list-style-type: disc !important;
+  }
+
+  .accordion-details-content li {
+    font-size: 9pt !important;
+    line-height: 1.3 !important;
+    margin-bottom: 2px !important;
+    color: #000000 !important;
+  }
+
+  .accordion-details-content li strong {
+    font-weight: bold !important;
+  }
+
+  /* Học vấn & Chứng chỉ */
+  .resume-item {
+    display: grid !important;
+    grid-template-columns: 1fr auto !important;
+    margin-bottom: 6px !important;
+    page-break-inside: avoid;
   }
 
   .resume-content {
-    width: 75% !important;
+    grid-column: 1 !important;
+    width: 100% !important;
   }
 
   .resume-date {
-    width: 25% !important;
+    grid-column: 2 !important;
     text-align: right !important;
-    font-size: 10pt !important;
-    font-weight: bold !important;
+    font-size: 9.5pt !important;
+    font-weight: normal !important;
+    color: #000000 !important;
+    width: auto !important;
   }
 
-  /* Định dạng khối Học thuật (Academic Callout) */
+  .resume-content h3 {
+    font-size: 9.5pt !important;
+    font-weight: bold !important;
+    margin-bottom: 1px !important;
+  }
+
+  .resume-content .subheading {
+    font-size: 9.5pt !important;
+    font-style: italic !important;
+    font-weight: normal !important;
+    margin-bottom: 1px !important;
+  }
+
+  .resume-content p.text-primary {
+    font-size: 9.5pt !important;
+    font-weight: normal !important;
+    color: #000000 !important;
+    margin-bottom: 2px !important;
+  }
+
+  .resume-content ul {
+    padding-left: 15px !important;
+    margin-top: 1px !important;
+    margin-bottom: 0 !important;
+    list-style-type: disc !important;
+  }
+
+  .resume-content li {
+    font-size: 9pt !important;
+    line-height: 1.3 !important;
+    margin-bottom: 2px !important;
+  }
+
+  /* Giáo trình/Nghiên cứu khoa học */
   .academic-callout-box {
-    background-color: #F8FAFC !important;
-    border: 1px solid #E2E8F0 !important;
-    padding: 8px 12px !important;
-    margin: 8px 0 !important;
-    border-radius: 4px !important;
+    background-color: #FFFFFF !important;
+    border: 0.5px solid #D3D3D3 !important;
+    padding: 6px 10px !important;
+    margin: 5px 0 !important;
+    border-radius: 2px !important;
+    page-break-inside: avoid;
   }
 
   .academic-callout-title {
     font-size: 8pt !important;
     font-weight: bold !important;
+    color: #000000 !important;
+    margin-bottom: 2px !important;
   }
 
   .academic-callout-formula {
-    font-size: 9pt !important;
-    padding: 4px 0 !important;
+    font-size: 8.5pt !important;
+    padding: 2px 0 !important;
   }
 
-  /* Định dạng Grid Chứng chỉ (Credentials) */
+  /* Khối chứng chỉ */
   .credential-grid {
     display: block !important;
   }
 
   .credential-card {
+    display: flex !important;
+    justify-content: space-between !important;
     border: none !important;
     padding: 0 !important;
-    margin-bottom: 8px !important;
+    margin-bottom: 4px !important;
     page-break-inside: avoid;
   }
 
-  /* Chuyển đổi overlay xác thực sang chữ tĩnh hiển thị Verification ID */
+  .credential-title {
+    font-size: 9.5pt !important;
+    font-weight: bold !important;
+    margin-bottom: 0 !important;
+    display: inline-block !important;
+  }
+
+  .credential-issuer {
+    font-size: 9.5pt !important;
+    font-style: italic !important;
+    margin-bottom: 0 !important;
+    display: inline-block !important;
+  }
+
+  .credential-issuer::before {
+    content: " - " !important;
+    font-style: normal !important;
+  }
+
+  .credential-card .small.text-muted {
+    display: none !important;
+  }
+
+  /* Tái cơ cấu Verification ID sang góc phải giống LaTeX */
   .credential-verify-overlay {
     position: static !important;
-    background: none !important;
-    color: #475569 !important;
+    display: inline-block !important;
     opacity: 1 !important;
+    background: none !important;
     padding: 0 !important;
-    text-align: left !important;
-    display: block !important;
-    margin-top: 2px !important;
+    margin: 0 !important;
   }
 
   .credential-verify-overlay .small,
@@ -796,22 +955,21 @@ section.portfolio-section:last-of-type {
   }
 
   .credential-verify-overlay .credential-id-code {
-    display: inline-block !important;
     font-family: monospace !important;
-    font-size: 8pt !important;
-    background: none !important;
+    font-size: 8.5pt !important;
+    color: #333333 !important;
     border: none !important;
+    background: none !important;
     padding: 0 !important;
-    color: #475569 !important;
   }
 
   .credential-verify-overlay .credential-id-code::before {
-    content: "Verification ID: ";
+    content: "ID: " !important;
     font-family: sans-serif !important;
-    font-weight: bold;
+    font-weight: bold !important;
   }
 
-  /* Định dạng Ma trận Kỹ năng */
+  /* Ma trận kỹ năng */
   .skills-box-container {
     display: block !important;
   }
@@ -819,37 +977,47 @@ section.portfolio-section:last-of-type {
   .skills-box {
     border: none !important;
     padding: 0 !important;
-    margin-bottom: 8px !important;
+    margin-bottom: 4px !important;
     page-break-inside: avoid;
   }
 
   .skills-box-title {
-    font-size: 10.5pt !important;
+    font-size: 9.5pt !important;
     font-weight: bold !important;
-    margin-bottom: 4px !important;
-    border-bottom: 1px dashed #CCCCCC !important;
-    padding-bottom: 2px !important;
+    margin-bottom: 2px !important;
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+    display: inline-block !important;
+  }
+
+  .skills-box-title::after {
+    content: ": " !important;
   }
 
   .skills-list {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    gap: 8px !important;
+    display: inline !important;
     list-style: none !important;
     padding-left: 0 !important;
   }
 
   .skills-list li {
-    border: none !important;
-    padding: 0 !important;
+    display: inline !important;
     font-size: 9pt !important;
+    padding: 0 !important;
+    border: none !important;
   }
 
   .skills-list li::before {
-    content: "•" !important;
-    color: #111111 !important;
-    font-weight: bold !important;
-    font-size: 9pt !important;
+    content: none !important;
+  }
+
+  .skills-list li::after {
+    content: ", " !important;
+    color: #000000 !important;
+  }
+
+  .skills-list li:last-child::after {
+    content: "" !important;
   }
 }
 
