@@ -167,6 +167,44 @@
         <h2 class="mb-5">Danh mục Dự án</h2>
         <div class="bento-grid">
 
+          <!-- Project 6: Wealth Concierge Agent -->
+          <div class="bento-card filterable" data-tags="data-pipelines, systems-integration, financial-analysis">
+            <div>
+              <div class="bento-metric-container">
+                <div class="bento-metric-value">5-10 giây</div>
+                <div class="bento-metric-label">SMTP Volatility Alert</div>
+              </div>
+              <h3 class="mt-2">Hệ thống Trợ lý Tài chính & Cảnh báo Biến động Portfolio <span class="project-date">Tháng 6/2026 – Hiện tại</span></h3>
+              <p class="text-muted font-weight-bold" style="font-size: 0.85rem; text-transform: uppercase;">Independent Developer & System Architect</p>
+              <p class="mb-3" style="font-size: 0.95rem;">
+                Phát triển hệ thống multi-agent trợ lý tài chính cá nhân song ngữ trên nền tảng Google ADK, kết hợp API Vnstock để quản lý danh mục đầu tư ảo, giải tối ưu hóa Markowitz (MPT) và chạy ngầm daemon gửi email cảnh báo tự động.
+              </p>
+            </div>
+            
+            <div>
+              <div class="tech-details-accordion">
+                <button class="accordion-toggle-btn">[Xem chi tiết kiến trúc & quy trình kỹ thuật]</button>
+                <div class="accordion-details-content">
+                  <ul>
+                    <li><strong>Thiết kế cấu trúc Multi-Agent</strong> sử dụng mô hình Root Orchestrator trên Google ADK, tự động nhận diện ý định (Intent) và chuyển giao hội thoại (LLM Delegation) tới 4 Sub-agents chuyên biệt.</li>
+                    <li><strong>Phát triển Sentinel Daemon chạy ngầm</strong> (`sentinel_daemon.py`) quét Vnstock định kỳ mỗi 10 phút, đối chiếu giá vốn cục bộ để tự động sinh báo cáo HTML và gửi email cảnh báo SMTP chỉ trong 5-10 giây.</li>
+                    <li><strong>Tích hợp bộ giải tối ưu hóa Markowitz (MPT)</strong> sử dụng `scipy` để tính toán GMV, Tangency Portfolios và đề xuất mã tối ưu, trực quan hóa trên Dashboard Streamlit song ngữ Anh-Việt tích hợp kiểm định `agents-cli eval`.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="bento-tech-tags">
+                <span class="tech-badge">Google ADK</span>
+                <span class="tech-badge">Streamlit</span>
+                <span class="tech-badge">Vnstock</span>
+                <span class="tech-badge">Markowitz MPT</span>
+                <span class="tech-badge">SMTP Alert</span>
+              </div>
+              <div class="mt-3">
+                <a href="https://github.com/wane-bs/wealth-concierge-agent" class="btn btn-sm btn-outline-dark" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </div>
+
           <!-- Project 1: Stock ETL Pipeline -->
           <div class="bento-card filterable" data-tags="data-pipelines">
             <div>
