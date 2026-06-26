@@ -164,6 +164,44 @@
         <h2 class="mb-5">Projects Grid</h2>
         <div class="bento-grid">
 
+          <!-- Project 6: Wealth Concierge Agent -->
+          <div class="bento-card filterable" data-tags="data-pipelines, systems-integration, financial-analysis">
+            <div>
+              <div class="bento-metric-container">
+                <div class="bento-metric-value">5-10s</div>
+                <div class="bento-metric-label">SMTP Volatility Alert</div>
+              </div>
+              <h3>Personal Wealth Concierge Agent (Portfolio & Volatility Alert) <span class="project-date">Jun. 2026 – Present</span></h3>
+              <p class="text-muted font-weight-bold" style="font-size: 0.85rem; text-transform: uppercase;">Independent Developer & System Architect</p>
+              <p class="mb-3" style="font-size: 0.95rem;">
+                Developed a bilingual multi-agent personal wealth assistant on Google ADK, integrating Vnstock API to manage portfolios, optimize asset allocations using Markowitz MPT, and run a background daemon for automated email volatility alerts.
+              </p>
+            </div>
+            
+            <div>
+              <div class="tech-details-accordion">
+                <button class="accordion-toggle-btn">[View technical details & solutions]</button>
+                <div class="accordion-details-content">
+                  <ul>
+                    <li><strong>Designed a Multi-Agent architecture</strong> on Google ADK using the Root Orchestrator pattern to analyze intents and delegate conversation control dynamically to 4 specialized Sub-agents.</li>
+                    <li><strong>Developed a background sentinel daemon</strong> (`sentinel_daemon.py`) scanning Vnstock prices every 10 minutes, generating structured HTML reports, and sending SMTP alerts within 5-10 seconds of volatility.</li>
+                    <li><strong>Integrated Markowitz MPT optimization solver</strong> using `scipy` to solve GMV and Tangency portfolios, visualization via an interactive bilingual Streamlit dashboard with automated verification.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="bento-tech-tags">
+                <span class="tech-badge">Google ADK</span>
+                <span class="tech-badge">Streamlit</span>
+                <span class="tech-badge">Vnstock</span>
+                <span class="tech-badge">Markowitz MPT</span>
+                <span class="tech-badge">SMTP Alert</span>
+              </div>
+              <div class="mt-3">
+                <a href="https://github.com/wane-bs/wealth-concierge-agent" class="btn btn-sm btn-outline-dark" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </div>
+
           <!-- Project 1: Stock ETL Pipeline -->
           <div class="bento-card filterable" data-tags="data-pipelines">
             <div>
