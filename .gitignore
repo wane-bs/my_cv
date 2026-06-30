@@ -4,5 +4,8 @@
 # Ngoại trừ file cấu hình .gitignore này
 !.gitignore
 
+# Ngoại trừ file README.md giới thiệu ở thư mục gốc
+!/README.md
+
 # Ngoại trừ thư mục my_cv-main chứa mã nguồn web CV đẩy lên GitHub
 !/my_cv-main/
