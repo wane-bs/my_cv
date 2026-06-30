@@ -1,26 +1,16 @@
-# Nguyễn Trung Hiếu - Online CV & Resume
+# Nguyễn Trung Hiếu (Wane) - Portfolio & CV
 
-CV trực tuyến cá nhân của **Nguyễn Trung Hiếu** – Sinh viên Công nghệ Tài chính (Fintech).
+## 🚀 Web Portfolio Trực Tuyến
+👉 **Truy cập bản Web tương tác đầy đủ tại đây:** **[wane-bs.github.io/my_cv](https://wane-bs.github.io/my_cv)**  
+*(Phiên bản tiếng Anh: [English Portfolio](https://wane-bs.github.io/my_cv/index-en.html))*
 
-Dự án này là trang web CV tĩnh, được tinh chỉnh gọn nhẹ từ template **Start Bootstrap - Resume**.
+---
 
-## Các phiên bản ngôn ngữ
-- **Tiếng Việt**: [index.html](file:///f:/my_cv-main/my_cv-main/index.html) (Mặc định)
-- **Tiếng Anh (English)**: [index-en.html](file:///f:/my_cv-main/my_cv-main/index-en.html)
+## 💼 Định hướng Nghề nghiệp
+- **Vị trí mục tiêu:** Financial Analyst Intern / Project Owner Level Intern  
+- **Triết lý cốt lõi:** Chính xác định lượng, phân tích liên kết báo cáo tài chính, thiết kế hệ thống dữ liệu phân tích và tự động hóa quy trình nghiệp vụ.
 
-## Công nghệ sử dụng
-- **Core**: HTML5, CSS3, JavaScript
-- **Framework**: Bootstrap 4 (đã đóng gói gọn trong thư mục `vendor/`)
-- **Rendering**: Tích hợp thư viện MathJax để hiển thị trực tiếp các công thức toán học và mô hình định lượng (ví dụ: Altman Z''-Score, ElasticNet, PLSR).
-
-## Cấu trúc thư mục dự án sau khi tối giản
-```text
-my_cv-main/
-├── css/             # CSS chứa giao diện đã nén (resume.min.css)
-├── js/              # Mã nguồn điều hướng mượt mà (resume.min.js)
-├── img/             # Thư mục ảnh đại diện (portrait_photo.png)
-├── vendor/          # Các thư viện phụ thuộc (Bootstrap, FontAwesome, Devicons, jQuery, Easing)
-├── index.html       # File chạy chính - bản Tiếng Việt
-├── index-en.html    # File chạy chính - bản Tiếng Anh
-└── README.md        # File giới thiệu dự án này
-```
+## 🛠️ Lĩnh vực Chuyên môn & Kỹ năng
+- **Financial Analysis & Valuation:** Lập mô hình tài chính (CapEx/OpEx), định giá doanh nghiệp (DCF, SoTP), phân tích báo cáo tài chính.
+- **Systems & Process Standardization:** Chuẩn hóa quy trình nghiệp vụ (As-Is/To-Be workflows), tích hợp và di chuyển dữ liệu ERP (Oracle NetSuite).
+- **Financial Data Analytics:** Xây dựng đường ống ETL tự động hóa, trực quan hóa dữ liệu (Python, Pandas, SQL, Streamlit).
