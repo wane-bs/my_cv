@@ -2,18 +2,19 @@
 
 ## 🚀 Web Portfolio Trực Tuyến
 
-👉 **Truy cập bản Web tương tác đầy đủ tại đây:** **[my-cv-8s9.pages.dev](https://my-cv-8s9.pages.dev/)**
-*(Phiên bản tiếng Anh: [English Portfolio](https://wane-bs.github.io/my_cv/index-en.html))*
+👉 **Truy cập bản Web Portfolio tương tác (Hỗ trợ Song ngữ VI / EN & Tải Harvard Master CV):**  
+🔗 **[https://nguyentrunghieu.wane.workers.dev/](https://nguyentrunghieu.wane.workers.dev/)**
 
 ---
 
 ## 💼 Định hướng Nghề nghiệp
 
-- **Vị trí mục tiêu:** Financial Analyst Intern / Project Owner Level Intern
-- **Triết lý cốt lõi:** Chính xác định lượng, phân tích liên kết báo cáo tài chính, thiết kế hệ thống dữ liệu phân tích và tự động hóa quy trình nghiệp vụ.
+- **Vị trí mục tiêu:** Financial Engineer / Quantitative Risk & Analytics Engineer
+- **Triết lý cốt lõi:** Kết hợp giữa Toán Tài chính Định lượng (định giá dòng tiền, mô hình rủi ro tín dụng, tối ưu hóa danh mục) và Kỹ thuật Tính toán / Dữ liệu (Python, SQL, Machine Learning, Multi-Agent Systems).
 
 ## 🛠️ Lĩnh vực Chuyên môn & Kỹ năng
 
-- **Financial Analysis & Valuation:** Lập mô hình tài chính (CapEx/OpEx), định giá doanh nghiệp (DCF, SoTP), phân tích báo cáo tài chính.
-- **Systems & Process Standardization:** Chuẩn hóa quy trình nghiệp vụ (As-Is/To-Be workflows), tích hợp và di chuyển dữ liệu ERP (Oracle NetSuite).
-- **Financial Data Analytics:** Xây dựng đường ống ETL tự động hóa, trực quan hóa dữ liệu (Python, Pandas, SQL, Streamlit).
+- **Quantitative Finance & Risk Modeling:** Lập mô hình rủi ro tín dụng doanh nghiệp (Credit Underwriting), dự báo kiệt quệ tài chính (Altman Z''-Score, Beneish M-Score), mô hình hóa dòng tiền và kiểm thử ứng suất (Stress Testing).
+- **Financial Analytics & Data Engineering:** Thiết kế pipeline dữ liệu tài chính (Python, SQL, dbt Core, PostgreSQL), chuẩn hóa kho dữ liệu và trực quan hóa (ECharts, Streamlit).
+- **Computational Finance & AI:** Tích hợp các mô hình học máy (Machine Learning) và Multi-Agent LLMs vào thẩm định rủi ro, đối soát số liệu và tự động hóa ra quyết định tài chính.
+
